@@ -1,4 +1,4 @@
-// Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 full UI → snapshots/final-v2/ or git tag final-v2
+// Stable baseline: see scroll-video-hero.stable-2026-06-10.tsx
 "use client";
 
 import { useRef, useEffect } from "react";

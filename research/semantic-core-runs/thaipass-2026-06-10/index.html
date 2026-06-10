@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Полный отчёт Core: thaipass 2026 06 10</title>
+  <style>
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#111; background:#fff; line-height:1.5; }
+    header { padding:44px 52px 30px; border-bottom:1px solid #ddd; background:linear-gradient(180deg,#fff,#f7f7f7); }
+    main { max-width:1180px; margin:0 auto; padding:34px 28px 70px; }
+    h1 { font-size:42px; line-height:1.08; margin:0 0 14px; letter-spacing:-.03em; }
+    h2 { font-size:28px; margin:42px 0 14px; padding-top:8px; border-top:2px solid #111; }
+    h3 { font-size:20px; margin:28px 0 10px; }
+    p { margin:0 0 12px; }
+    .lead { font-size:18px; max-width:900px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:22px 0; }
+    .card { border:1px solid #ddd; border-radius:14px; padding:16px; background:#fafafa; }
+    .card b { display:block; font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:#555; margin-bottom:8px; }
+    .card span { font-size:28px; font-weight:700; }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    table { width:100%; border-collapse:collapse; margin:12px 0 24px; font-size:14px; }
+    th,td { border:1px solid #ddd; padding:8px 9px; vertical-align:top; text-align:left; }
+    th { background:#efefef; position:sticky; top:0; z-index:1; }
+    code { background:#f0f0f0; padding:1px 5px; border-radius:4px; }
+    .note { border-left:4px solid #111; padding:12px 14px; background:#fafafa; margin:16px 0; }
+    .pill { display:inline-block; border:1px solid #111; border-radius:999px; padding:2px 9px; margin:2px; font-size:12px; }
+    li { margin:0 0 7px; }
+    footer { padding:24px 52px; border-top:1px solid #ddd; color:#555; }
+    @media (max-width:800px) { header { padding:28px 22px; } .two { grid-template-columns:1fr; } h1 { font-size:32px; } }
+  </style>
+</head>
+<body>
+<header>
+  <p>Semantic Core / SEO + GEO / Wordstat / Cursor sub-agent</p>
+  <h1>Полный отчёт по семантическому ядру: thaipass 2026 06 10</h1>
+  <p class="lead">Это общий файл “всё в одном”: выводы, методика, таблицы, карта страниц, контент-план, риски, ограничения и рекомендации.</p>
+</header>
+<main>
+  <section>
+    <h2>1. Краткий вывод</h2>
+    <div class="grid">
+      <div class="card"><b>Строк Wordstat</b><span>0</span></div>
+      <div class="card"><b>Очищенных запросов</b><span>0</span></div>
+      <div class="card"><b>Включено</b><span>0</span></div>
+      <div class="card"><b>Исключено</b><span>0</span></div>
+      <div class="card"><b>Кластеров</b><span>15</span></div>
+      <div class="card"><b>P0/P1</b><span>14</span></div>
+    </div>
+    <p>Пакет показывает, какие темы уже можно переводить в страницы, какие требуют проверки SERP, где есть риск каннибализации и что делать в ближайшие 7/30/90 дней.</p>
+  </section>
+
+  <section>
+    <h2>2. Файлы пакета</h2>
+    <ul><li><a href="05-clusters.csv">05-clusters.csv</a></li><li><a href="06-url-map.csv">06-url-map.csv</a></li><li><a href="07-content-briefs.md">07-content-briefs.md</a></li><li><a href="09-quality-report.md">09-quality-report.md</a></li><li><a href="10-todo.md">10-todo.md</a></li><li><a href="12-implementation-roadmap.md">12-implementation-roadmap.md</a></li></ul>
+  </section>
+
+  <section>
+    <h2>3. Что уже хорошо и что мешает росту</h2>
+    <div class="two">
+      <div class="note">
+        <h3>Что уже хорошо</h3>
+        <ul>
+          <li>Есть карта спроса, кластеры и URL-решения.</li>
+          <li>Есть P0/P1 приоритеты для ближайшей работы.</li>
+          <li>Есть отдельные брифы и roadmap внедрения.</li>
+        </ul>
+      </div>
+      <div class="note">
+        <h3>Что мешает</h3>
+        <ul>
+          <li>Без live SERP нельзя считать границы кластеров финальными.</li>
+          <li>Без GSC/Яндекс.Вебмастера неизвестны фактические URL-показы.</li>
+          <li>Шумные seed-направления требуют ручной фильтрации.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Покрытие Wordstat</h2>
+    <table><thead><tr><th>Seed-фраза</th><th>Строк Wordstat</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section>
+    <h2>5. Структура ядра</h2>
+    <p>Приоритеты: <span class="pill">P0: 9</span> <span class="pill">P1: 5</span> <span class="pill">P2: 1</span></p>
+    <p>URL-статусы: <span class="pill">: 15</span></p>
+    <p>Интенты: <span class="pill">commercial: 6</span> <span class="pill">informational: 4</span> <span class="pill">local: 1</span> <span class="pill">transactional: 4</span></p>
+    <table><thead><tr><th>ID</th><th>Кластер</th><th>Главный запрос</th><th>Интент</th><th>Частотность</th><th>Тип страницы</th><th>Приоритет</th><th>Целевой URL</th><th>Статус URL</th><th>Примечания</th></tr></thead><tbody><tr><td>1</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td>transactional</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td>informational</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>5</td><td></td><td></td><td>transactional</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>7</td><td></td><td></td><td>transactional</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>8</td><td></td><td></td><td>transactional</td><td></td><td></td><td>P1</td><td></td><td></td><td></td></tr><tr><td>9</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>10</td><td></td><td></td><td>local</td><td></td><td></td><td>P0</td><td></td><td></td><td></td></tr><tr><td>11</td><td></td><td></td><td>informational</td><td></td><td></td><td>P1</td><td></td><td></td><td></td></tr><tr><td>12</td><td></td><td></td><td>informational</td><td></td><td></td><td>P1</td><td></td><td></td><td></td></tr><tr><td>13</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P1</td><td></td><td></td><td></td></tr><tr><td>14</td><td></td><td></td><td>commercial</td><td></td><td></td><td>P1</td><td></td><td></td><td></td></tr><tr><td>15</td><td></td><td></td><td>informational</td><td></td><td></td><td>P2</td><td></td><td></td><td></td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>6. URL roadmap</h2>
+    <table><thead><tr><th>Целевой URL</th><th>Статус</th><th>Тип страницы</th><th>Кластеры</th><th>Главные запросы</th><th>Рекомендуемый H1</th><th>Задача</th><th>Примечания</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>landing 70/20/10</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>variant 1 premium name</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>variant 2 premium name</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>urgent TR</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>standard TR</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>O-A visa</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>WP integration</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>local SEO</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>P1 article</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>P1 article</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>P1 article</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>7. Очищенные запросы</h2>
+    <table><thead><tr><th>Запрос</th><th>Каноническая формулировка</th><th>Частотность</th><th>Интент</th><th>Уверенность</th><th>Кандидат в кластер</th><th>Статус</th><th>Причина исключения</th><th>Примечания</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section>
+    <h2>8. Wordstat-сырьё</h2>
+    <table><thead><tr><th>Дата</th><th>Seed-фраза</th><th>Запрос</th><th>Частотность</th><th>Регион</th><th>Устройство</th><th>Источник</th><th>Примечания</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section>
+    <h2>9. Практические рекомендации по страницам</h2>
+    <table><thead><tr><th>Приоритет</th><th>Кластер</th><th>Что сделать</th><th>URL</th><th>Почему важно</th><th>Риск / примечание</th></tr></thead><tbody><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P1</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P0</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P1</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P1</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P1</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr><tr><td>P1</td><td></td><td>Проверить и развить</td><td></td><td></td><td></td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>10. Полные текстовые разделы</h2>
+    <article><h3>Контент-брифы</h3><h2>Content Briefs — ThaiPass P0 Pages</h2>
+<h3>/ (Главная)</h3>
+<li>**Title:** Виза в Таиланд 2026 — DTV, TR, пенсионная 50+ | ThaiPass</li>
+<li>**Description:** Оформление виз в Таиланд для россиян: DTV на 5 лет, туристическая TR за 3–7 дней, пенсионная 50+. Офис в Москве, курьер по России. Бесплатный разбор кейса.</li>
+<li>**H1:** Жить в Таиланде дольше 60 дней — без отказа и переделок</li>
+<li>**Blocks:** Hero pain, Знакомо?, Стоимость бездействия, FAQ, Квиз, 5 пакетов, Процесс, Доставка, Trust strip</li>
+<li>**GEO:** для россиян, Москва, курьер по РФ</li>
+<li>**CTA:** Получить разбор кейса</li>
+<h3>/uslugi/dtv-audit</h3>
+<li>**Title:** DTV Audit — документы и аудит кейса | ThaiPass</li>
+<li>**Description:** Проверка документов DTV: 500 000 THB, workcation-портфолио, выписки. Подготовка пакета под консульство без типовых отказов.</li>
+<li>**H1:** ThaiPass DTV Audit — проверим кейс до подачи в консульство</li>
+<h3>/uslugi/dtv-concierge</h3>
+<li>**Title:** DTV Concierge — сопровождение до одобрения | ThaiPass</li>
+<li>**Description:** Полное сопровождение DTV: документы, подача на thaievisa.go.th, контроль статуса, доработка при запросе консульства.</li>
+<li>**H1:** ThaiPass DTV Concierge — от документов до штампа в паспорте</li>
+<h3>/uslugi/tr-express</h3>
+<li>**Title:** TR Express — срочная виза за 3 дня | ThaiPass</li>
+<li>**H1:** ThaiPass TR Express — когда до вылета остались дни</li>
+<h3>/uslugi/tr-standard</h3>
+<li>**Title:** TR Standard — туристическая виза 7 дней | ThaiPass</li>
+<li>**H1:** ThaiPass TR Standard — оптимальный срок для плановой поездки</li>
+<h3>/uslugi/retirement-50</h3>
+<li>**Title:** Retirement Path — пенсионная виза 50+ | ThaiPass</li>
+<li>**H1:** ThaiPass Retirement Path — легально жить в Таиланде после 50</li>
+<h3>/kontakty</h3>
+<li>**Title:** Контакты ThaiPass — офис Москва, курьер по России</li>
+<li>**H1:** Офис в Москве и доставка курьером по всей России</li></article><article><h3>Отчёт качества</h3><h2>Отчёт качества — ThaiPass Semantic Core</h2>
+<p>**Run date:** 2026-06-10</p>
+<p>**Region:** Russia (Wordstat ID 225)</p>
+<h3>Limitations</h3>
+<li>Wordstat MCP returned SSL certificate error — frequencies marked as **estimated** beнизкая.</li>
+<li>Re-run `/core` after fixing Wordstat credentials in MCP-KV dashboard.</li>
+<h3>Verified manually</h3>
+<li>Official sources: thaievisa.go.th, moscow.thaiembassy.org, tdac.immigration.go.th</li>
+<li>Service slugs aligned with docs/BRAND.md</li>
+<h3>Risks</h3>
+<li>«DTV виза» — growing niche, moderate competition from pattayavisahelp, relosale</li>
+<li>«Виза Таиланд» — высокая competition, need long-tail landing pages</li>
+<li>YMYL: require disclaimer and freshness dates on all visa pages</li></article><article><h3>TODO</h3><h2>TODO — Semantic Core Run</h2>
+<li>[x] Clusters defined (15)</li>
+<li>[x] URL map создатьd</li>
+<li>[x] P0 content briefs written</li>
+<li>[ ] Wordstat frequencies — re-fetch when MCP SSL fixed</li>
+<li>[ ] Publish 3 blog articles via WordPress MCP</li>
+<li>[ ] Submit sitemap to Yandex Webmaster + GSC after deploy</li></article><article><h3>План внедрения</h3><h2>План внедрения — SEO</h2>
+<h3>Sprint 1 (week 1)</h3>
+<li>Deploy landing + 5 service pages with briefs from 07-content-briefs.md</li>
+<li>FAQ Schema on homepage</li>
+<li>LocalBusiness schema on /kontakty</li>
+<h3>Sprint 2 (week 2)</h3>
+<li>Publish blog: DTV guide, TDAC, bezviz 2026</li>
+<li>Internal links: blog → service pages</li>
+<li>IndexLift audit fixes</li>
+<h3>Sprint 3 (week 3–4)</h3>
+<li>Yandex Direct: DTV + срочная виза long-tail</li>
+<li>Monitor GSC/Вебмастер indexing</li></article>
+  </section>
+
+  <section>
+    <h2>11. Итоговые рекомендации</h2>
+    <h3>Что улучшить первым</h3>
+    <ol>
+      <li>Развести информационные и коммерческие интенты по разным страницам.</li>
+      <li>Создать или обновить все P0-страницы.</li>
+      <li>Проверить live SERP по P0/P1 запросам.</li>
+      <li>Подключить GSC и Яндекс.Вебмастер.</li>
+      <li>Добавить кейсы, доверие, FAQ/GEO-блоки и сильные CTA.</li>
+    </ol>
+    <h3>План 7/30/90 дней</h3>
+    <ul>
+      <li>7 дней: проверить SERP, конкурентов, URL-структуру и первые ТЗ.</li>
+      <li>30 дней: опубликовать P0-страницы, перелинковать, добавить FAQ.</li>
+      <li>90 дней: сравнить показы/клики/CTR, обновить title/description, пересобрать ядро по фактическим данным.</li>
+    </ul>
+  </section>
+</main>
+<footer>Сгенерировано Core. Частотности не выдумываются; ограничения должны быть явно указаны в отчёте качества.</footer>
+</body>
+</html>

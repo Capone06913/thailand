@@ -1,0 +1,16 @@
+cluster_id,main_query,intent,frequency_est,url,priority
+1,виза в тайланд 2026,commercial,12000,/,P0
+2,dtv виза тайланд,commercial,3500,/uslugi/dtv-concierge,P0
+3,оформление dtv виза тайланд,transactional,1200,/uslugi/dtv-concierge,P0
+4,документы для dtv виза,informational,900,/uslugi/dtv-audit,P0
+5,dtv виза под ключ,transactional,600,/uslugi/dtv-concierge,P0
+6,туристическая виза тайланд,commercial,8000,/uslugi/tr-standard,P0
+7,срочная виза тайланд 3 дня,transactional,450,/uslugi/tr-express,P0
+8,виза тайланд 7 дней,transactional,380,/uslugi/tr-standard,P1
+9,пенсионная виза тайланд 50,commercial,1100,/uslugi/retirement-50,P0
+10,виза тайланд москва,local,2200,/kontakty,P0
+11,tdac тайланд как заполнить,informational,5000,/blog/tdac-tailand-2026,P1
+12,безвиз тайланд 2026 россияне,informational,15000,/blog/bezviz-tailand-2026,P1
+13,destination thailand visa,commercial,800,/uslugi/dtv-concierge,P1
+14,виза удаленщика тайланд,commercial,650,/uslugi/dtv-audit,P1
+15,thaievisa подача,informational,400,/blog/dtv-viza-tailand-2026,P2

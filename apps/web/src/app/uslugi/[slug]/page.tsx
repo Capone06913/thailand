@@ -131,11 +131,6 @@ export default async function ServicePage({ params }: PageProps) {
             </ServiceLeadShell>
           </div>
         </div>
-
-        <p className="mt-12 text-xs text-[var(--color-muted)]">
-          ThaiPass не является консульством. Решение о визе принимает только
-          консульство Королевства Таиланд. Официальная подача: thaievisa.go.th
-        </p>
       </div>
     </article>
   );

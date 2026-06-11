@@ -47,4 +47,10 @@ Copy-Item "apps\web\src\components\sections\scroll-video-hero.stable-2026-06-10.
 
 ---
 
+## GitHub
+
+Инструкция по первому push: [docs/GITHUB.md](./GITHUB.md). CI: `.github/workflows/ci.yml`.
+
+---
+
 После отката через git для продолжения работы: `git checkout master`

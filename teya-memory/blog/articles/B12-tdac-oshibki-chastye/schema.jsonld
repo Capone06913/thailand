@@ -1,0 +1,137 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/tdac-oshibki-chastye#article",
+      "headline": "TDAC: 10 частых ошибок при заполнении карты прибытия",
+      "description": "Типичные ошибки TDAC: раннее заполнение, опечатки в паспорте, неверный рейс, путаница с визой. Чек-лист перед вылетом. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/tdac-oshibki-chastye",
+      "image": "https://thaipass.ru/blog/tdac-oshibki-chastye/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://thaipass.ru/blog/tdac-oshibki-chastye#howto",
+      "name": "Чек-лист TDAC без ошибок",
+      "description": "Как заполнить TDAC без типичных ошибок перед вылетом в Таиланд",
+      "totalTime": "PT15M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "tdac.immigration.go.th"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Проверить окно 72 часа",
+          "text": "Заполняйте TDAC не ранее чем за 72 часа до прилёта в Таиланд."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Сверить паспорт",
+          "text": "Сверьте номер паспорта и даты с машиночитаемой зоной."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Указать рейс и адрес",
+          "text": "Укажите актуальный рейс прилёта и первую ночь проживания."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Выбрать цель визита",
+          "text": "Выберите цель визита, соответствующую вашему статусу въезда."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Сохранить подтверждение",
+          "text": "Сохраните QR и email-подтверждение офлайн на телефоне."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/tdac-oshibki-chastye#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли заполнить TDAC за неделю до вылета?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Окно открывается не ранее чем за 72 часа до прибытия в Таиланд."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC детям?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, каждый въезжающий подаёт отдельную карту, если иное не указано на официальном портале."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TDAC заменяет визу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. TDAC: карта прибытия; виза или безвиз: отдельный правовой режим."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если нашёл опечатку после отправки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Используйте функцию исправления или подайте новую TDAC по правилам tdac.immigration.go.th до вылета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Штрафуют ли за отсутствие TDAC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TDAC обязательна; последствия уточняйте в официальных объявлениях иммиграции."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заполнить TDAC на русском?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Интерфейс многоязычный; персональные данные: как в паспорте латиницей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Помогает ли ThaiPass с TDAC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ThaiPass фокусируется на визовом сопровождении. TDAC заполняется самостоятельно на государственном портале."
+          }
+        }
+      ]
+    }
+  ]
+}

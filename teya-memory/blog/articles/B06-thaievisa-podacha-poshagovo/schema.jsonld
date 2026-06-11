@@ -1,0 +1,137 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/thaievisa-podacha-poshagovo#article",
+      "headline": "Thaievisa.go.th: пошаговая подача визы в Таиланд",
+      "description": "Пошаговая инструкция подачи визы на thaievisa.go.th: регистрация, анкета, документы, оплата, VAC и статусы. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/thaievisa-podacha-poshagovo",
+      "image": "https://thaipass.ru/blog/thaievisa-podacha-poshagovo/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://thaipass.ru/blog/thaievisa-podacha-poshagovo#howto",
+      "name": "Как подать визу через thaievisa.go.th",
+      "description": "Пошаговая подача визы в Таиланд на портале Thai e-Visa: регистрация, анкета, документы, оплата и VAC.",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Браузер, загранпаспорт и сканы документов"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Регистрация на thaievisa.go.th",
+          "text": "Создайте учётную запись на официальном портале Thai e-Visa на рабочий email."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Выбор консульства и типа визы",
+          "text": "Укажите VAC или консульство, тип визы TR или DTV и подкатегорию."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Заполнение анкеты",
+          "text": "Введите данные паспорта, цель поездки и даты въезда и выезда."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Загрузка документов",
+          "text": "Прикрепите PDF-сканы по чек-листу выбранной категории визы."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Оплата и запись в VAC",
+          "text": "Оплатите госпошлину и запишитесь на визит, если он обязателен."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/thaievisa-podacha-poshagovo#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли подать thaievisa из России?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если выбранное консульство или VAC принимает заявления от резидентов РФ. Маршрут уточняйте на thaievisa.go.th и moscow.thaiembassy.org на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли личный визит при подаче через thaievisa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа визы и выбранного VAC. Портал покажет, нужна ли запись на биометрию после оплаты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится рассмотрение после подачи на thaievisa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Срок не фиксирован: от нескольких дней до нескольких недель. Зависит от консульства, сезона и полноты пакета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли редактировать анкету после оплаты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно существенные правки: через запрос консульства или новую заявку. Проверяйте анкету до платежа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Thaievisa заменяет TDAC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Виза оформляется на thaievisa; TDAC заполняется отдельно перед каждым въездом на tdac.immigration.go.th."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где посмотреть актуальную госпошлину?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только на thaievisa.go.th и в инструкции выбранного консульства на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Помогает ли ThaiPass с подачей на thaievisa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, через DTV Concierge и аудит документов. Решение по визе принимает только консульство Таиланда."
+          }
+        }
+      ]
+    }
+  ]
+}

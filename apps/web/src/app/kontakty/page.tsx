@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/utils";
 import { MapPin, MessageCircle, Send } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Контакты — офис Москва, курьер по России",
+  title: "Контакты: офис Москва, курьер по России",
   description:
     "Связаться с ThaiPass: офис в Москве, курьерская доставка по России, WhatsApp, Telegram-канал. Заявка на разбор визового кейса.",
 };
@@ -34,7 +34,7 @@ export default function KontaktyPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-[var(--color-muted)]">
           Принимаем документы в Москве или организуем курьера по всей России.
-          Телефонная линия появится позже — пока связь через форму, WhatsApp и
+          Телефонная линия появится позже: пока связь через форму, WhatsApp и
           Telegram.
         </p>
 
@@ -44,7 +44,7 @@ export default function KontaktyPage() {
             <h2 className="mt-4 font-semibold">Офис</h2>
             <p className="mt-2 text-sm text-[var(--color-muted)]">
               {siteConfig.officeAddress ||
-                "Адрес будет опубликован при открытии. Запись на приём — через заявку."}
+                "Адрес будет опубликован при открытии. Запись на приём: через заявку."}
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export default function KontaktyPage() {
               <Send className="text-[var(--color-teal)]" size={24} />
               <h2 className="mt-4 font-semibold">Telegram-канал</h2>
               <p className="mt-2 text-sm text-[var(--color-muted)]">
-                Новости, прайс и изменения правил — {siteConfig.telegramChannelName}
+                Новости, прайс и изменения правил: {siteConfig.telegramChannelName}
               </p>
             </a>
           )}

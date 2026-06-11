@@ -19,13 +19,13 @@ const pains = [
     num: "01",
     icon: FileX,
     title: "Консульство вернуло заявку",
-    text: "Доработка с нуля и ещё 2–4 недели ожидания.",
+    text: "Доработка с нуля и ещё от 2 до 4 недели ожидания.",
   },
   {
     num: "02",
     icon: Wallet,
     title: "500 000 бат есть, выписка не подходит",
-    text: "Формат, срок и движение средств — типичный отказ по DTV.",
+    text: "Формат, срок и движение средств: типичный отказ по DTV.",
   },
   {
     num: "03",
@@ -53,7 +53,7 @@ const risks: RiskItem[] = [
   {
     icon: AlertTriangle,
     title: "Переделка после отказа",
-    text: "Ещё 2–4 недели и повторная госпошлина",
+    text: "Ещё от 2 до 4 недели и повторная госпошлина",
   },
   {
     icon: Ban,
@@ -161,7 +161,7 @@ export function PainSection() {
                 Разбор кейса за 30 минут
               </p>
               <p className="mt-3 max-w-2xl text-sm font-medium leading-relaxed text-white/80 md:text-base">
-                Напишите в мессенджер — проверим документы, выписку и фото до
+                Напишите в мессенджер: проверим документы, выписку и фото до
                 подачи в консульство. Москва и вся Россия. DTV, туристическая и
                 пенсионная виза в Таиланд.
               </p>
@@ -216,7 +216,7 @@ export function PainSection() {
                       risk.tickerTo !== undefined ? (
                         <p className="mt-1.5 font-display text-lg font-bold tabular-nums text-[var(--color-teal)] md:text-xl">
                           <NumberTicker value={risk.tickerFrom} />
-                          <span> – </span>
+                          <span>, </span>
                           <NumberTicker value={risk.tickerTo} />
                           <span className="whitespace-nowrap"> ₽</span>
                         </p>

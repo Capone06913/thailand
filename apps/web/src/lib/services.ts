@@ -68,14 +68,14 @@ export const services: Service[] = [
       "Те, кого консульство уже просило доработать документы",
       "Заявители по программам Muay Thai, кулинарии, языка",
     ],
-    timeline: "3–5 рабочих дней",
+    timeline: "от 3 до 5 рабочих дней",
     primaryKeyword: "проверка dtv виза таиланд",
     image: "/images/generated/service-dtv-audit.jpg",
     accent: "from-teal-900/20 to-emerald-800/10",
     pricing: {
       amountRub: 10000,
       consularFeeIncluded: false,
-      processingDays: "3–5 рабочих дней",
+      processingDays: "от 3 до 5 рабочих дней",
     },
     visaInfo: {
       important:
@@ -91,7 +91,7 @@ export const services: Service[] = [
   },
   {
     slug: "dtv-5-let-dokumenty",
-    name: "DTV виза на 5 лет — под документы заявителя",
+    name: "DTV виза на 5 лет: под документы заявителя",
     shortName: "DTV под документы",
     tagline: "Оформление DTV, когда пакет документов готовит заявитель",
     description:
@@ -99,7 +99,7 @@ export const services: Service[] = [
     metaTitle: "DTV виза на 5 лет под документы заявителя | ThaiPass",
     metaDescription:
       "Оформление DTV визы в Таиланд на 5 лет под документы заявителя. Подача, статус, доработка. Для россиян. Москва, курьер по России.",
-    h1: "DTV виза на 5 лет в Таиланд — под документы заявителя",
+    h1: "DTV виза на 5 лет в Таиланд: под документы заявителя",
     features: [
       "Проверка пакета документов заявителя",
       "Подача на thaievisa.go.th",
@@ -111,7 +111,7 @@ export const services: Service[] = [
       "Цифровые кочевники с подтверждённым доходом",
       "Повторная подача после доработки",
     ],
-    timeline: "10–15 рабочих дней",
+    timeline: "от 10 до 15 рабочих дней",
     primaryKeyword: "dtv виза таиланд 5 лет",
     image: "/images/generated/pain-documents.jpg",
     accent: "from-amber-900/15 to-yellow-700/10",
@@ -135,13 +135,13 @@ export const services: Service[] = [
         "Фотография 1 шт. 3,5×4,5 или 4×6 цветная на белом фоне",
       ],
       childrenExtra:
-        "Если едет семья: на супруга/супругу — паспорт, фото, свидетельство о браке; на детей — паспорт, фото, свидетельство о рождении. Цены для взрослых и детей одинаковые.",
+        "Если едет семья: на супруга/супругу: паспорт, фото, свидетельство о браке; на детей: паспорт, фото, свидетельство о рождении. Цены для взрослых и детей одинаковые.",
     },
     showGroupOffer: true,
   },
   {
     slug: "dtv-5-let-garantiya",
-    name: "DTV виза на 5 лет — гарант / под ключ",
+    name: "DTV виза на 5 лет: гарант / под ключ",
     shortName: "DTV под ключ",
     tagline: "Полное сопровождение DTV с гарантией возврата при отказе",
     description:
@@ -149,7 +149,7 @@ export const services: Service[] = [
     metaTitle: "DTV виза на 5 лет под ключ с гарантией | ThaiPass",
     metaDescription:
       "DTV виза в Таиланд на 5 лет под ключ с гарантией. Документы, подача, статус. Для россиян. Москва, курьер по России.",
-    h1: "DTV виза на 5 лет в Таиланд — гарант / под ключ",
+    h1: "DTV виза на 5 лет в Таиланд: гарант / под ключ",
     features: [
       "Полный пакет документов под консульство",
       "Подача и контроль на thaievisa.go.th",
@@ -162,7 +162,7 @@ export const services: Service[] = [
       "Те, кто не хочет разбираться в e-Visa самостоятельно",
       "Повторная подача после отказа",
     ],
-    timeline: "10–15 рабочих дней",
+    timeline: "от 10 до 15 рабочих дней",
     primaryKeyword: "dtv виза таиланд под ключ",
     image: "/images/generated/service-dtv-concierge.jpg",
     accent: "from-amber-900/15 to-yellow-700/10",
@@ -175,7 +175,7 @@ export const services: Service[] = [
       amountRub: 219000,
       consularFeeIncluded: true,
       processingDays: "за 15 дней",
-      guarantee: "Гарантия! Если отказ — 100% возврат.",
+      guarantee: "Гарантия! Если отказ: 100% возврат.",
     },
     visaInfo: {
       important:
@@ -187,7 +187,7 @@ export const services: Service[] = [
         "Фотография 1 шт. 3,5×4,5 или 4×6 цветная на белом фоне",
       ],
       childrenExtra:
-        "Если едет семья: на супруга/супругу — паспорт, фото, свидетельство о браке; на детей — паспорт, фото, свидетельство о рождении. Цены для взрослых и детей одинаковые.",
+        "Если едет семья: на супруга/супругу: паспорт, фото, свидетельство о браке; на детей: паспорт, фото, свидетельство о рождении. Цены для взрослых и детей одинаковые.",
     },
     showGroupOffer: true,
   },
@@ -258,7 +258,7 @@ export const services: Service[] = [
       "Продление пребывания через туристическую визу",
       "Семейные поездки с жёстким дедлайном",
     ],
-    timeline: "3–5 рабочих дней",
+    timeline: "от 3 до 5 рабочих дней",
     primaryKeyword: "срочная туристическая виза таиланд",
     image: "/images/generated/service-tr-express.jpg",
     accent: "from-sky-900/15 to-cyan-800/10",
@@ -277,7 +277,7 @@ export const services: Service[] = [
         "Фотография 1 шт. 3,5×4,5 или 4×6 цветная на белом фоне",
       ],
       childrenExtra:
-        "Для детей: перевод свидетельства о рождении и согласие на выезд. Переводы — от 5000 ₽ с человека.",
+        "Для детей: перевод свидетельства о рождении и согласие на выезд. Переводы: от 5000 ₽ с человека.",
     },
     showGroupOffer: true,
   },
@@ -389,14 +389,14 @@ export const services: Service[] = [
       "Работа с тайскими контрагентами",
       "Регулярные командировки в Таиланд",
     ],
-    timeline: "7–10 рабочих дней",
+    timeline: "от 7 до 10 рабочих дней",
     primaryKeyword: "бизнес виза таиланд non-b",
     image: "/images/generated/trust-consultant.jpg",
     accent: "from-slate-900/15 to-gray-800/10",
     pricing: {
       amountRub: 49000,
       consularFeeIncluded: true,
-      processingDays: "7–10 рабочих дней",
+      processingDays: "от 7 до 10 рабочих дней",
     },
     visaInfo: {
       important:
@@ -432,7 +432,7 @@ export const services: Service[] = [
       "Заявители без готовых переводов",
       "Дополнение к любому визовому кейсу",
     ],
-    timeline: "1–3 рабочих дня",
+    timeline: "от 1 до 3 рабочих дня",
     primaryKeyword: "перевод документов виза таиланд",
     image: "/images/generated/hero-poster.jpg",
     accent: "from-teal-900/20 to-emerald-800/10",
@@ -459,8 +459,8 @@ export function getService(slug: string): Service | undefined {
 
 export const serviceOptions = [
   ...services.map((s) => ({ value: s.slug, label: s.name })),
-  { value: "passport", label: "Загранпаспорт — помощь с оформлением" },
-  { value: "unknown", label: "Не знаю — нужна консультация" },
+  { value: "passport", label: "Загранпаспорт: помощь с оформлением" },
+  { value: "unknown", label: "Не знаю: нужна консультация" },
 ];
 
 export function formatPrice(rub: number): string {

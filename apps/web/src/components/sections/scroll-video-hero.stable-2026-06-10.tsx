@@ -1,5 +1,5 @@
 /**
- * Stable hero checkpoint — 2026-06-10
+ * Stable hero checkpoint: 2026-06-10
  * Approved: cinematic scroll, 3-line parallax, white readable text, no CTAs.
  * Restore from this file if further edits break the hero.
  */

@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/strahovka-viza-tailand#article",
+      "headline": "Страховка для визы в Таиланд: требования и ошибки",
+      "description": "Медстраховка для TR, DTV и O-A: срок, сумма, PDF для thaievisa. ThaiPass помогает в визовых пакетах. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/strahovka-viza-tailand",
+      "image": "https://thaipass.ru/blog/strahovka-viza-tailand/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/strahovka-viza-tailand#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Обязательна ли страховка для туристической визы TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для большинства заявок через thaievisa медстраховка требуется по чек-листу категории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какая минимальная сумма покрытия?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа визы и jurisdiction; смотрите thaievisa на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли полис из банка бесплатно к карте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только если certificate соответствует сроку, территории и сумме по чек-листу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ThaiPass продаёт страховку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ThaiPass не страховая компания; помогает подобрать полис в визовых пакетах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли обновлять страховку при продлении в IMMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Часто да: полис должен покрывать новый период stay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Страховка заменяет финансовую выписку для DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. DTV требует отдельный пакет с финансами и страховкой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что загружать в e-Visa: полис или чек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Официальный PDF insurance certificate с данными застрахованного."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "topic_id": "B13",
+  "slug": "udalenshchik-vs-bezviz-tailand",
+  "primary_query": "работать удаленно тайланд виза",
+  "secondary_queries": [
+    "удаленщик таиланд безвиз",
+    "dtv или безвиз",
+    "digital nomad thailand visa"
+  ],
+  "title": "Удалёнщик в Таиланде: безвиз или DTV: что выбрать",
+  "meta_description": "Сравнение безвиза, TR и DTV Workcation: сроки, 500k бат, риски для удалёнщиков.",
+  "char_count": 8602,
+  "faq_count": 7,
+  "article_mode": "A",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "работать удаленно в таиланде виза",
+    "безвиз или dtv для удаленщика",
+    "удаленная работа таиланд статус"
+  ],
+  "meta_ab": {
+    "title_seo": "Удалёнщик в Таиланде: безвиз или DTV: сравнение | ThaiPass",
+    "title_ctr": "Работать из Таиланда на безвизе или оформлять DTV? Честное сравнение",
+    "title_aeo": "Можно ли работать удалённо в Таиланде на безвизе или нужна DTV?",
+    "description_seo": "Сравнение безвиза, TR и DTV Workcation для удалёнщиков: сроки, 500k бат, риски border run. Актуально на июнь.",
+    "description_ctr": "Таблица безвиз vs TR vs DTV для фрилансеров. Когда хватает безвиза, когда нужен Workcation.",
+    "description_aeo": "Безвиз не оформляет удалённую работу. DTV Workcation: для длительного пребывания с контрактом и 500 000 бат."
+  },
+  "geo_qa": {
+    "score": 88,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

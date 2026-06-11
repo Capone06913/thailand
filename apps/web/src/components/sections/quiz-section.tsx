@@ -167,15 +167,15 @@ export function QuizSection() {
     },
     {
       v: "tourist",
-      l: "Туристическая поездка на 1–3 месяца",
+      l: "Туристическая поездка на от 1 до 3 месяца",
       hint: "Стандартная или мультивиза",
       icon: Palmtree,
     },
   ];
 
   const timelineOptions: Option<NonNullable<Timeline>>[] = [
-    { v: "days", l: "В ближайшие 3–5 дней", icon: Zap },
-    { v: "week", l: "В течение 1–2 недель", icon: CalendarDays },
+    { v: "days", l: "В ближайшие от 3 до 5 дней", icon: Zap },
+    { v: "week", l: "В течение от 1 до 2 недель", icon: CalendarDays },
     { v: "month", l: "В течение месяца", icon: Calendar },
     {
       v: "flex",
@@ -235,7 +235,7 @@ export function QuizSection() {
             Подберём визу за 1 минуту
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm font-medium leading-relaxed text-[var(--color-muted)] lg:text-base">
-            Три вопроса — и вы увидите подходящую услугу с формой заявки.
+            Три вопроса: и вы увидите подходящую услугу с формой заявки.
           </p>
         </motion.div>
 
@@ -254,7 +254,7 @@ export function QuizSection() {
                     Какая у вас главная цель?
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-muted)] lg:text-base">
-                    Выберите сценарий — остальное подстроим под ваш кейс.
+                    Выберите сценарий: остальное подстроим под ваш кейс.
                   </p>
                   <div className="mt-6 grid gap-3 lg:grid-cols-2 lg:gap-4">
                     {goalOptions.map((opt, i) => (

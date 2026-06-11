@@ -19,7 +19,7 @@ import { RussiaDotMap } from "@/components/sections/russia-dot-map";
 const perksLeft = [
   {
     icon: MapPin,
-    title: `Офис — ${siteConfig.officeCity}`,
+    title: `Офис: ${siteConfig.officeCity}`,
     text: "Личная передача документов и консультация на месте",
   },
   {
@@ -98,7 +98,7 @@ export function DeliverySection() {
               География ThaiPass
             </p>
             <h2 className="font-serif mt-2 text-3xl font-semibold text-[var(--color-sapphire)] md:text-5xl">
-              Вся Россия — один стандарт сервиса
+              Вся Россия: один стандарт сервиса
             </h2>
             <p className="mt-4 max-w-xl text-base font-medium leading-relaxed text-[var(--color-muted)]">
               Оформляем визы в Таиланд для россиян из Москвы и регионов. Офис в
@@ -117,7 +117,7 @@ export function DeliverySection() {
                   Напишите в Telegram
                 </span>
               )}{" "}
-              — подскажем по вашему городу.
+              , подскажем по вашему городу.
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -208,7 +208,7 @@ export function DeliverySection() {
               <div className="relative aspect-[5/4] min-h-[300px]">
                 <Image
                   src="/images/generated/delivery-premium.jpg"
-                  alt="Премиальная курьерская доставка паспорта с визой"
+                  alt="Курьерская доставка паспорта с визой в Таиланд по России"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 45vw"

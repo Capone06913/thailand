@@ -1,4 +1,10 @@
+import { getExcaliburBlogPosts } from "./blog-excalibur";
 import { mockBlogPosts, type BlogPost } from "./blog-mock";
+
+function getLocalBlogPosts(): BlogPost[] {
+  const excalibur = getExcaliburBlogPosts();
+  return excalibur.length > 0 ? excalibur : mockBlogPosts;
+}
 
 interface WPPost {
   id: number;
@@ -28,7 +34,7 @@ function mapWPPost(post: WPPost): BlogPost {
 
 export async function getBlogPosts(): Promise<BlogPost[]> {
   const apiUrl = process.env.WORDPRESS_API_URL;
-  if (!apiUrl) return mockBlogPosts;
+  if (!apiUrl) return getLocalBlogPosts();
 
   try {
     const headers: HeadersInit = { Accept: "application/json" };
@@ -43,18 +49,18 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
       next: { revalidate: 300 },
     });
 
-    if (!res.ok) return mockBlogPosts;
+    if (!res.ok) return getLocalBlogPosts();
     const data: WPPost[] = await res.json();
     return data.map(mapWPPost);
   } catch {
-    return mockBlogPosts;
+    return getLocalBlogPosts();
   }
 }
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   const apiUrl = process.env.WORDPRESS_API_URL;
   if (!apiUrl) {
-    return mockBlogPosts.find((p) => p.slug === slug) ?? null;
+    return getLocalBlogPosts().find((p) => p.slug === slug) ?? null;
   }
 
   try {
@@ -71,14 +77,14 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     });
 
     if (!res.ok) {
-      return mockBlogPosts.find((p) => p.slug === slug) ?? null;
+      return getLocalBlogPosts().find((p) => p.slug === slug) ?? null;
     }
     const data: WPPost[] = await res.json();
     if (!data.length) {
-      return mockBlogPosts.find((p) => p.slug === slug) ?? null;
+      return getLocalBlogPosts().find((p) => p.slug === slug) ?? null;
     }
     return mapWPPost(data[0]);
   } catch {
-    return mockBlogPosts.find((p) => p.slug === slug) ?? null;
+    return getLocalBlogPosts().find((p) => p.slug === slug) ?? null;
   }
 }

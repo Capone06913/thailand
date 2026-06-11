@@ -1,0 +1,147 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/tdac-tailand-2026#article",
+      "headline": "TDAC Таиланд 2026: как заполнить цифровую карту прибытия",
+      "description": "Пошаговая инструкция TDAC на tdac.immigration.go.th: сроки 72 часа, поля, ошибки. Не путать с визой.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/tdac-tailand-2026",
+      "image": "https://thaipass.ru/blog/tdac-tailand-2026/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://thaipass.ru/blog/tdac-tailand-2026#howto",
+      "name": "Как заполнить TDAC Таиланд 2026",
+      "description": "Пошаговое заполнение цифровой карты прибытия на tdac.immigration.go.th за 72 часа до рейса.",
+      "totalTime": "PT15M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Браузер и загранпаспорт"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Открыть tdac.immigration.go.th",
+          "text": "Перейдите на официальный сайт TDAC и выберите язык интерфейса."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Начать карту прибытия",
+          "text": "Создайте новую Arrival Card для иностранца."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ввести данные паспорта",
+          "text": "Заполните ФИО, номер паспорта, гражданство и дату рождения как в документе."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Указать рейс и дату прилёта",
+          "text": "Внесите номер рейса, аэропорт прилёта и страну отправления."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Указать адрес в Таиланде",
+          "text": "Заполните адрес отеля, аренды или принимающей стороны."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ответить на вопросы о цели визита",
+          "text": "Укажите цель и багаж согласно фактической поездке."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Подтвердить и сохранить QR",
+          "text": "Проверьте поля, отправьте форму и сохраните QR или PDF на телефон."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/tdac-tailand-2026#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TDAC платная?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Официальное заполнение на tdac.immigration.go.th бесплатно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC детям?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, для каждого въезжающего пассажира, включая детей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заполнить TDAC в аэропорту?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Форма доступна онлайн, но лучше заполнить за от 24 до 48 часов до вылета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TDAC заменяет регистрацию в отеле?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Отели могут отдельно запрашивать паспорт для учёта гостей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что если я ошибся в номере паспорта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Исправьте или пересоздайте карту до вылета по инструкции портала."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при транзите через Таиланд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При выходе в город и прохождении иммиграции TDAC обычно требуется."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где проверить правила въезда для россиян?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На moscow.thaiembassy.org и thaievisa.go.th."
+          }
+        }
+      ]
+    }
+  ]
+}

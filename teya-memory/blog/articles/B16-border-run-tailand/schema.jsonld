@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/border-run-tailand#article",
+      "headline": "Border run в Таиланде: риски и альтернативы",
+      "description": "Border run и visa run: отказ на границе, overstay, IMMI, TR и DTV вместо бесконечных кругов. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/border-run-tailand",
+      "image": "https://thaipass.ru/blog/border-run-tailand/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/border-run-tailand#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Border run легален в Таиланде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Выезд и новый въезд законны; злоупотребление частыми въездами может привести к отказу или короткому stamp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько border run можно делать подряд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Фиксированного лимита в публичном списке нет; иммиграция оценивает паттерн въездов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Border run сбрасывает overstay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Просрочка закрывается в IMMI со штрафом по правилам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем заменить border run удалёнщику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DTV workcation или TR с учётом лимитов пребывания."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Камбоджа или Малайзия: где лучше штамп?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Решение принимает офицер Таиланда при въезде; гарантированного маршрута нет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли ThaiPass организовать border run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ThaiPass сопровождает визы TR, DTV и retirement через официальные каналы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли новая TR после нескольких run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При исчерпании безвиза или отказах во въезде новая TR через thaievisa: разумный шаг."
+          }
+        }
+      ]
+    }
+  ]
+}

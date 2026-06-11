@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/prodlenie-prebyvaniya-tailand#article",
+      "headline": "Продление пребывания в Таиланде: виза, stamp и IMMI",
+      "description": "Как продлить безвиз, TR, DTV и O-A в иммиграции: TM.7, лимиты, overstay, re-entry permit. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/prodlenie-prebyvaniya-tailand",
+      "image": "https://thaipass.ru/blog/prodlenie-prebyvaniya-tailand/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/prodlenie-prebyvaniya-tailand#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли продлить безвиз в иммиграции?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа въезда и правил на дату обращения. Уточняйте в местном IMMI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько раз продлевают туристическую TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лимиты задаёт иммиграция; бесконечное продление: миф."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Border run продлевает безвиз легально?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Новый въезд даёт новый stamp, но злоупотребление въездами может привести к отказу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое 90-day report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обязанность сообщать адрес каждые 90 дней для долгосрочных категорий."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Штраф за overstay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, размер зависит от количества дней просрочки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли ThaiPass продлить визу в IMMI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Продление: личная процедура заявителя в Таиланде."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при выезде и новом въезде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TDAC заполняется на каждый новый въезд в окне 72 часов."
+          }
+        }
+      ]
+    }
+  ]
+}

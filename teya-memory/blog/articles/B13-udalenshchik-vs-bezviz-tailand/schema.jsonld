@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/udalenshchik-vs-bezviz-tailand#article",
+      "headline": "Удалёнщик в Таиланде: безвиз или DTV: что выбрать в 2026",
+      "description": "Сравнение безвиза, TR и DTV Workcation для удалёнщиков: сроки, 500k бат, риски border run. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/udalenshchik-vs-bezviz-tailand",
+      "image": "https://thaipass.ru/blog/udalenshchik-vs-bezviz-tailand/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://thaipass.ru/blog/udalenshchik-vs-bezviz-tailand#review",
+      "itemReviewed": {
+        "@type": "Thing",
+        "name": "DTV Workcation vs безвиз для удалёнщиков в Таиланде"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass"
+      },
+      "reviewBody": "Для длительного пребывания с удалённой работой DTV Workcation предпочтительнее безвиза; безвиз подходит для коротких поездок без формализации дохода."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/udalenshchik-vs-bezviz-tailand#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли легально работать удалённо на безвизе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Безвиз: туристический статус. Удалённая работа не оформлена; для формализации: DTV Workcation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли DTV, если работодатель в другой стране?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При проживании в Таиланде месяцами DTV Workcation подтверждает цель пребывания. Краткий визит: безвиз."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DTV требует 500 000 бат на тайском счёте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно достаточно эквивалента на счёте в другой валюте по правилам консульства."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем DTV лучше туристической TR для фрилансера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TR не предполагает удалённую работу как цель. DTV Workcation включает проверку контрактов и выписки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Border run заменяет DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Повторные въезды не дают долгосрочного статуса удалёнщика."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ThaiPass гарантирует DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Решение принимает консульство."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, TDAC обязательна для каждого въезда."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -21,7 +21,7 @@ const steps = [
   {
     icon: FileText,
     title: "Документы",
-    text: "От вас минимальный пакет документов — остальное подскажем",
+    text: "От вас минимальный пакет документов: остальное подскажем",
     effect: "float",
   },
   {
@@ -33,7 +33,7 @@ const steps = [
   {
     icon: Stamp,
     title: "Виза",
-    text: "Вы получаете визу в паспорте — Москва или курьер по РФ",
+    text: "Вы получаете визу в паспорте: Москва или курьер по РФ",
     effect: "stamp",
   },
 ] as const;
@@ -200,7 +200,7 @@ export function ProcessSection() {
           <div className="relative aspect-[21/9] min-h-[240px] md:min-h-[340px]">
             <Image
               src="/images/generated/process-timeline.jpg"
-              alt="Подготовка документов для визы в Таиланд на рабочем столе"
+              alt="Подготовка документов для получения визы в Таиланд: паспорт и чек-лист"
               fill
               className="object-cover object-center"
               sizes="100vw"
@@ -211,7 +211,7 @@ export function ProcessSection() {
                 Доверие через прозрачность
               </p>
               <p className="mt-3 text-base font-medium leading-relaxed text-white/90">
-                Каждый этап фиксируем в мессенджере — вы видите, что происходит
+                Каждый этап фиксируем в мессенджере: вы видите, что происходит
                 с заявкой.
               </p>
             </div>

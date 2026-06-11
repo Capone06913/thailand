@@ -1,0 +1,37 @@
+{
+  "topic_id": "B02",
+  "slug": "tdac-tailand-2026",
+  "primary_query": "tdac тайланд как заполнить",
+  "secondary_queries": [
+    "tdac тайланд 2026",
+    "цифровая карта прибытия таиланд"
+  ],
+  "title": "TDAC Таиланд: как заполнить цифровую карту прибытия",
+  "meta_description": "Пошаговая инструкция TDAC на tdac.immigration.go.th: окно 72 часа, поля, типичные ошибки. Не путать с визой.",
+  "char_count": 8522,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "tdac тайланд как заполнить 2026",
+    "цифровая карта прибытия tdac инструкция",
+    "заполнение tdac за 72 часа"
+  ],
+  "meta_ab": {
+    "title_seo": "TDAC Таиланд: как заполнить карту прибытия | ThaiPass",
+    "title_ctr": "TDAC: пошагово за 72 часа до рейса: без ошибок на границе",
+    "title_aeo": "Как заполнить TDAC в Таиланд и когда это нужно делать?",
+    "description_seo": "Пошаговая инструкция TDAC на tdac.immigration.go.th: сроки 72 часа, поля, ошибки. Не путать с визой.",
+    "description_ctr": "TDAC обязательна для въезда в Таиланд. Пошаговая инструкция, типичные ошибки и отличие от визы.",
+    "description_aeo": "TDAC: цифровая карта прибытия на tdac.immigration.go.th. Заполняют за 72 часа до рейса. Это не виза."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

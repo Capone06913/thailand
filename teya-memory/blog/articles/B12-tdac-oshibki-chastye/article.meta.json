@@ -1,0 +1,38 @@
+{
+  "topic_id": "B12",
+  "slug": "tdac-oshibki-chastye",
+  "primary_query": "tdac ошибки заполнения",
+  "secondary_queries": [
+    "tdac ошибки",
+    "цифровая карта прибытия ошибки",
+    "tdac не принимает"
+  ],
+  "title": "TDAC: 10 частых ошибок при заполнении",
+  "meta_description": "Типичные ошибки TDAC: раннее заполнение, паспорт, рейс, путаница с визой.",
+  "char_count": 8557,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "tdac ошибки заполнения таиланд",
+    "частые ошибки tdac",
+    "как не ошибиться в tdac"
+  ],
+  "meta_ab": {
+    "title_seo": "TDAC ошибки заполнения: 10 частых промахов | ThaiPass",
+    "title_ctr": "TDAC: 10 ошибок, из-за которых задержат на паспортном контроле",
+    "title_aeo": "Какие ошибки чаще всего делают при заполнении TDAC?",
+    "description_seo": "Типичные ошибки TDAC: раннее заполнение, опечатки в паспорте, неверный рейс, путаница с визой. Чек-лист перед вылетом. Актуально на июнь.",
+    "description_ctr": "Разбор 10 ошибок TDAC и чек-лист перед отправкой на tdac.immigration.go.th. Не путайте с визой.",
+    "description_aeo": "Частые ошибки TDAC: заполнение раньше 72 часов, опечатки в паспорте, неверный рейс. Карта обязательна для всех въезжающих."
+  },
+  "geo_qa": {
+    "score": 86,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

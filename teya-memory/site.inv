@@ -1,0 +1,71 @@
+# ThaiPass — Teya intake (Excalibur blog-only run)
+# Secrets: teya-memory/teya.env.local (do not commit)
+
+[project]
+site_name = ThaiPass
+theme_slug = thaipass-nextjs
+language = ru-RU
+region = Россия
+primary_goal = leads
+public_site_url = https://thaipass.ru
+
+[business]
+company_name = ThaiPass
+short_description = Премиальный visa concierge для россиян: DTV, туристическая TR, пенсионная 50+. Офис в Москве, курьер по России.
+city = Москва
+country = Россия
+
+[contacts]
+email = info@thaipass.ru
+telegram = @thaipass_visa
+whatsapp = https://wa.me/
+cta_url = https://thaipass.ru/#zayavka
+cta_text = Получить разбор кейса
+
+[design]
+style_notes = Premium calm expert. Palette: teal #0a4a48, sapphire #142a45, gold #d4a853, sky #4a9fd4, bg #f8f6f1
+allow_mcp_image_generation = yes
+allow_background_removal = yes
+blog_required = yes
+starter_blog_posts = 15
+
+[content]
+niche = Визы в Таиланд для граждан РФ и СНГ
+services = ThaiPass DTV Audit, ThaiPass DTV Concierge, ThaiPass TR Express, ThaiPass TR Standard, ThaiPass Retirement Path
+target_audience = Россия, Москва, удалёнщики, туристы, пенсионеры 50+, семьи
+competitors = visa-агентства РФ, самостоятельная подача thaievisa.go.th
+exclude_topics = VPN-обход, фейковые отзывы, гарантии 100% одобрения
+existing_content_path = apps/web
+blog_required = yes
+starter_blog_posts = 15
+
+[seo]
+wordstat_region = 225
+priority_search = yandex,google
+robots_host = thaipass.ru
+allow_ai_crawlers = yes
+generate_llms_txt = yes
+
+[forms]
+lead_form_required = yes
+lead_form_fields = name,contact,service,deadline,comment
+anti_spam = honeypot
+
+[wordpress]
+wp_admin_url = https://blog.thaipass.ru/wp-admin
+permalink_structure = /%postname%/
+
+[hosting]
+deploy_mode = local-only
+credentials_file = teya-memory/teya.env.local
+
+[legal]
+privacy_policy_required = yes
+cookies_policy_required = yes
+personal_data_consent_required = yes
+
+[automation]
+allow_publish = no
+allow_activate_theme = no
+allow_create_pages = no
+allow_create_posts = yes

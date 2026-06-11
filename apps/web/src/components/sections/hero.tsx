@@ -64,7 +64,7 @@ export function Hero() {
         >
           <Image
             src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?w=1200&q=80"
-            alt="Таиланд, вид на побережье"
+            alt="Виза в Таиланд: получить туристическую TR, DTV или пенсионную визу"
             fill
             priority
             className="object-cover"
@@ -72,7 +72,7 @@ export function Hero() {
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-teal)]/50 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <p className="text-sm font-medium opacity-90">Офис — {siteConfig.officeCity}</p>
+            <p className="text-sm font-medium opacity-90">Офис: {siteConfig.officeCity}</p>
             <p className="text-xs opacity-75">Курьер по всей России</p>
           </div>
         </motion.div>

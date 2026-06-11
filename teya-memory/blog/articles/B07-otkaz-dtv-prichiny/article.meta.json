@@ -1,0 +1,38 @@
+{
+  "topic_id": "B07",
+  "slug": "otkaz-dtv-prichiny",
+  "primary_query": "отказ dtv виза причины",
+  "secondary_queries": [
+    "почему отказали в dtv",
+    "отказ destination thailand visa",
+    "повторная подача dtv"
+  ],
+  "title": "Отказ DTV: типичные причины и что делать",
+  "meta_description": "Почему отклоняют DTV: выписка, категория, документы. Как исправить пакет перед повторной подачей.",
+  "char_count": 8516,
+  "faq_count": 7,
+  "article_mode": "A",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "отказ dtv виза причины тайланд",
+    "почему отказали в destination thailand visa",
+    "что делать после отказа dtv"
+  ],
+  "meta_ab": {
+    "title_seo": "Отказ DTV виза: причины и повторная подача | ThaiPass",
+    "title_ctr": "Почему отказывают в DTV: 7 частых причин и как исправить пакет",
+    "title_aeo": "Какие причины отказа DTV визы в Таиланд и что делать?",
+    "description_seo": "Разбор причин отказа DTV: выписка 500k, Workcation, Soft Power, страховка, даты. Что делать после Rejected на thaievisa. Актуально на июнь.",
+    "description_ctr": "Rejected на thaievisa? Выписка, категория, договор: разбираем отказ DTV без иллюзий про 100% одобрение.",
+    "description_aeo": "Отказ DTV чаще из-за финансов, неверной категории и слабых документов Workcation. Повторная подача после исправления пакета."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

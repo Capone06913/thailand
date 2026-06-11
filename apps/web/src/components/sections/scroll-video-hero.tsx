@@ -1,4 +1,4 @@
-// Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 full UI → snapshots/final-v2/ or git tag final-v2
+// Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 → git tag final-v2 | v3 → git tag final-v3
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -130,20 +130,20 @@ export function ScrollVideoHero() {
           <div className="w-full max-w-5xl">
             <motion.p
               style={{ y: eyebrowY }}
-              className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] md:text-sm lg:text-base"
+              className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] sm:text-xs md:mb-4 md:text-sm"
             >
-              Визы в Таиланд для россиян
+              Визы в Таиланд для россиян · {siteConfig.officeCity}
             </motion.p>
 
             <motion.h1
               style={{ letterSpacing: titleTracking }}
-              className="font-display font-bold uppercase leading-[0.9] text-white"
+              className="font-display font-bold uppercase leading-[0.92] text-white"
             >
               {headlineLines.map((line, i) => (
                 <motion.span
                   key={line}
                   style={{ y: lineMotion[i], display: "block" }}
-                  className="block text-[2.75rem] drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-5xl md:text-7xl lg:text-[5.25rem] xl:text-[6rem]"
+                  className="block text-[2.625rem] drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem]"
                 >
                   {line}
                 </motion.span>
@@ -152,10 +152,13 @@ export function ScrollVideoHero() {
 
             <motion.p
               style={{ y: subcopyY }}
-              className="mt-5 max-w-2xl text-base leading-relaxed text-white drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] md:mt-6 md:text-lg lg:text-[1.35rem] lg:leading-relaxed"
+              className="mt-4 max-w-xl text-[0.9375rem] leading-[1.65] text-white/95 drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] sm:max-w-2xl sm:text-base md:mt-5 md:text-lg md:leading-relaxed lg:text-[1.125rem]"
             >
-              {siteConfig.name} ведёт DTV, туристическую и пенсионную визу.
-              Проверяем документы до подачи и сопровождаем заявку под ключ.
+              {siteConfig.name}: сервис оформления виз в Таиланд для граждан
+              России. Офис в {siteConfig.officeCity}, приём документов по всей
+              РФ. Ведём DTV на 5 лет, туристическую TR и пенсионную 50+:
+              проверяем пакет до подачи на thaievisa.go.th и сопровождаем
+              заявку. Оставьте заявку, и мы разберём кейс и предложим пакет.
             </motion.p>
           </div>
         </motion.div>

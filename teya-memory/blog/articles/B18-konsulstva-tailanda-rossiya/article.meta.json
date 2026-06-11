@@ -1,0 +1,38 @@
+{
+  "topic_id": "B18",
+  "slug": "konsulstva-tailanda-rossiya",
+  "primary_query": "консульства таиланда россия",
+  "secondary_queries": [
+    "куда подавать на визу в таиланд из россии",
+    "vac таиланд москва",
+    "jurisdiction thaievisa россия"
+  ],
+  "title": "Консульства Таиланда: куда подавать из России",
+  "meta_description": "Moscow jurisdiction, VAC и embassy: как выбрать маршрут подачи на thaievisa для россиян.",
+  "char_count": 8610,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "консульства таиланда в россии подача визы",
+    "куда подавать на визу таиланд из рф",
+    "thaievisa vac москва jurisdiction"
+  ],
+  "meta_ab": {
+    "title_seo": "Консульства Таиланда Россия: VAC, подача | ThaiPass",
+    "title_ctr": "Куда подавать на визу в Таиланд из России: VAC vs посольство",
+    "title_aeo": "Какое консульство Таиланда принимает визы от россиян?",
+    "description_seo": "Moscow jurisdiction, VAC, биометрия и регионы РФ на thaievisa. Актуально на июнь.",
+    "description_ctr": "Таблица каналов: e-Visa, VAC, embassy, ThaiPass. Выбор округа без путаницы.",
+    "description_aeo": "Россияне подают через Royal Thai Embassy Moscow jurisdiction на thaievisa; VAC по инструкции кабинета."
+  },
+  "geo_qa": {
+    "score": 85,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

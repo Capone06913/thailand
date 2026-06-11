@@ -23,7 +23,7 @@ export function FaqSection() {
           </h2>
           <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
             Развёрнутые ответы про DTV, туристическую визу, пенсионную визу и
-            оформление из Москвы — то, что мешает принять решение.
+            оформление из Москвы: то, что мешает принять решение.
           </p>
         </FadeIn>
 

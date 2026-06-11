@@ -1,0 +1,38 @@
+{
+  "topic_id": "B11",
+  "slug": "pensionnaya-viza-50-trebovaniya",
+  "primary_query": "пенсионная виза тайланд 50",
+  "secondary_queries": [
+    "виза retirement тайланд",
+    "o-a виза таиланд 50 лет",
+    "пенсионная виза таиланд требования"
+  ],
+  "title": "Пенсионная виза Таиланд 50+: требования для россиян",
+  "meta_description": "Non-Immigrant O-A: возраст, депозит или пенсия, страховка, подача через thaievisa.",
+  "char_count": 9064,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "пенсионная виза тайланд 50 требования",
+    "o-a виза таиланд для россиян",
+    "retirement visa thailand 50 plus"
+  ],
+  "meta_ab": {
+    "title_seo": "Пенсионная виза Таиланд 50+: требования O-A | ThaiPass",
+    "title_ctr": "Пенсионная виза в Таиланд после 50: полный разбор O-A в",
+    "title_aeo": "Какие требования к пенсионной визе Таиланд 50+ в?",
+    "description_seo": "Non-Immigrant O-A retirement 50+: возраст, депозит или пенсия, страховка, документы и подача через thaievisa. Актуально на июнь.",
+    "description_ctr": "O-A vs DTV vs безвиз: кому подходит retirement 50+, какие документы и финансы. Без гарантий: только факты ThaiPass.",
+    "description_aeo": "Пенсионная виза O-A в Таиланд: для 50+ с депозитом или подтверждённым доходом. Подача через thaievisa.go.th, ежегодное продление в IMMI."
+  },
+  "geo_qa": {
+    "score": 87,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

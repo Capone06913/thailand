@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/pensionnaya-viza-50-trebovaniya#article",
+      "headline": "Пенсионная виза Таиланд 50+: требования для россиян в 2026",
+      "description": "Non-Immigrant O-A retirement 50+: возраст, депозит или пенсия, страховка, документы и подача через thaievisa. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/pensionnaya-viza-50-trebovaniya",
+      "image": "https://thaipass.ru/blog/pensionnaya-viza-50-trebovaniya/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/pensionnaya-viza-50-trebovaniya#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С какого возраста дают пенсионную визу в Таиланд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для категории O-A (retirement): с 50 лет на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли получить O-A, не будучи формально на пенсии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если выполняете финансовые требования консульства: депозит и/или подтверждённый регулярный доход из-за рубежа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли депозит в тайском банке до подачи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от выбранной схемы и этапа. Актуальный порядок: на thaievisa.go.th и moscow.thaiembassy.org."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем O-A отличается от DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O-A: retirement 50+ без основания удалённая работа. DTV: для workcation и soft power, с выпиской 500 000 бат."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать удалённо на O-A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O-A не предназначена для трудоустройства в Таиланде. Для формализации удалёнки смотрите DTV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Гарантирует ли ThaiPass получение пенсионной визы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ThaiPass помогает подготовить документы; решение принимает консульство Таиланда."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при въезде по O-A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. TDAC на tdac.immigration.go.th заполняется не ранее чем за 72 часа до прилёта."
+          }
+        }
+      ]
+    }
+  ]
+}

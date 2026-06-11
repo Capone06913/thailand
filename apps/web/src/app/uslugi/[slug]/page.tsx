@@ -95,11 +95,15 @@ export default async function ServicePage({ params }: PageProps) {
             <p className="mt-4 text-lg font-medium text-[var(--color-muted)]">
               {service.tagline}
             </p>
+            <p className="mt-4 text-base leading-relaxed text-[var(--color-muted)]">
+              {service.description} Для граждан России, офис в{" "}
+              {siteConfig.officeCity}, документы принимаем по всей РФ.
+            </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
             <Image
               src={service.image}
-              alt={service.name}
+              alt={`${service.name}: получить визу в Таиланд, сопровождение ThaiPass`}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -97,9 +97,6 @@ export function TestimonialsSection() {
           <h2 className="mt-2 font-display text-4xl font-extrabold tracking-tight text-[var(--color-sapphire)] md:text-5xl">
             Нам доверяют заявители по всей России
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base font-medium text-[#666]">
-            Как на Яндекс Картах — можно остановить полосу и сдвинуть мышью.
-          </p>
         </FadeIn>
       </div>
 

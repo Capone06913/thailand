@@ -1,0 +1,35 @@
+{
+  "concept_ref": "teya-memory/design/AURA_BLOG_COVER_CONCEPT.json",
+  "topics": [
+    {
+      "topic_id": "B01",
+      "slug": "dtv-viza-tailand-2026",
+      "topic_scene_descriptor": "passport and Thai e-Visa portal on laptop screen, teal desk, gold accent pen, Phuket coast blur through window",
+      "alt": "DTV виза Таиланд 2026 — документы и подача через Thai e-Visa"
+    },
+    {
+      "topic_id": "B02",
+      "slug": "tdac-tailand-2026",
+      "topic_scene_descriptor": "smartphone showing digital arrival card form, airport arrival hall bokeh, calm morning light",
+      "alt": "TDAC Таиланд — цифровая карта прибытия на телефоне"
+    },
+    {
+      "topic_id": "B03",
+      "slug": "bezviz-tailand-2026",
+      "topic_scene_descriptor": "open passport with Thailand entry stamp aesthetic, tropical leaves shadow, neutral desk",
+      "alt": "Безвиз Таиланд 2026 для россиян — правила въезда"
+    },
+    {
+      "topic_id": "B04",
+      "slug": "workcation-dtv-dokumenty",
+      "topic_scene_descriptor": "freelancer laptop with contract papers and bank statement folder, Bangkok skyline soft focus",
+      "alt": "Документы DTV Workcation для удалёнщика"
+    },
+    {
+      "topic_id": "B05",
+      "slug": "dtv-500000-bat-vypiska",
+      "topic_scene_descriptor": "bank statement printout and calculator with Thai baht coins, premium teal stationery",
+      "alt": "500 000 бат для DTV — выписка и требования"
+    }
+  ]
+}

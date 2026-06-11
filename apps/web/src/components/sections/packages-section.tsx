@@ -75,7 +75,7 @@ export function PackagesSection() {
             Визы в Таиланд под ваш кейс
           </h2>
           <p className="mt-3 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            Девять форматов — от проверки DTV до срочной туристической и
+            Девять форматов: от проверки DTV до срочной туристической и
             пенсионной. Срок на карточке, детали и стоимость на странице услуги.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ export function PackagesSection() {
               <div className="relative min-h-[200px] lg:min-h-full">
                 <Image
                   src={featured.image}
-                  alt={featured.name}
+                  alt={`${featured.name}: оформление визы в Таиланд для россиян`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -178,7 +178,7 @@ export function PackagesSection() {
           className="mt-8 flex justify-center"
         >
           <PremiumCta href="#zayavka" variant="secondary">
-            Не уверены в формате — напишите нам
+            Не уверены в формате: напишите нам
           </PremiumCta>
         </motion.div>
       </div>

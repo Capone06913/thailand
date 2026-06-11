@@ -31,4 +31,20 @@ Copy-Item "apps\web\src\components\sections\scroll-video-hero.stable-2026-06-10.
 
 ---
 
+## v3 — блог, копирайт, hero (2026-06-11)
+
+**Что сохранено:** Excalibur-блог (18 статей), обложки Flux 2 Pro, очистка em-dash по сайту, hero-типографика, cookie/oferta/privacy, отзывы без подсказки Яндекс.
+
+| Способ | Команда |
+|--------|---------|
+| Git-тег (весь проект на момент v3) | `git checkout final-v3` |
+| Git-ветка | `git checkout stable/final-v3` |
+| Версия npm-пакета web | `0.3.0` в `apps/web/package.json` |
+
+**Тег git:** `final-v3`
+
+**Коммит:** см. `git show final-v3`
+
+---
+
 После отката через git для продолжения работы: `git checkout master`

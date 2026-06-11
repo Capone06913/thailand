@@ -10,7 +10,9 @@ const footerLinks = [
   { href: "/#zayavka", label: "Заявка" },
   { href: "/kontakty", label: "Контакты" },
   { href: "/blog", label: "Блог" },
+  { href: "/oferta", label: "Условия" },
   { href: "/privacy", label: "Политика" },
+  { href: "/cookies", label: "Cookie" },
 ];
 
 export function Footer() {
@@ -61,7 +63,7 @@ export function Footer() {
       <div className="border-t border-[var(--color-border)]/70 px-4 py-3 text-center text-[11px] leading-relaxed text-[var(--color-muted)]">
         <p className="mx-auto max-w-2xl">
           ThaiPass не является консульством. Сумма на сайте не является публичной
-          офертой — точную стоимость подтверждаем после разбора кейса. © {year}{" "}
+          офертой: точную стоимость подтверждаем после разбора кейса. © {year}{" "}
           {siteConfig.name}.{" "}
           <a
             href="https://www.thaievisa.go.th"

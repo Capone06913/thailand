@@ -1,0 +1,38 @@
+{
+  "topic_id": "B17",
+  "slug": "strahovka-viza-tailand",
+  "primary_query": "страховка виза тайланд",
+  "secondary_queries": [
+    "страховка для визы в таиланд",
+    "медстраховка thaievisa",
+    "страховка dtv таиланд"
+  ],
+  "title": "Страховка для визы в Таиланд: требования и ошибки",
+  "meta_description": "Медстраховка для TR, DTV и O-A: срок, сумма, PDF для thaievisa. ThaiPass в визовых пакетах.",
+  "char_count": 8890,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "страховка для визы таиланд требования",
+    "медицинская страховка thaievisa",
+    "страховка dtv виза таиланд"
+  ],
+  "meta_ab": {
+    "title_seo": "Страховка для визы Таиланд: TR, DTV | ThaiPass",
+    "title_ctr": "Страховка для визы в Таиланд: что проверяет консульство",
+    "title_aeo": "Какая страховка нужна для визы в Таиланд?",
+    "description_seo": "Медстраховка для TR, DTV и O-A: даты, сумма, PDF. ThaiPass помогает в пакетах. Актуально на июнь.",
+    "description_ctr": "Типичные ошибки полиса и таблица по категориям. Без выдуманных сумм покрытия.",
+    "description_aeo": "Страховка: часть пакета thaievisa. Сверьте срок и территорию с чек-листом; ThaiPass не страховщик."
+  },
+  "geo_qa": {
+    "score": 87,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

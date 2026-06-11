@@ -11,7 +11,7 @@ const guarantees = [
   },
   {
     title: "Сроки проговариваем заранее",
-    text: "До подачи озвучиваем реалистичный дедлайн с учётом консульства и вашего маршрута. Если задержка на нашей стороне — переносим сроки.",
+    text: "До подачи озвучиваем реалистичный дедлайн с учётом консульства и вашего маршрута. Если задержка на нашей стороне: переносим сроки.",
   },
   {
     title: "Разбор кейса бесплатно",
@@ -38,7 +38,7 @@ export function GuaranteesSection() {
             Наши гарантии
           </h2>
           <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            Работаем честно и берём ответственность на себя — только визы в
+            Работаем честно и берём ответственность на себя: только визы в
             Таиланд, без смежных услуг.
           </p>
 
@@ -81,7 +81,7 @@ export function GuaranteesSection() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[var(--color-bg)] shadow-2xl ring-1 ring-[var(--color-border)]">
             <Image
               src="/images/generated/trust-consultant.jpg"
-              alt="Специалист ThaiPass с загранпаспортом и визой в Таиланд"
+              alt="Специалист ThaiPass помогает получить визу в Таиланд: DTV и TR"
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 90vw, 45vw"

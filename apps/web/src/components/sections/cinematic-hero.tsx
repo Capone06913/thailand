@@ -63,7 +63,7 @@ export function CinematicHero() {
               </h1>
 
               <p className="mt-5 max-w-xl text-base font-medium leading-relaxed text-[var(--color-muted)] md:text-lg">
-                DTV, TR и пенсионная 50+ — проверим документы до подачи в
+                DTV, TR и пенсионная 50+: проверим документы до подачи в
                 консульство и ведём заявку до одобрения. Москва и курьер по всей
                 России.
               </p>

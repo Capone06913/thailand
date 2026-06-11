@@ -1,0 +1,37 @@
+{
+  "topic_id": "B05",
+  "slug": "dtv-500000-bat-vypiska",
+  "primary_query": "500000 бат dtv виза",
+  "secondary_queries": [
+    "выписка для dtv тайланд",
+    "сколько денег нужно dtv"
+  ],
+  "title": "500 000 бат для DTV: как оформить выписку без отказа",
+  "meta_description": "Сколько нужно на счёте для DTV, валюта, формат выписки для thaievisa.go.th.",
+  "char_count": 8534,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "500000 бат dtv выписка",
+    "сколько денег на счёте для dtv",
+    "банковская выписка dtv тайланд"
+  ],
+  "meta_ab": {
+    "title_seo": "500 000 бат для DTV визы: требования к выписке | ThaiPass",
+    "title_ctr": "500 000 бат для DTV: как оформить выписку и не словить отказ",
+    "title_aeo": "Сколько нужно денег на счёте для DTV визы в Таиланд?",
+    "description_seo": "Сколько нужно на счёте для DTV, в какой валюте, как оформить выписку для thaievisa.go.th.",
+    "description_ctr": "500k бат, рублёвый или валютный счёт, PDF statement: разбор финансового требования DTV.",
+    "description_aeo": "Для DTV нужен эквивалент 500 000 бат на банковской выписке. Счёт может быть в рублях или долларах по правилам thaievisa."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

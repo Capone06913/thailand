@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/turisticheskaya-viza-tr-dokumenty#article",
+      "headline": "Туристическая виза TR: полный список документов",
+      "description": "Чек-лист документов туристической TR: паспорт, фото, брони, финансы, страховка, thaievisa.go.th. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/turisticheskaya-viza-tr-dokumenty",
+      "image": "https://thaipass.ru/blog/turisticheskaya-viza-tr-dokumenty/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/turisticheskaya-viza-tr-dokumenty#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие документы нужны на туристическую визу TR в Таиланд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Паспорт, фото, анкета, брони перелёта и проживания, финансовое подтверждение, страховка: полный список на thaievisa.go.th для Tourist Visa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли выписка из банка для TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как правило, да: формат и сумма по правилам консульства на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли получить TR без брони отеля?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от чек-листа: иногда достаточно приглашения с адресом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Отличаются ли документы TR от DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. DTV требует 500 000 бат и документы под Workcation или Soft Power. TR: туристический пакет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TR детям?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если ребёнку нужна виза; плюс документы родителей и согласия по правилам консульства."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько действует туристическая TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа визы и условий на наклейке. Читайте текст визы после одобрения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем ThaiPass TR Standard отличается от самостоятельной подачи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Мы помогаем собрать и проверить пакет, организуем курьер по России. Визу выдаёт консульство."
+          }
+        }
+      ]
+    }
+  ]
+}

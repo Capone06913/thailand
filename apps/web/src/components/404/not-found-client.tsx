@@ -25,7 +25,7 @@ export function NotFoundClient() {
         </h1>
         <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
           Похоже, вы свернули не туда. Подвигайте блоки мышью или вернитесь на
-          главную — там все услуги и форма заявки.
+          главную: там все услуги и форма заявки.
         </p>
         <Link
           href="/"

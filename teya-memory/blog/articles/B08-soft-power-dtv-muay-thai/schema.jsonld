@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/soft-power-dtv-muay-thai#article",
+      "headline": "DTV Soft Power: Muay Thai: документы и подача",
+      "description": "DTV Muay Thai через Soft Power: договор со школой, 500 000 бат, thaievisa.go.th и типичные ошибки. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/soft-power-dtv-muay-thai",
+      "image": "https://thaipass.ru/blog/soft-power-dtv-muay-thai/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/soft-power-dtv-muay-thai#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Любая школа Muay Thai подходит для DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Нужна организация, которая соответствует требованиям категории Soft Power на thaievisa и выдаёт документы для консульства."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли 500 000 бат на тайском счёте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно достаточно эквивалента на счёте в другой валюте по правилам консульства."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать удалённо на Soft Power Muay Thai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Soft Power завязан на обучение. Удалённая работа: отдельная категория Workcation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится рассмотрение DTV Muay Thai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как у других DTV: от нескольких недель, зависит от консульства и сезона."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Soft Power отличается от туристической TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TR: туризм без 500k и без долгосрочной программы обучения. DTV Soft Power: длительное пребывание с договором школы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если школа отказала в письме для визы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ищите другую школу или меняйте маршрут. Без документов школы Soft Power не собрать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Помогает ли ThaiPass с DTV Muay Thai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, через DTV Audit и Concierge. Визу выдаёт только консульство."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -28,7 +28,7 @@ export const painScenarios = [
 export const costOfInaction = [
   {
     title: "Переделка после отказа",
-    detail: "Ещё 2–4 недели ожидания и повторная госпошлина",
+    detail: "Ещё от 2 до 4 недели ожидания и повторная госпошлина",
     impact: "high",
   },
   {

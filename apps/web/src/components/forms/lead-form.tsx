@@ -115,7 +115,7 @@ export function LeadForm({
           Заявка принята
         </p>
         <p className="mt-2 max-w-xs text-sm font-medium text-[var(--color-muted)]">
-          Ответим в Telegram или WhatsApp в течение 15–30 минут в рабочие часы.
+          Ответим в Telegram или WhatsApp от 15 до 30 минут в рабочие часы.
         </p>
         <Button
           type="button"
@@ -153,8 +153,8 @@ export function LeadForm({
         </p>
         <p className="mt-1 text-sm text-white/70">
           {isServicePage
-            ? `${serviceName ?? "Услуга"} — бесплатный разбор документов и сроков, ответ за 15–30 минут`
-            : "Ответ в мессенджере за 15–30 минут"}
+            ? `${serviceName ?? "Услуга"}: бесплатный разбор документов и сроков, ответ от 15 до 30 минут`
+            : "Ответ в мессенджере от 15 до 30 минут"}
         </p>
       </div>
 

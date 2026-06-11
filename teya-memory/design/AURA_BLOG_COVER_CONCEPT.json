@@ -1,0 +1,17 @@
+{
+  "project": "ThaiPass",
+  "cover_family": "editorial_photo",
+  "secondary_cover_families": ["lifestyle_candid"],
+  "color_lock": {
+    "primary": "#0a4a48",
+    "secondary": "#142a45",
+    "accent": "#d4a853",
+    "sky": "#4a9fd4",
+    "background": "#f8f6f1"
+  },
+  "global_prompt_prefix": "Premium editorial travel document photography, Thailand visa and relocation theme, teal and gold brand accents, calm expert mood, no text overlay, no logos, photorealistic, 16:9",
+  "global_prompt_suffix": "soft natural light, subtle film grain, Moscow-to-Bangkok expat context, Russian audience, no watermarks, no faces of identifiable celebrities",
+  "layout": "hero object left third, negative space right for title overlay in CMS",
+  "grain": "light",
+  "must_avoid": ["cartoon", "stock smile tourist group", "land of smiles cliché", "passport with readable personal data"]
+}

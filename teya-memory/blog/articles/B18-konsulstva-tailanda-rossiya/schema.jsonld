@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/konsulstva-tailanda-rossiya#article",
+      "headline": "Консульства Таиланда: куда подавать из России",
+      "description": "Moscow jurisdiction, VAC и embassy: как выбрать маршрут подачи на thaievisa для россиян. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/konsulstva-tailanda-rossiya",
+      "image": "https://thaipass.ru/blog/konsulstva-tailanda-rossiya/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/konsulstva-tailanda-rossiya#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Где консульства Таиланда для россиян?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Основная jurisdiction: Royal Thai Embassy Moscow через thaievisa.go.th. VAC и запись: в личном кабинете."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем VAC отличается от посольства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VAC принимает паспорт и биометрию; решение по визе принимает консульство."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли подать из Петербурга или регионов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Анкета онлайн из любого города РФ; очный этап по назначенному VAC или embassy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как выбрать правильный консульский округ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При регистрации на thaievisa укажите резидентство; для большинства россиян Moscow jurisdiction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ThaiPass подаёт в консульство за меня?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ThaiPass готовит документы; биометрию и паспорт в VAC передаёте вы по правилам embassy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли ехать в посольство, если есть VAC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от шагов в личном кабинете e-Visa для вашего кейса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где официальные правила для россиян?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "moscow.thaiembassy.org и thaievisa.go.th."
+          }
+        }
+      ]
+    }
+  ]
+}

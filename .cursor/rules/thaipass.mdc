@@ -1,0 +1,67 @@
+---
+description: ThaiPass project conventions — brand, SEO, stack, and workflow
+alwaysApply: true
+---
+
+# ThaiPass Project Rules
+
+## Brand
+
+- Brand name is always **ThaiPass** (never ThaiVisa Pro or generic «агентство виз»).
+- Tone: premium, calm, expert relocation service — not budget visa shop.
+- UI language: Russian. SEO locale: `ru-RU`. Primary geo: Russia, Moscow.
+
+## Services (client-facing names)
+
+| Slug | Name |
+|------|------|
+| `dtv-audit` | ThaiPass DTV Audit |
+| `dtv-concierge` | ThaiPass DTV Concierge |
+| `tr-express` | ThaiPass TR Express |
+| `tr-standard` | ThaiPass TR Standard |
+| `retirement-50` | ThaiPass Retirement Path |
+
+Never use «вариант 1/2» in user-facing copy.
+
+## Stack
+
+- **Next.js 15** App Router, TypeScript, Tailwind CSS v4
+- **React Bits** + **Magic UI** for motion (phase 2+)
+- **shadcn/ui** for forms, accordion, dialog
+- **WordPress REST API** for blog (`/blog`)
+- **Context7** MCP for Next.js/React docs when writing code
+
+## Content strategy (70 / 20 / 10)
+
+- **70%** pain, objections, scenarios, FAQ-as-objections on landing
+- **20%** product: packages, quiz, process, delivery
+- **10%** trust: Moscow office, courier, Telegram channel — minimal «about us»
+
+## Contacts
+
+- Primary CTA: **lead form** → Telegram notification
+- Secondary: WhatsApp, Telegram channel (news/prices)
+- **No phone number** on site until operator and number are ready
+
+## Workflow phases
+
+1. **Phase 1**: functionality — routing, form API, blog fetch, base layout
+2. **Phase 2**: content + SEO meta, Schema.org, semantic core briefs
+3. **Phase 3**: Aura `AURADESIGN.md`, React Bits motion, Magic UI components
+
+## MCP tools
+
+- **ЯДрышко** (`/core`): semantic core, Wordstat via MCP-KV
+- **Aura Designer**: `auradesign/AURADESIGN.md`
+- **IndexLift SEO**: audit after pages are built
+- **Browser DevTools MCP**: verify UI changes before marking complete
+
+## YMYL disclaimer
+
+Every page footer must state ThaiPass is not a government body. Link to [thaievisa.go.th](https://www.thaievisa.go.th) and [moscow.thaiembassy.org](https://moscow.thaiembassy.org). Show «Актуально на [month] 2026» on visa content.
+
+## Code
+
+- Minimize scope; match existing patterns in `apps/web`
+- Use `apps/web` as the Next.js root
+- Env secrets only in `.env`, never commit `.env`

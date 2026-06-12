@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/workcation-dtv-dokumenty#article",
+      "headline": "Workcation DTV: какие документы нужны удалёнщику и фрилансеру",
+      "description": "Договор, выписка, портфолио, страховка: полный чек-лист документов DTV Workcation для россиян.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/workcation-dtv-dokumenty",
+      "image": "https://thaipass.ru/blog/workcation-dtv-dokumenty/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/workcation-dtv-dokumenty#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли перевод договора на английский?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от требований консульства на thaievisa.go.th. Часто принимают английский или тайский."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли ИП в России для Workcation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ИП с контрактами и поступлениями может подходить, если документы показывают удалённый доход из-за рубежа Таиланда."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли показать криптовалютный доход?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только если он отражён в официальной банковской выписке и принимается консульством."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли письмо от работодателя на английском?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Рекомендуется. Письмо должно подтверждать remote work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что указать в портфолио, если NDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Опишите тип проектов без раскрытия секретов. Приложите контракты где NDA позволяет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько контрактов приложить фрилансеру?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно достаточно от 2 до 3 актуальных с поступлениями за последние месяцы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где проверить полный список полей анкеты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На thaievisa.go.th после выбора DTV Workcation."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "policy": "MCP_KV_ONLY_FOR_GENERATED_IMAGES",
+  "assets": [
+    {
+      "id": "brand-kit",
+      "role": "brand kit image showcasing design system style",
+      "status": "ready",
+      "generationTool": "user-mcp-kv/gpt-image-2",
+      "backgroundRemovalTool": null,
+      "generatedImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_000000007a1071f7ad66cb6bffdd926c.png",
+      "transparentImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_000000007a1071f7ad66cb6bffdd926c.png",
+      "prompt": "A beautiful, premium design system brand kit collage for language learning platform called \"Language You+\". The image contains several slides on a single canvas showing: 1) color palette (deep violet, pastel yellow, pure white, soft pastel chips), 2) modern font pairs (clean sans serif), 3) flat UI components (pill buttons, language chips with minimal custom SVG flags), 4) hero landing layout preview, 5) mobile responsiveness wireframe. Elegant, studio lighting, vector style design asset, flat UI, high-end presentation.",
+      "mustUseInHtml": false
+    },
+    {
+      "id": "tile-1-group-classes",
+      "role": "Bento tile 1 image showing group classes for family",
+      "status": "ready",
+      "generationTool": "user-mcp-kv/gpt-image-2",
+      "backgroundRemovalTool": null,
+      "generatedImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000b628722f98be65a180cadbde.png",
+      "transparentImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000b628722f98be65a180cadbde.png",
+      "prompt": "A high-quality lifestyle portrait of a beautiful European mother and her 8-year-old ginger hair son sitting together at a study desk, looking thoughtful and looking up-right to the side. Warm natural light, professional photography, cozy background.",
+      "mustUseInHtml": true
+    },
+    {
+      "id": "tile-4-anywhere",
+      "role": "Bento tile 4 image showing learning anywhere",
+      "status": "ready",
+      "generationTool": "user-mcp-kv/gpt-image-2",
+      "backgroundRemovalTool": null,
+      "generatedImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000f640722f929f3bc17c221c3a.png",
+      "transparentImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000f640722f929f3bc17c221c3a.png",
+      "prompt": "A modern lifestyle photo of a young African-American female student sitting comfortably on a bed in a stylish cozy bedroom, using her laptop, typing and smiling. Soft ambient lighting, beautiful color grading.",
+      "mustUseInHtml": true
+    },
+    {
+      "id": "tile-5-lessons-for-kids",
+      "role": "Bento tile 5 image showing lessons for kids",
+      "status": "ready",
+      "generationTool": "user-mcp-kv/gpt-image-2",
+      "backgroundRemovalTool": null,
+      "generatedImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000f47c722f9aebb718ba27fd4a.png",
+      "transparentImageUrl": "https://tempfile.aiquickdraw.com/images/chatgpt/file_00000000f47c722f9aebb718ba27fd4a.png",
+      "prompt": "A warm, professional photo of a smiling female tutor reading an open book to a group of happy diverse young children in a modern bright classroom. Classroom decor, soft light, shallow depth of field.",
+      "mustUseInHtml": true
+    }
+  ]
+}

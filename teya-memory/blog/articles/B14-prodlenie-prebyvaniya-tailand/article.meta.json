@@ -1,0 +1,38 @@
+{
+  "topic_id": "B14",
+  "slug": "prodlenie-prebyvaniya-tailand",
+  "primary_query": "продление визы тайланд",
+  "secondary_queries": [
+    "продление пребывания таиланд",
+    "продлить безвиз таиланд",
+    "immi продление визы"
+  ],
+  "title": "Продление пребывания в Таиланде: виза, штамп и IMMI",
+  "meta_description": "Как продлить безвиз, TR, DTV и O-A: TM.7, overstay, re-entry permit.",
+  "char_count": 8544,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "продление визы в таиланде immi",
+    "как продлить пребывание в таиланде",
+    "продление туристической визы таиланд"
+  ],
+  "meta_ab": {
+    "title_seo": "Продление визы Таиланд: IMMI, stamp, overstay | ThaiPass",
+    "title_ctr": "Продление пребывания в Таиланде: что реально работает в",
+    "title_aeo": "Как продлить визу или безвизовое пребывание в Таиланде?",
+    "description_seo": "Как продлить безвиз, TR, DTV и O-A в иммиграции: TM.7, лимиты, overstay, re-entry permit. Актуально на июнь.",
+    "description_ctr": "Безвиз, TR, DTV: разные правила продления. Таблица рисков и чек-лист для IMMI.",
+    "description_aeo": "Продление зависит от типа stamp или визы. Обращение в IMMI до конца срока, форма TM.7, без overstay."
+  },
+  "geo_qa": {
+    "score": 86,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

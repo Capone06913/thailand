@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/dtv-500000-bat-vypiska#article",
+      "headline": "500 000 бат для DTV: как оформить выписку и не получить отказ",
+      "description": "Сколько нужно на счёте для DTV, в какой валюте, как оформить выписку для thaievisa.go.th.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/dtv-500000-bat-vypiska",
+      "image": "https://thaipass.ru/blog/dtv-500000-bat-vypiska/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/dtv-500000-bat-vypiska#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужно ли переводить 500 000 бат на тайский банк?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно нет. Достаточно выписки по счёту в вашей валюте с эквивалентом по правилам консульства."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли показать наличные?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DTV ориентирован на bank statement. Наличные редко заменяют выписку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Учитывают ли депозит или брокерский счёт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа счёта и доступности средств. Текущий счёт: самый предсказуемый вариант."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что если курс рубля упал после выписки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Возможен запрос новой выписки или отказ. Держите запас от порога."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли выписка на каждого члена семьи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Финансовые требования для сопровождающих смотрите в разделе dependents на thaievisa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как долго деньги должны лежать на счёте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Стабильный остаток убедительнее резкого inbound за день до выписки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где проверить актуальную сумму и формат?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На thaievisa.go.th в требованиях DTV и на moscow.thaiembassy.org."
+          }
+        }
+      ]
+    }
+  ]
+}

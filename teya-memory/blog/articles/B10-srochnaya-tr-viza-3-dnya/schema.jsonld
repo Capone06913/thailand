@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/srochnaya-tr-viza-3-dnya#article",
+      "headline": "Срочная туристическая виза TR за 3 дня: реально ли",
+      "description": "Срочная TR: реальные сроки, TR Express, документы без сокращений и план B. Без гарантии 72 часов. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/srochnaya-tr-viza-3-dnya",
+      "image": "https://thaipass.ru/blog/srochnaya-tr-viza-3-dnya/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/srochnaya-tr-viza-3-dnya#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Реально ли получить визу в Таиланд за 3 дня?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Иногда при идеальных условиях и экспресс VAC, но не как гарантия. Планируйте запас."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем TR Express отличается от самостоятельной экспресс-подачи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ThaiPass готовит и проверяет пакет, координирует курьер. Консульство рассматривает так же."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли ускорить TR без полного пакета документов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Допзапрос съедает срочность. Сначала чек-лист, потом экспресс-слот."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит срочная туристическая виза?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Госпошлина и экспресс-сбор VAC: на официальных сайтах на дату подачи. Услуга ThaiPass TR Express: отдельно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ускоряет ли курьер ThaiPass решение консульства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Курьер ускоряет доставку документов в офис подготовки. Рассмотрение: у консульства и VAC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если виза не успела к вылету?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перенос рейса, план B по маршруту или повторная подача после исправления пакета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при срочной TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. TDAC на tdac.immigration.go.th за 72 часа до прилёта: для любого въезда."
+          }
+        }
+      ]
+    }
+  ]
+}

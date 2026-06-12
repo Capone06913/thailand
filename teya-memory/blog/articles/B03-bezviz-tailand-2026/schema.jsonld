@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/bezviz-tailand-2026#article",
+      "headline": "Безвиз в Таиланд 2026 для россиян: что известно и когда нужна виза",
+      "description": "Актуальная информация о безвизовом въезде в Таиланд: сроки, TDAC, когда оформлять DTV или TR.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/bezviz-tailand-2026",
+      "image": "https://thaipass.ru/blog/bezviz-tailand-2026/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/bezviz-tailand-2026#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько дней безвиз даёт россиянам в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Точный срок определяет действующее соглашение и штамп при въезде. Актуальную информацию смотрите на moscow.thaiembassy.org."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли продлить безвиз внутри Таиланда?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Правила продления туристического штампа уточняйте в иммиграционной службе на дату поездки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли виза ребёнку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При безвизе для взрослых обычно те же правила для ребёнка с отдельным паспортом. TDAC нужна на каждого."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать удалённо на безвизе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Туристический статус не предназначен для длительной удалённой работы. Для этого есть DTV Workcation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое visa run и стоит ли?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Выезд и повторный въезд ради нового штампа. Иммиграция отслеживает такие паттерны."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где оформить туристическую визу, если безвиза нет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Через thaievisa.go.th или консульство."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязателен ли обратный билет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Могут запросить подтверждение выезда. Имейте бронь или билет."
+          }
+        }
+      ]
+    }
+  ]
+}

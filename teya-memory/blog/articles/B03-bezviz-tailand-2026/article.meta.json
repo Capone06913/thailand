@@ -1,0 +1,37 @@
+{
+  "topic_id": "B03",
+  "slug": "bezviz-tailand-2026",
+  "primary_query": "безвиз тайланд 2026 россияне",
+  "secondary_queries": [
+    "безвиз тайланд сколько дней",
+    "въезд в тайланд 2026"
+  ],
+  "title": "Безвиз в Таиланд для россиян: сроки и когда нужна виза",
+  "meta_description": "Безвизовый въезд в Таиланд: сроки, TDAC, когда оформлять DTV или туристическую TR.",
+  "char_count": 8512,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "безвиз тайланд 2026 для россиян",
+    "въезд в тайланд без визы правила",
+    "когда нужна виза вместо безвиза"
+  ],
+  "meta_ab": {
+    "title_seo": "Безвиз Таиланд для россиян: сроки и правила | ThaiPass",
+    "title_ctr": "Безвиз в Таиланд: что изменилось и когда пора оформлять визу",
+    "title_aeo": "Нужен ли безвиз россиянам в Таиланд в и сколько можно находиться?",
+    "description_seo": "Актуальная информация о безвизовом въезде в Таиланд: сроки, TDAC, когда оформлять DTV или TR.",
+    "description_ctr": "Безвиз, TDAC, DTV и TR: разбираем без мифов. Проверяйте moscow.thaiembassy.org перед каждым вылетом.",
+    "description_aeo": "Безвиз в Таиланд для россиян: краткий туристический въезд со штампом. TDAC обязательна. Для длительного stay: DTV или TR."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

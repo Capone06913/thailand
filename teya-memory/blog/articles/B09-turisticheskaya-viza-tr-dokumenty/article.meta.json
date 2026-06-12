@@ -1,0 +1,38 @@
+{
+  "topic_id": "B09",
+  "slug": "turisticheskaya-viza-tr-dokumenty",
+  "primary_query": "туристическая виза тайланд документы",
+  "secondary_queries": [
+    "документы tr виза тайланд",
+    "туристическая виза таиланд список",
+    "thaievisa tourist visa документы"
+  ],
+  "title": "Туристическая виза TR: полный список документов",
+  "meta_description": "Чек-лист документов туристической TR: паспорт, брони, финансы, страховка.",
+  "char_count": 8544,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "туристическая виза тайланд документы список",
+    "документы для tr визы в таиланд",
+    "чек-лист туристическая виза thaievisa"
+  ],
+  "meta_ab": {
+    "title_seo": "Туристическая виза TR Таиланд: документы | ThaiPass",
+    "title_ctr": "TR виза Таиланд: полный чек-лист документов для thaievisa",
+    "title_aeo": "Какие документы нужны для туристической визы TR в Таиланд?",
+    "description_seo": "Чек-лист документов туристической TR: паспорт, фото, брони, финансы, страховка, thaievisa.go.th. Актуально на июнь.",
+    "description_ctr": "Паспорт, выписка, страховка, брони: собираем TR без типичных ошибок загрузки на портал.",
+    "description_aeo": "Туристическая TR требует паспорт, анкету, брони, финансовое подтверждение и страховку через thaievisa.go.th."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

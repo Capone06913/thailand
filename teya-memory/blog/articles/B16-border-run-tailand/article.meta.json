@@ -1,0 +1,38 @@
+{
+  "topic_id": "B16",
+  "slug": "border-run-tailand",
+  "primary_query": "border run тайланд",
+  "secondary_queries": [
+    "бордер ран таиланд",
+    "visa run тайланд",
+    "как продлить безвиз выезд"
+  ],
+  "title": "Border run в Таиланде: риски и альтернативы",
+  "meta_description": "Border run и visa run: отказ на границе, overstay, IMMI, TR и DTV вместо бесконечных кругов.",
+  "char_count": 8720,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "border run тайланд риски",
+    "visa run таиланд альтернативы",
+    "как не делать border run"
+  ],
+  "meta_ab": {
+    "title_seo": "Border run Таиланд: риски и альтернативы | ThaiPass",
+    "title_ctr": "Border run в Таиланде: когда перестаёт работать и что делать",
+    "title_aeo": "Что такое border run в Таиланде и чем его заменить?",
+    "description_seo": "Риски border run: отказ, короткий stamp, overstay. Альтернативы: IMMI, TR, DTV. Актуально на июнь.",
+    "description_ctr": "Таблица: border run vs продление vs TR vs DTV. Без гарантий штампа на границе.",
+    "description_aeo": "Border run не продлевает визу внутри страны и не сбрасывает overstay. Легальные пути: IMMI, thaievisa, DTV."
+  },
+  "geo_qa": {
+    "score": 86,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

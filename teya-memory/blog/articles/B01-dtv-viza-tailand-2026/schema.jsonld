@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/dtv-viza-tailand-2026#article",
+      "headline": "DTV виза в Таиланд 2026: полный гайд для россиян",
+      "description": "Destination Thailand Visa для россиян: кому подходит DTV, 500 000 бат, workcation и soft power, подача через thaievisa.go.th. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/dtv-viza-tailand-2026",
+      "image": "https://thaipass.ru/blog/dtv-viza-tailand-2026/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/dtv-viza-tailand-2026#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли получить DTV, находясь в России?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если выбранное консульство или VAC принимает заявления от резидентов РФ. Маршрут и необходимость личного визита уточняйте на thaievisa.go.th и moscow.thaiembassy.org на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DTV заменяет безвиз?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Безвиз: отдельный режим для краткого туризма. DTV: долгосрочная виза с другими требованиями и целью пребывания."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязательно ли иметь 500 000 бат именно на тайском счёте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Обычно достаточно эквивалента на счёте в другой валюте по правилам консульства. Формат и свежесть выписки важнее валюты счёта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится рассмотрение DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Срок не фиксирован: зависит от консульства, сезона и полноты пакета. Закладывайте несколько недель минимум и следите за статусом в личном кабинете thaievisa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать в Таиланде на местную компанию по DTV Workcation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Workcation предполагает удалённую работу на иностранного работодателя или клиентов вне Таиланда. Работа на тайского работодателя: другой правовой режим."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Гарантирует ли ThaiPass одобрение DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ThaiPass помогает подготовить и проверить документы, но решение принимает только консульство Таиланда."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC при въезде по DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. TDAC заполняется на tdac.immigration.go.th не ранее чем за 72 часа до прилёта: независимо от типа визы."
+          }
+        }
+      ]
+    }
+  ]
+}

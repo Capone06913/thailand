@@ -1,0 +1,38 @@
+{
+  "topic_id": "B15",
+  "slug": "posolstvo-tailanda-moskva-viza",
+  "primary_query": "посольство тайланда москва виза",
+  "secondary_queries": [
+    "посольство таиланда виза",
+    "thaievisa москва",
+    "консульство таиланда виза россия"
+  ],
+  "title": "Посольство Таиланда в Москве: как подать на визу",
+  "meta_description": "Royal Thai Embassy Moscow и thaievisa.go.th: VAC, биометрия, маршрут подачи.",
+  "char_count": 8572,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "посольство тайланда москва подача визы",
+    "как подать на визу в таиланд из россии",
+    "thaievisa посольство москва"
+  ],
+  "meta_ab": {
+    "title_seo": "Посольство Таиланда Москва: подача на визу | ThaiPass",
+    "title_ctr": "Виза в Таиланд через Москву: embassy, e-Visa и когда ехать лично",
+    "title_aeo": "Как подать на визу в Таиланд через посольство в Москве?",
+    "description_seo": "Royal Thai Embassy Moscow и thaievisa.go.th: когда нужен визит, VAC, биометрия и роль ThaiPass. Актуально на июнь.",
+    "description_ctr": "Пошагово: moscow.thaiembassy.org → thaievisa → биометрия. Чем embassy отличается от ThaiPass.",
+    "description_aeo": "Подача из РФ через Thai e-Visa на thaievisa.go.th; личный визит в embassy/VAC: если требует система."
+  },
+  "geo_qa": {
+    "score": 85,
+    "verdict": "PASS",
+    "date": "2026-06-11",
+    "html_linter": "PASS",
+    "slop_score": "PASS",
+    "cannibalization": "PASS"
+  },
+  "cover_family": "brand_collage"
+}

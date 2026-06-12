@@ -1,0 +1,38 @@
+{
+  "topic_id": "B06",
+  "slug": "thaievisa-podacha-poshagovo",
+  "primary_query": "thaievisa подача",
+  "secondary_queries": [
+    "thaievisa go th как подать",
+    "thai e-visa пошагово",
+    "подача визы тайланд онлайн"
+  ],
+  "title": "Thaievisa.go.th: пошаговая подача визы в Таиланд",
+  "meta_description": "Регистрация, анкета, документы, оплата и статусы на thaievisa.go.th для DTV и TR.",
+  "char_count": 8837,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "thaievisa подача визы пошагово",
+    "как подать визу на thaievisa go th",
+    "инструкция thai e-visa тайланд"
+  ],
+  "meta_ab": {
+    "title_seo": "Thaievisa подача: пошаговая инструкция | ThaiPass",
+    "title_ctr": "Thaievisa.go.th: как подать визу без типичных ошибок",
+    "title_aeo": "Как подать визу в Таиланд через thaievisa.go.th пошагово?",
+    "description_seo": "Пошаговая инструкция подачи визы на thaievisa.go.th: регистрация, анкета, документы, оплата, VAC и статусы. Актуально на июнь.",
+    "description_ctr": "10 шагов thaievisa: от регистрации до Approved. TDAC отдельно, ошибки загрузки PDF и выбор консульства.",
+    "description_aeo": "Подача визы на thaievisa.go.th: личный кабинет, тип визы, загрузка документов, оплата госпошлины и запись в VAC."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

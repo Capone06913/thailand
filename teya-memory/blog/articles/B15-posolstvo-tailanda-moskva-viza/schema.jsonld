@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/posolstvo-tailanda-moskva-viza#article",
+      "headline": "Посольство Таиланда в Москве: как подать на визу в 2026",
+      "description": "Royal Thai Embassy Moscow и thaievisa.go.th: когда нужен визит, VAC, биометрия и роль ThaiPass. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/posolstvo-tailanda-moskva-viza",
+      "image": "https://thaipass.ru/blog/posolstvo-tailanda-moskva-viza/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/posolstvo-tailanda-moskva-viza#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Где подать на визу в Таиланд из России?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Основной маршрут: Thai e-Visa на thaievisa.go.th с jurisdiction Royal Thai Embassy Moscow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли лично приезжать в посольство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от типа визы и этапа e-Visa. Портал покажет, нужен ли визит или VAC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ThaiPass: это посольство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. ThaiPass: частный сервис сопровождения документов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как связаться с посольством?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Контакты: на moscow.thaiembassy.org."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли подать DTV через Москву?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если консульский округ принимает DTV от резидентов РФ: да, через thaievisa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где адрес ThaiPass в Москве?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Актуальный адрес: на странице kontakty ThaiPass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли TDAC после получения визы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. TDAC заполняется не ранее чем за 72 часа до каждого прилёта."
+          }
+        }
+      ]
+    }
+  ]
+}

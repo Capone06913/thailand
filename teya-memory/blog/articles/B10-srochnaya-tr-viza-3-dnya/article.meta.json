@@ -1,0 +1,38 @@
+{
+  "topic_id": "B10",
+  "slug": "srochnaya-tr-viza-3-dnya",
+  "primary_query": "срочная виза тайланд 3 дня",
+  "secondary_queries": [
+    "быстрая туристическая виза тайланд",
+    "tr express виза тайланд",
+    "срочное оформление визы таиланд"
+  ],
+  "title": "Срочная туристическая TR: реальные сроки оформления",
+  "meta_description": "Срочная TR без мифа «за 3 дня»: документы, TR Express, план B.",
+  "char_count": 8503,
+  "faq_count": 7,
+  "article_mode": "B",
+  "author_id": "elena-kovaleva",
+  "anchor_variants": [
+    "срочная виза тайланд 3 дня реально",
+    "быстрое оформление туристической tr",
+    "tr express срочная виза таиланд"
+  ],
+  "meta_ab": {
+    "title_seo": "Срочная виза Таиланд 3 дня: TR Express | ThaiPass",
+    "title_ctr": "Виза в Таиланд за 3 дня: когда экспресс работает, а когда нет",
+    "title_aeo": "Можно ли получить туристическую визу TR в Таиланд за 3 дня?",
+    "description_seo": "Срочная TR: реальные сроки, TR Express, документы без сокращений и план B. Без гарантии 72 часов. Актуально на июнь.",
+    "description_ctr": "Дедлайн горит? Разбираем срочную TR: экспресс VAC, полный пакет и честные сроки без магии.",
+    "description_aeo": "Срочная TR за 3 дня возможна только при полном пакете и экспресс VAC; ThaiPass TR Express сопровождает, не гарантирует срок."
+  },
+  "geo_qa": {
+    "score": 0,
+    "verdict": "PENDING",
+    "date": "2026-06-11",
+    "html_linter": "PENDING",
+    "slop_score": "PENDING",
+    "cannibalization": "PENDING"
+  },
+  "cover_family": "brand_collage"
+}

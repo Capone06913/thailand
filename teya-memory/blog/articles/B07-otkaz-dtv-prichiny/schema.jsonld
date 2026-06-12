@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://thaipass.ru/blog/otkaz-dtv-prichiny#article",
+      "headline": "Отказ DTV: типичные причины и что делать",
+      "description": "Разбор причин отказа DTV: выписка 500k, Workcation, Soft Power, страховка, даты. Что делать после Rejected на thaievisa. Актуально на июнь 2026.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru-RU",
+      "url": "https://thaipass.ru/blog/otkaz-dtv-prichiny",
+      "image": "https://thaipass.ru/blog/otkaz-dtv-prichiny/cover.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ThaiPass"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThaiPass",
+        "url": "https://thaipass.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thaipass.ru/blog/otkaz-dtv-prichiny#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Консульство обязано объяснить причину отказа DTV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На практике часто приходит общая формулировка. Детальный разбор не гарантирован; выводы делайте по чек-листу и слабым местам пакета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли подать DTV снова после отказа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, после исправления документов. Это новая заявка и новая госпошлина по правилам портала на дату подачи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Отказ DTV влияет на туристическую TR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельные заявки рассматриваются в своих категориях, но нестабильный пакет документов вреден и для TR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Частая ли причина: выписка ровно 500 000 бат?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Конвертация и комиссии могут опустить сумму ниже порога. Держите запас над минимумом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Помогает ли смена консульства после отказа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только если новое консульство легитимно обслуживает ваше резидентство."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Гарантирует ли ThaiPass одобрение при повторной подаче?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. DTV Audit и Concierge готовят и проверяют документы; решение принимает только консульство."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Стоит ли оспаривать отказ через посольство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно уточнить процедуру на moscow.thaiembassy.org. Чаще эффективнее исправленный пакет при повторной подаче."
+          }
+        }
+      ]
+    }
+  ]
+}

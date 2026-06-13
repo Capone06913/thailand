@@ -110,4 +110,3 @@ export function SocialLinks({ className, size = "md" }: SocialLinksProps) {
 }
 
 export { IconInstagram, IconTelegram, IconWhatsApp };
-

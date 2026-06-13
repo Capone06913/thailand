@@ -38,4 +38,3 @@ export function SectionMedia({
     </div>
   );
 }
-

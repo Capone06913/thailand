@@ -6,4 +6,3 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export { siteConfig } from "./site-config";
-

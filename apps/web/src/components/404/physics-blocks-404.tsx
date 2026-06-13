@@ -196,4 +196,3 @@ export function PhysicsBlocks404() {
     </div>
   );
 }
-

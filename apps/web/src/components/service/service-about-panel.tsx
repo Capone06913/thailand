@@ -10,7 +10,7 @@ export function ServiceAboutPanel({ service }: ServiceAboutPanelProps) {
     <section className="overflow-hidden rounded-[1.75rem] border border-[var(--color-border)] bg-white shadow-[0_16px_48px_rgba(20,42,69,0.06)]">
       <div className="border-b border-[var(--color-border)] bg-[var(--color-surface)] px-7 py-6 md:px-9 md:py-7">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-          РћР± СѓСЃР»СѓРіРµ
+          Об услуге
         </p>
         <p className="mt-3 text-base font-medium leading-relaxed text-[var(--color-muted)] md:text-[17px]">
           {service.description}
@@ -24,7 +24,7 @@ export function ServiceAboutPanel({ service }: ServiceAboutPanelProps) {
               <Check size={16} strokeWidth={2.5} />
             </span>
             <h2 className="font-serif text-lg font-semibold text-[var(--color-sapphire)]">
-              Р§С‚Рѕ РІС…РѕРґРёС‚
+              Что входит
             </h2>
           </div>
           <ul className="mt-5 space-y-3">
@@ -46,7 +46,7 @@ export function ServiceAboutPanel({ service }: ServiceAboutPanelProps) {
               <Users size={16} strokeWidth={2.5} />
             </span>
             <h2 className="font-serif text-lg font-semibold text-[var(--color-sapphire)]">
-              РљРѕРјСѓ РїРѕРґС…РѕРґРёС‚
+              Кому подходит
             </h2>
           </div>
           <ul className="mt-5 space-y-3">
@@ -65,4 +65,3 @@ export function ServiceAboutPanel({ service }: ServiceAboutPanelProps) {
     </section>
   );
 }
-

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { getBlogPosts } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Р‘Р»РѕРі: РіР°Р№РґС‹ РїРѕ РІРёР·Р°Рј РІ РўР°РёР»Р°РЅРґ",
+  title: "Блог: гайды по визам в Таиланд",
   description:
-    "РЎС‚Р°С‚СЊРё ThaiPass: DTV, TDAC, Р±РµР·РІРёР·, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ TR Рё РїРµРЅСЃРёРѕРЅРЅР°СЏ РІРёР·Р° РґР»СЏ СЂРѕСЃСЃРёСЏРЅ.",
+    "Статьи ThaiPass: DTV, TDAC, безвиз, туристическая TR и пенсионная виза для россиян.",
 };
 
 export default async function BlogPage() {
@@ -16,14 +16,14 @@ export default async function BlogPage() {
     <div className="px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-5xl">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--color-gold)]">
-          Р‘Р»РѕРі
+          Блог
         </p>
         <h1 className="mt-3 font-serif text-4xl font-semibold md:text-5xl">
-          Р“Р°Р№РґС‹ РїРѕ РІРёР·Р°Рј РІ РўР°РёР»Р°РЅРґ
+          Гайды по визам в Таиланд
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-[var(--color-muted)]">
-          Р Р°Р·Р±РѕСЂ СЃС‚СЂР°С…РѕРІ Рё С‚РёРїРёС‡РЅС‹С… РѕС€РёР±РѕРє: DTV, TDAC, Р±РµР·РІРёР·, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ TR
-          Рё РїРµРЅСЃРёРѕРЅРЅР°СЏ РІРёР·Р° РґР»СЏ СЂРѕСЃСЃРёСЏРЅ.
+          Разбор страхов и типичных ошибок: DTV, TDAC, безвиз, туристическая TR
+          и пенсионная виза для россиян.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -80,9 +80,9 @@ export default async function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="mt-5 inline-flex items-center text-sm font-medium text-[var(--color-teal)]"
                 >
-                  Р§РёС‚Р°С‚СЊ СЃС‚Р°С‚СЊСЋ
+                  Читать статью
                   <span className="ml-1 transition-transform group-hover:translate-x-0.5">
-                    в†’
+                    →
                   </span>
                 </Link>
               </div>
@@ -93,4 +93,3 @@ export default async function BlogPage() {
     </div>
   );
 }
-

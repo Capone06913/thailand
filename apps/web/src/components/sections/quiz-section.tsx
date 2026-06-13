@@ -149,37 +149,37 @@ export function QuizSection() {
   const goalOptions: Option<NonNullable<Goal>>[] = [
     {
       v: "remote",
-      l: "Р–РёС‚СЊ Рё СЂР°Р±РѕС‚Р°С‚СЊ СѓРґР°Р»С‘РЅРЅРѕ РѕС‚ 6 РјРµСЃСЏС†РµРІ",
-      hint: "DTV Рё РґРѕР»РіРѕСЃСЂРѕС‡РЅРѕРµ РїСЂРµР±С‹РІР°РЅРёРµ",
+      l: "Жить и работать удалённо от 6 месяцев",
+      hint: "DTV и долгосрочное пребывание",
       icon: Laptop,
     },
     {
       v: "urgent",
-      l: "РЎСЂРѕС‡РЅРѕ РІСЉРµС…Р°С‚СЊ, РІС‹Р»РµС‚ СѓР¶Рµ Р±Р»РёР·РєРѕ",
-      hint: "РЈСЃРєРѕСЂРµРЅРЅР°СЏ С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ РІРёР·Р°",
+      l: "Срочно въехать, вылет уже близко",
+      hint: "Ускоренная туристическая виза",
       icon: Zap,
     },
     {
       v: "retire",
-      l: "РџРµСЂРµРµС…Р°С‚СЊ РІ РўР°РёР»Р°РЅРґ РїРѕСЃР»Рµ 50 Р»РµС‚",
-      hint: "РџРµРЅСЃРёРѕРЅРЅР°СЏ РІРёР·Р° 50+",
+      l: "Переехать в Таиланд после 50 лет",
+      hint: "Пенсионная виза 50+",
       icon: Heart,
     },
     {
       v: "tourist",
-      l: "РўСѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ РїРѕРµР·РґРєР° РЅР° РѕС‚ 1 РґРѕ 3 РјРµСЃСЏС†Р°",
-      hint: "РЎС‚Р°РЅРґР°СЂС‚РЅР°СЏ РёР»Рё РјСѓР»СЊС‚РёРІРёР·Р°",
+      l: "Туристическая поездка на от 1 до 3 месяца",
+      hint: "Стандартная или мультивиза",
       icon: Palmtree,
     },
   ];
 
   const timelineOptions: Option<NonNullable<Timeline>>[] = [
-    { v: "days", l: "Р’ Р±Р»РёР¶Р°Р№С€РёРµ РѕС‚ 3 РґРѕ 5 РґРЅРµР№", icon: Zap },
-    { v: "week", l: "Р’ С‚РµС‡РµРЅРёРµ РѕС‚ 1 РґРѕ 2 РЅРµРґРµР»СЊ", icon: CalendarDays },
-    { v: "month", l: "Р’ С‚РµС‡РµРЅРёРµ РјРµСЃСЏС†Р°", icon: Calendar },
+    { v: "days", l: "В ближайшие от 3 до 5 дней", icon: Zap },
+    { v: "week", l: "В течение от 1 до 2 недель", icon: CalendarDays },
+    { v: "month", l: "В течение месяца", icon: Calendar },
     {
       v: "flex",
-      l: "РЎСЂРѕРє РіРёР±РєРёР№, С…РѕС‡Сѓ СЃРїРѕРєРѕР№РЅРѕ РїРѕРґРіРѕС‚РѕРІРёС‚СЊСЃСЏ",
+      l: "Срок гибкий, хочу спокойно подготовиться",
       icon: Clock,
     },
   ];
@@ -187,14 +187,14 @@ export function QuizSection() {
   const triedOptions: Option<NonNullable<Tried>>[] = [
     {
       v: "yes",
-      l: "Р”Р°, Р±С‹Р» РѕС‚РєР°Р· РёР»Рё РґРѕСЂР°Р±РѕС‚РєР°",
-      hint: "РџСЂРѕРІРµСЂРёРј РєРµР№СЃ РґРѕ РїРѕРІС‚РѕСЂРЅРѕР№ РїРѕРґР°С‡Рё",
+      l: "Да, был отказ или доработка",
+      hint: "Проверим кейс до повторной подачи",
       icon: FileWarning,
     },
     {
       v: "no",
-      l: "РќРµС‚, С‚РѕР»СЊРєРѕ РЅР°С‡РёРЅР°СЋ СЂР°Р·Р±РёСЂР°С‚СЊСЃСЏ",
-      hint: "Р Р°Р·Р±РѕСЂ РґРѕРєСѓРјРµРЅС‚РѕРІ Р±РµСЃРїР»Р°С‚РЅРѕ",
+      l: "Нет, только начинаю разбираться",
+      hint: "Разбор документов бесплатно",
       icon: Sparkles,
     },
   ];
@@ -229,13 +229,13 @@ export function QuizSection() {
           className="text-center"
         >
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[var(--color-gold)]">
-            РџРѕРґР±РѕСЂ Р·Р° 1 РјРёРЅСѓС‚Сѓ
+            Подбор за 1 минуту
           </p>
           <h2 className="font-serif mt-2 text-3xl font-semibold text-[var(--color-sapphire)] md:text-4xl lg:text-5xl">
-            РџРѕРґР±РµСЂС‘Рј РІРёР·Сѓ Р·Р° 1 РјРёРЅСѓС‚Сѓ
+            Подберём визу за 1 минуту
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm font-medium leading-relaxed text-[var(--color-muted)] lg:text-base">
-            РўСЂРё РІРѕРїСЂРѕСЃР°: Рё РІС‹ СѓРІРёРґРёС‚Рµ РїРѕРґС…РѕРґСЏС‰СѓСЋ СѓСЃР»СѓРіСѓ СЃ С„РѕСЂРјРѕР№ Р·Р°СЏРІРєРё.
+            Три вопроса: и вы увидите подходящую услугу с формой заявки.
           </p>
         </motion.div>
 
@@ -251,10 +251,10 @@ export function QuizSection() {
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <h3 className="font-serif text-xl font-semibold text-[var(--color-sapphire)] md:text-2xl lg:text-3xl">
-                    РљР°РєР°СЏ Сѓ РІР°СЃ РіР»Р°РІРЅР°СЏ С†РµР»СЊ?
+                    Какая у вас главная цель?
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-muted)] lg:text-base">
-                    Р’С‹Р±РµСЂРёС‚Рµ СЃС†РµРЅР°СЂРёР№: РѕСЃС‚Р°Р»СЊРЅРѕРµ РїРѕРґСЃС‚СЂРѕРёРј РїРѕРґ РІР°С€ РєРµР№СЃ.
+                    Выберите сценарий: остальное подстроим под ваш кейс.
                   </p>
                   <div className="mt-6 grid gap-3 lg:grid-cols-2 lg:gap-4">
                     {goalOptions.map((opt, i) => (
@@ -280,7 +280,7 @@ export function QuizSection() {
                         : "cursor-not-allowed bg-[var(--color-border)] text-[var(--color-muted)]",
                     )}
                   >
-                    Р”Р°Р»РµРµ
+                    Далее
                     <ArrowRight
                       size={16}
                       className="transition-transform group-hover:translate-x-0.5"
@@ -299,10 +299,10 @@ export function QuizSection() {
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <h3 className="font-serif text-xl font-semibold text-[var(--color-sapphire)] md:text-2xl lg:text-3xl">
-                    РљРѕРіРґР° РІР°Рј РЅСѓР¶РЅР° РІРёР·Р°?
+                    Когда вам нужна виза?
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-muted)] lg:text-base">
-                    РћС‚ СЃСЂРѕРєР° Р·Р°РІРёСЃРёС‚ С„РѕСЂРјР°С‚ РїРѕРґР°С‡Рё Рё РїСЂРёРѕСЂРёС‚РµС‚.
+                    От срока зависит формат подачи и приоритет.
                   </p>
                   <div className="mt-6 grid gap-3 lg:grid-cols-2 lg:gap-4">
                     {timelineOptions.map((opt, i) => (
@@ -322,7 +322,7 @@ export function QuizSection() {
                       className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-full border border-[var(--color-border)] bg-white py-3.5 text-sm font-semibold text-[var(--color-sapphire)] transition-colors hover:border-[var(--color-sapphire)]/25 hover:bg-[var(--color-bg)] lg:py-4 lg:text-base"
                     >
                       <ChevronLeft size={16} />
-                      РќР°Р·Р°Рґ
+                      Назад
                     </button>
                     <motion.button
                       type="button"
@@ -336,7 +336,7 @@ export function QuizSection() {
                           : "cursor-not-allowed bg-[var(--color-border)] text-[var(--color-muted)]",
                       )}
                     >
-                      Р”Р°Р»РµРµ
+                      Далее
                       <ArrowRight size={16} />
                     </motion.button>
                   </div>
@@ -353,10 +353,10 @@ export function QuizSection() {
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <h3 className="font-serif text-xl font-semibold text-[var(--color-sapphire)] md:text-2xl lg:text-3xl">
-                    РЈР¶Рµ РїСЂРѕР±РѕРІР°Р»Рё РїРѕРґР°РІР°С‚СЊ СЃР°РјРё?
+                    Уже пробовали подавать сами?
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-muted)] lg:text-base">
-                    Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ С‚РѕС‡РЅРµРµ РѕС†РµРЅРёС‚СЊ СЂРёСЃРєРё РґРѕ РїРѕРґР°С‡Рё.
+                    Это поможет точнее оценить риски до подачи.
                   </p>
                   <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:gap-5">
                     {triedOptions.map((opt, i) => (
@@ -376,7 +376,7 @@ export function QuizSection() {
                       className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-full border border-[var(--color-border)] bg-white py-3.5 text-sm font-semibold text-[var(--color-sapphire)] transition-colors hover:border-[var(--color-sapphire)]/25 hover:bg-[var(--color-bg)] lg:py-4 lg:text-base"
                     >
                       <ChevronLeft size={16} />
-                      РќР°Р·Р°Рґ
+                      Назад
                     </button>
                     <motion.button
                       type="button"
@@ -390,7 +390,7 @@ export function QuizSection() {
                           : "cursor-not-allowed bg-[var(--color-border)] text-[var(--color-muted)]",
                       )}
                     >
-                      РџРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚
+                      Показать результат
                       <Sparkles size={16} className="text-[var(--color-gold)]" />
                     </motion.button>
                   </div>
@@ -414,7 +414,7 @@ export function QuizSection() {
                   </motion.div>
 
                   <p className="mt-5 text-center text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
-                    Р РµРєРѕРјРµРЅРґСѓРµРј
+                    Рекомендуем
                   </p>
                   <h3 className="mt-2 text-center font-display text-2xl font-extrabold text-[var(--color-sapphire)] md:text-3xl lg:text-4xl">
                     {result.name}
@@ -423,9 +423,9 @@ export function QuizSection() {
                     {result.tagline}
                   </p>
                   <p className="mt-2 text-center text-xs font-medium text-[var(--color-muted)]">
-                    РЎСЂРѕРє: {result.timeline}
+                    Срок: {result.timeline}
                     {tried === "yes" &&
-                      " В· Р РµРєРѕРјРµРЅРґСѓРµРј РїСЂРѕРІРµСЂРєСѓ РєРµР№СЃР° РґРѕ РїРѕРІС‚РѕСЂРЅРѕР№ РїРѕРґР°С‡Рё"}
+                      " · Рекомендуем проверку кейса до повторной подачи"}
                   </p>
 
                   <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -436,7 +436,7 @@ export function QuizSection() {
                         "rounded-full border-[var(--color-sapphire)]/20 px-5 py-2.5 font-semibold",
                       )}
                     >
-                      РџРѕРґСЂРѕР±РЅРµРµ РѕР± СѓСЃР»СѓРіРµ
+                      Подробнее об услуге
                     </Link>
                     {siteConfig.telegramChannelUrl && (
                       <a
@@ -448,7 +448,7 @@ export function QuizSection() {
                           "rounded-full px-5 py-2.5 font-semibold",
                         )}
                       >
-                        РќР°РїРёСЃР°С‚СЊ РІ Telegram
+                        Написать в Telegram
                       </a>
                     )}
                   </div>
@@ -460,10 +460,10 @@ export function QuizSection() {
                     className="mt-8 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]/60 p-5 md:p-6 lg:p-8"
                   >
                     <p className="font-display text-sm font-bold text-[var(--color-sapphire)]">
-                      РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° СЂР°Р·Р±РѕСЂ РєРµР№СЃР°
+                      Оставьте заявку на разбор кейса
                     </p>
                     <p className="mt-1 text-xs text-[var(--color-muted)]">
-                      РћС‚РІРµС‚РёРј Р·Р° 30 РјРёРЅСѓС‚ В· Р±РµСЃРїР»Р°С‚РЅРѕРµ С„РѕС‚Рѕ РЅР° РІРёР·Сѓ
+                      Ответим за 30 минут · бесплатное фото на визу
                     </p>
                     <div className="mt-4">
                       <LeadForm defaultService={result.slug} compact />
@@ -477,4 +477,3 @@ export function QuizSection() {
     </section>
   );
 }
-

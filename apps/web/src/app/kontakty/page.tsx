@@ -6,9 +6,9 @@ import { siteConfig } from "@/lib/utils";
 import { MapPin, MessageCircle, Send } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "РљРѕРЅС‚Р°РєС‚С‹: РѕС„РёСЃ РњРѕСЃРєРІР°, РєСѓСЂСЊРµСЂ РїРѕ Р РѕСЃСЃРёРё",
+  title: "Контакты: офис Москва, курьер по России",
   description:
-    "РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ ThaiPass: РѕС„РёСЃ РІ РњРѕСЃРєРІРµ, РєСѓСЂСЊРµСЂСЃРєР°СЏ РґРѕСЃС‚Р°РІРєР° РїРѕ Р РѕСЃСЃРёРё, WhatsApp, Telegram-РєР°РЅР°Р». Р—Р°СЏРІРєР° РЅР° СЂР°Р·Р±РѕСЂ РІРёР·РѕРІРѕРіРѕ РєРµР№СЃР°.",
+    "Связаться с ThaiPass: офис в Москве, курьерская доставка по России, WhatsApp, Telegram-канал. Заявка на разбор визового кейса.",
 };
 
 const localSchema = {
@@ -30,21 +30,21 @@ export default function KontaktyPage() {
       <JsonLd data={localSchema} />
       <div className="mx-auto max-w-6xl">
         <h1 className="font-serif text-4xl font-semibold md:text-5xl">
-          РћС„РёСЃ РІ {siteConfig.officeCity} Рё РґРѕСЃС‚Р°РІРєР° РєСѓСЂСЊРµСЂРѕРј
+          Офис в {siteConfig.officeCity} и доставка курьером
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-[var(--color-muted)]">
-          РџСЂРёРЅРёРјР°РµРј РґРѕРєСѓРјРµРЅС‚С‹ РІ РњРѕСЃРєРІРµ РёР»Рё РѕСЂРіР°РЅРёР·СѓРµРј РєСѓСЂСЊРµСЂР° РїРѕ РІСЃРµР№ Р РѕСЃСЃРёРё.
-          РўРµР»РµС„РѕРЅРЅР°СЏ Р»РёРЅРёСЏ РїРѕСЏРІРёС‚СЃСЏ РїРѕР·Р¶Рµ: РїРѕРєР° СЃРІСЏР·СЊ С‡РµСЂРµР· С„РѕСЂРјСѓ, WhatsApp Рё
+          Принимаем документы в Москве или организуем курьера по всей России.
+          Телефонная линия появится позже: пока связь через форму, WhatsApp и
           Telegram.
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-[var(--color-border)] bg-white p-6">
             <MapPin className="text-[var(--color-teal)]" size={24} />
-            <h2 className="mt-4 font-semibold">РћС„РёСЃ</h2>
+            <h2 className="mt-4 font-semibold">Офис</h2>
             <p className="mt-2 text-sm text-[var(--color-muted)]">
               {siteConfig.officeAddress ||
-                "РђРґСЂРµСЃ Р±СѓРґРµС‚ РѕРїСѓР±Р»РёРєРѕРІР°РЅ РїСЂРё РѕС‚РєСЂС‹С‚РёРё. Р—Р°РїРёСЃСЊ РЅР° РїСЂРёС‘Рј: С‡РµСЂРµР· Р·Р°СЏРІРєСѓ."}
+                "Адрес будет опубликован при открытии. Запись на приём: через заявку."}
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function KontaktyPage() {
               <MessageCircle className="text-[var(--color-teal)]" size={24} />
               <h2 className="mt-4 font-semibold">WhatsApp</h2>
               <p className="mt-2 text-sm text-[var(--color-muted)]">
-                РќР°РїРёС€РёС‚Рµ РЅР°РїСЂСЏРјСѓСЋ РїРѕ РІРѕРїСЂРѕСЃР°Рј РІРёР·
+                Напишите напрямую по вопросам виз
               </p>
             </a>
           )}
@@ -71,9 +71,9 @@ export default function KontaktyPage() {
               className="rounded-2xl border border-[var(--color-border)] bg-white p-6 transition-shadow hover:shadow-lg"
             >
               <Send className="text-[var(--color-teal)]" size={24} />
-              <h2 className="mt-4 font-semibold">Telegram-РєР°РЅР°Р»</h2>
+              <h2 className="mt-4 font-semibold">Telegram-канал</h2>
               <p className="mt-2 text-sm text-[var(--color-muted)]">
-                РќРѕРІРѕСЃС‚Рё, РїСЂР°Р№СЃ Рё РёР·РјРµРЅРµРЅРёСЏ РїСЂР°РІРёР»: {siteConfig.telegramChannelName}
+                Новости, прайс и изменения правил: {siteConfig.telegramChannelName}
               </p>
             </a>
           )}
@@ -81,9 +81,9 @@ export default function KontaktyPage() {
 
         <div className="mt-16 grid gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-semibold">РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</h2>
+            <h2 className="text-2xl font-semibold">Оставить заявку</h2>
             <p className="mt-2 text-[var(--color-muted)]">
-              РћСЃРЅРѕРІРЅРѕР№ СЃРїРѕСЃРѕР± СЃРІСЏР·Рё. РџРµСЂРµР·РІРѕРЅРёРј РІ РјРµСЃСЃРµРЅРґР¶РµСЂ Рё СЂР°Р·Р±РµСЂС‘Рј РєРµР№СЃ.
+              Основной способ связи. Перезвоним в мессенджер и разберём кейс.
             </p>
           </div>
           <LeadForm />
@@ -91,11 +91,10 @@ export default function KontaktyPage() {
 
         <p className="mt-12 text-sm text-[var(--color-muted)]">
           <Link href="/" className="text-[var(--color-teal)] underline">
-            в†ђ РќР° РіР»Р°РІРЅСѓСЋ
+            ← На главную
           </Link>
         </p>
       </div>
     </div>
   );
 }
-

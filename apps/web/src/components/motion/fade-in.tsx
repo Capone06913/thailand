@@ -34,4 +34,3 @@ export function FadeIn({
     </motion.div>
   );
 }
-

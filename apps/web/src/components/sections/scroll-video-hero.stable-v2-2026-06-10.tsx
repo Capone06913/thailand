@@ -1,4 +1,4 @@
-// Stable baselines: v1 hero в†’ scroll-video-hero.stable-2026-06-10.tsx | v2 full UI в†’ snapshots/final-v2/ or git tag final-v2
+// Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 full UI → snapshots/final-v2/ or git tag final-v2
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
 
-const headlineLines = ["РћС„РѕСЂРјРёРј", "РІРёР·Сѓ РІ", "РўР°РёР»Р°РЅРґ"];
+const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 export function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -79,7 +79,7 @@ export function ScrollVideoHero() {
     <section
       ref={containerRef}
       className="relative h-[240vh]"
-      aria-label="Р“Р»Р°РІРЅС‹Р№ СЌРєСЂР°РЅ"
+      aria-label="Главный экран"
     >
       <div className="sticky top-0 z-0 h-svh min-h-[600px] overflow-hidden">
         <HeroNav />
@@ -95,10 +95,10 @@ export function ScrollVideoHero() {
             muted
             loop
             playsInline
-            poster="/thailand/images/generated/hero-poster.jpg"
-            aria-label="Р’РёРґ РЅР° РїРѕР±РµСЂРµР¶СЊРµ РўР°РёР»Р°РЅРґР°"
+            poster="/images/generated/hero-poster.jpg"
+            aria-label="Вид на побережье Таиланда"
           >
-            <source src="/thailand/video/hero-loop.mp4" type="video/mp4" />
+            <source src="/video/hero-loop.mp4" type="video/mp4" />
           </video>
         </motion.div>
 
@@ -132,7 +132,7 @@ export function ScrollVideoHero() {
               style={{ y: eyebrowY }}
               className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] md:text-sm lg:text-base"
             >
-              Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ
+              Визы в Таиланд для россиян
             </motion.p>
 
             <motion.h1
@@ -154,8 +154,8 @@ export function ScrollVideoHero() {
               style={{ y: subcopyY }}
               className="mt-5 max-w-2xl text-base leading-relaxed text-white drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] md:mt-6 md:text-lg lg:text-[1.35rem] lg:leading-relaxed"
             >
-              {siteConfig.name} РІРµРґС‘С‚ DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєСѓСЋ Рё РїРµРЅСЃРёРѕРЅРЅСѓСЋ РІРёР·Сѓ.
-              РџСЂРѕРІРµСЂСЏРµРј РґРѕРєСѓРјРµРЅС‚С‹ РґРѕ РїРѕРґР°С‡Рё Рё СЃРѕРїСЂРѕРІРѕР¶РґР°РµРј Р·Р°СЏРІРєСѓ РїРѕРґ РєР»СЋС‡.
+              {siteConfig.name} ведёт DTV, туристическую и пенсионную визу.
+              Проверяем документы до подачи и сопровождаем заявку под ключ.
             </motion.p>
           </div>
         </motion.div>
@@ -163,4 +163,3 @@ export function ScrollVideoHero() {
     </section>
   );
 }
-

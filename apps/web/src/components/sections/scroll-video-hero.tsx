@@ -1,4 +1,4 @@
-// Stable baselines: v1 hero в†’ scroll-video-hero.stable-2026-06-10.tsx | v2 в†’ git tag final-v2 | v3 в†’ git tag final-v3
+// Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 → git tag final-v2 | v3 → git tag final-v3
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
 
-const headlineLines = ["РћС„РѕСЂРјРёРј", "РІРёР·Сѓ РІ", "РўР°РёР»Р°РЅРґ"];
+const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 export function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -79,7 +79,7 @@ export function ScrollVideoHero() {
     <section
       ref={containerRef}
       className="relative h-[240vh]"
-      aria-label="Р“Р»Р°РІРЅС‹Р№ СЌРєСЂР°РЅ"
+      aria-label="Главный экран"
     >
       <div className="sticky top-0 z-0 h-svh min-h-[600px] overflow-hidden">
         <HeroNav />
@@ -95,10 +95,10 @@ export function ScrollVideoHero() {
             muted
             loop
             playsInline
-            poster="/thailand/images/generated/hero-poster.jpg"
-            aria-label="Р’РёРґ РЅР° РїРѕР±РµСЂРµР¶СЊРµ РўР°РёР»Р°РЅРґР°"
+            poster="/images/generated/hero-poster.jpg"
+            aria-label="Вид на побережье Таиланда"
           >
-            <source src="/thailand/video/hero-loop.mp4" type="video/mp4" />
+            <source src="/video/hero-loop.mp4" type="video/mp4" />
           </video>
         </motion.div>
 
@@ -132,7 +132,7 @@ export function ScrollVideoHero() {
               style={{ y: eyebrowY }}
               className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] sm:text-xs md:mb-4 md:text-sm"
             >
-              Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ В· {siteConfig.officeCity}
+              Визы в Таиланд для россиян · {siteConfig.officeCity}
             </motion.p>
 
             <motion.h1
@@ -154,11 +154,11 @@ export function ScrollVideoHero() {
               style={{ y: subcopyY }}
               className="mt-4 max-w-xl text-[0.9375rem] leading-[1.65] text-white/95 drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] sm:max-w-2xl sm:text-base md:mt-5 md:text-lg md:leading-relaxed lg:text-[1.125rem]"
             >
-              {siteConfig.name}: СЃРµСЂРІРёСЃ РѕС„РѕСЂРјР»РµРЅРёСЏ РІРёР· РІ РўР°РёР»Р°РЅРґ РґР»СЏ РіСЂР°Р¶РґР°РЅ
-              Р РѕСЃСЃРёРё. РћС„РёСЃ РІ {siteConfig.officeCity}, РїСЂРёС‘Рј РґРѕРєСѓРјРµРЅС‚РѕРІ РїРѕ РІСЃРµР№
-              Р Р¤. Р’РµРґС‘Рј DTV РЅР° 5 Р»РµС‚, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєСѓСЋ TR Рё РїРµРЅСЃРёРѕРЅРЅСѓСЋ 50+:
-              РїСЂРѕРІРµСЂСЏРµРј РїР°РєРµС‚ РґРѕ РїРѕРґР°С‡Рё РЅР° thaievisa.go.th Рё СЃРѕРїСЂРѕРІРѕР¶РґР°РµРј
-              Р·Р°СЏРІРєСѓ. РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ, Рё РјС‹ СЂР°Р·Р±РµСЂС‘Рј РєРµР№СЃ Рё РїСЂРµРґР»РѕР¶РёРј РїР°РєРµС‚.
+              {siteConfig.name}: сервис оформления виз в Таиланд для граждан
+              России. Офис в {siteConfig.officeCity}, приём документов по всей
+              РФ. Ведём DTV на 5 лет, туристическую TR и пенсионную 50+:
+              проверяем пакет до подачи на thaievisa.go.th и сопровождаем
+              заявку. Оставьте заявку, и мы разберём кейс и предложим пакет.
             </motion.p>
           </div>
         </motion.div>
@@ -166,4 +166,3 @@ export function ScrollVideoHero() {
     </section>
   );
 }
-

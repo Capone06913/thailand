@@ -28,7 +28,7 @@ function mapWPPost(post: WPPost): BlogPost {
     excerpt: stripHtml(post.excerpt.rendered),
     content: post.content.rendered,
     date: post.date.split("T")[0],
-    category: "Р‘Р»РѕРі",
+    category: "Блог",
   };
 }
 
@@ -88,4 +88,3 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     return getLocalBlogPosts().find((p) => p.slug === slug) ?? null;
   }
 }
-

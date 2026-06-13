@@ -13,22 +13,22 @@ interface ArticleMeta {
 const CATEGORY_BY_TOPIC: Record<string, string> = {
   B01: "DTV",
   B02: "TDAC",
-  B03: "Р‘РµР·РІРёР·",
+  B03: "Безвиз",
   B04: "DTV",
   B05: "DTV",
-  B06: "РџРѕРґР°С‡Р°",
+  B06: "Подача",
   B07: "DTV",
   B08: "DTV",
   B09: "TR",
   B10: "TR",
   B11: "Retirement",
   B12: "TDAC",
-  B13: "Р‘РµР·РІРёР·",
+  B13: "Безвиз",
   B14: "TR",
-  B15: "РљРѕРЅСЃСѓР»СЊСЃС‚РІРѕ",
-  B16: "Р‘РµР·РІРёР·",
-  B17: "РЎС‚СЂР°С…РѕРІРєР°",
-  B18: "РљРѕРЅСЃСѓР»СЊСЃС‚РІРѕ",
+  B15: "Консульство",
+  B16: "Безвиз",
+  B17: "Страховка",
+  B18: "Консульство",
 };
 
 function resolveArticlesDir(): string | null {
@@ -78,7 +78,7 @@ function loadArticle(dir: string, folder: string): BlogPost | null {
     excerpt: meta.meta_description ?? stripHtml(content).slice(0, 200),
     content,
     date: dateForTopic(meta.topic_id),
-    category: CATEGORY_BY_TOPIC[meta.topic_id] ?? "Р‘Р»РѕРі",
+    category: CATEGORY_BY_TOPIC[meta.topic_id] ?? "Блог",
     coverImage: cover?.src,
     coverAlt: cover?.alt,
   };
@@ -99,4 +99,3 @@ export function getExcaliburBlogPosts(): BlogPost[] {
     .filter((p): p is BlogPost => p !== null)
     .sort((a, b) => a.id - b.id);
 }
-

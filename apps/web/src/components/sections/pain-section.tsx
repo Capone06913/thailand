@@ -18,26 +18,26 @@ const pains = [
   {
     num: "01",
     icon: FileX,
-    title: "РљРѕРЅСЃСѓР»СЊСЃС‚РІРѕ РІРµСЂРЅСѓР»Рѕ Р·Р°СЏРІРєСѓ",
-    text: "Р”РѕСЂР°Р±РѕС‚РєР° СЃ РЅСѓР»СЏ Рё РµС‰С‘ РѕС‚ 2 РґРѕ 4 РЅРµРґРµР»Рё РѕР¶РёРґР°РЅРёСЏ.",
+    title: "Консульство вернуло заявку",
+    text: "Доработка с нуля и ещё от 2 до 4 недели ожидания.",
   },
   {
     num: "02",
     icon: Wallet,
-    title: "500 000 Р±Р°С‚ РµСЃС‚СЊ, РІС‹РїРёСЃРєР° РЅРµ РїРѕРґС…РѕРґРёС‚",
-    text: "Р¤РѕСЂРјР°С‚, СЃСЂРѕРє Рё РґРІРёР¶РµРЅРёРµ СЃСЂРµРґСЃС‚РІ: С‚РёРїРёС‡РЅС‹Р№ РѕС‚РєР°Р· РїРѕ DTV.",
+    title: "500 000 бат есть, выписка не подходит",
+    text: "Формат, срок и движение средств: типичный отказ по DTV.",
   },
   {
     num: "03",
     icon: Clock,
-    title: "Р‘РµР·РІРёР· Р·Р°РєР°РЅС‡РёРІР°РµС‚СЃСЏ",
-    text: "Р’РёР·Р° РЅРµ РіРѕС‚РѕРІР°, Р° РґРЅРё РІ РўР°РёР»Р°РЅРґРµ РЅР° РёСЃС…РѕРґРµ.",
+    title: "Безвиз заканчивается",
+    text: "Виза не готова, а дни в Таиланде на исходе.",
   },
   {
     num: "04",
     icon: Plane,
-    title: "Р”Рѕ РІС‹Р»РµС‚Р° 3 РґРЅСЏ",
-    text: "РЎС‚Р°РЅРґР°СЂС‚РЅС‹Рµ СЃСЂРѕРєРё РєРѕРЅСЃСѓР»СЊСЃС‚РІР° СѓР¶Рµ РЅРµ СЃРїР°СЃР°СЋС‚.",
+    title: "До вылета 3 дня",
+    text: "Стандартные сроки консульства уже не спасают.",
   },
 ];
 
@@ -52,25 +52,25 @@ type RiskItem = {
 const risks: RiskItem[] = [
   {
     icon: AlertTriangle,
-    title: "РџРµСЂРµРґРµР»РєР° РїРѕСЃР»Рµ РѕС‚РєР°Р·Р°",
-    text: "Р•С‰С‘ РѕС‚ 2 РґРѕ 4 РЅРµРґРµР»Рё Рё РїРѕРІС‚РѕСЂРЅР°СЏ РіРѕСЃРїРѕС€Р»РёРЅР°",
+    title: "Переделка после отказа",
+    text: "Ещё от 2 до 4 недели и повторная госпошлина",
   },
   {
     icon: Ban,
-    title: "РћРІРµСЂСЃС‚РµР№ РІ РўР°РёР»Р°РЅРґРµ",
-    text: "РЁС‚СЂР°С„ РґРѕ 20 000 Р±Р°С‚ Рё СЂРёСЃРє Р·Р°РїСЂРµС‚Р° РЅР° РІСЉРµР·Рґ",
+    title: "Оверстей в Таиланде",
+    text: "Штраф до 20 000 бат и риск запрета на въезд",
   },
   {
     icon: FileWarning,
-    title: "РЎРѕСЂРІР°РЅРЅС‹Рµ Р±РёР»РµС‚С‹ Рё Р±СЂРѕРЅРё",
-    text: "РџРѕС‚РµСЂРё РЅР° СЃРµРјСЊСЋ",
+    title: "Сорванные билеты и брони",
+    text: "Потери на семью",
     tickerFrom: 50000,
     tickerTo: 200000,
   },
   {
     icon: HeartCrack,
-    title: "РџРѕС‚РµСЂСЏРЅРЅС‹Рµ РїР»Р°РЅС‹",
-    text: "Р Р°Р±РѕС‚Р°, Р°СЂРµРЅРґР° Рё РїРµСЂРµРµР·Рґ Р·Р°РІРёСЃСЏС‚ РѕС‚ РѕРґРЅРѕР№ РІРёР·С‹",
+    title: "Потерянные планы",
+    text: "Работа, аренда и переезд зависят от одной визы",
   },
 ];
 
@@ -88,14 +88,14 @@ export function PainSection() {
           className="max-w-3xl"
         >
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Р‘РѕР»Рё РєР»РёРµРЅС‚РѕРІ
+            Боли клиентов
           </p>
           <h2 className="font-serif mt-2 text-3xl font-semibold text-[var(--color-sapphire)] md:text-5xl">
-            РЈР·РЅР°С‘С‚Рµ СЃРµР±СЏ?
+            Узнаёте себя?
           </h2>
           <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            РџСЂРёС…РѕРґСЏС‚ РїРѕСЃР»Рµ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕР№ РїРѕРґР°С‡Рё РёР»Рё РєРѕРіРґР° РґРѕ РІС‹Р»РµС‚Р° РѕСЃС‚Р°Р»РёСЃСЊ
-            СЃС‡РёС‚Р°РЅРЅС‹Рµ РґРЅРё. Р Р°Р·Р±РёСЂР°РµРј РєРµР№СЃ РґРѕ РїРѕРґР°С‡Рё, РЅРµ РїРѕСЃР»Рµ РѕС‚РєР°Р·Р°.
+            Приходят после самостоятельной подачи или когда до вылета остались
+            считанные дни. Разбираем кейс до подачи, не после отказа.
           </p>
         </motion.div>
 
@@ -155,19 +155,19 @@ export function PainSection() {
           <div className="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-[var(--color-gold)]/40 bg-[var(--color-gold)]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-                Р‘РµСЃРїР»Р°С‚РЅРѕ РґРѕ РїРѕРґР°С‡Рё
+                Бесплатно до подачи
               </p>
               <p className="font-serif mt-4 text-2xl font-semibold text-white md:text-4xl">
-                Р Р°Р·Р±РѕСЂ РєРµР№СЃР° Р·Р° 30 РјРёРЅСѓС‚
+                Разбор кейса за 30 минут
               </p>
               <p className="mt-3 max-w-2xl text-sm font-medium leading-relaxed text-white/80 md:text-base">
-                РќР°РїРёС€РёС‚Рµ РІ РјРµСЃСЃРµРЅРґР¶РµСЂ: РїСЂРѕРІРµСЂРёРј РґРѕРєСѓРјРµРЅС‚С‹, РІС‹РїРёСЃРєСѓ Рё С„РѕС‚Рѕ РґРѕ
-                РїРѕРґР°С‡Рё РІ РєРѕРЅСЃСѓР»СЊСЃС‚РІРѕ. РњРѕСЃРєРІР° Рё РІСЃСЏ Р РѕСЃСЃРёСЏ. DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ Рё
-                РїРµРЅСЃРёРѕРЅРЅР°СЏ РІРёР·Р° РІ РўР°РёР»Р°РЅРґ.
+                Напишите в мессенджер: проверим документы, выписку и фото до
+                подачи в консульство. Москва и вся Россия. DTV, туристическая и
+                пенсионная виза в Таиланд.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row md:flex-col md:items-stretch">
-              {["30 РјРёРЅСѓС‚", "РњРѕСЃРєРІР° + Р Р¤", "DTV В· TR В· 50+"].map((tag) => (
+              {["30 минут", "Москва + РФ", "DTV · TR · 50+"].map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white backdrop-blur-sm"
@@ -187,10 +187,10 @@ export function PainSection() {
           className="relative mt-14 overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-white p-6 shadow-lg shadow-[var(--color-sapphire)]/5 md:p-8"
         >
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Р•СЃР»Рё С‚СЏРЅСѓС‚СЊ СЃ РѕС„РѕСЂРјР»РµРЅРёРµРј
+            Если тянуть с оформлением
           </p>
           <h3 className="font-serif mt-2 max-w-2xl text-2xl font-semibold text-[var(--color-sapphire)] md:text-3xl">
-            РћС‚РєР°Р· РѕР±С…РѕРґРёС‚СЃСЏ РґРѕСЂРѕР¶Рµ, С‡РµРј РїСЂРѕРІРµСЂРєР° РєРµР№СЃР°
+            Отказ обходится дороже, чем проверка кейса
           </h3>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -218,7 +218,7 @@ export function PainSection() {
                           <NumberTicker value={risk.tickerFrom} />
                           <span>, </span>
                           <NumberTicker value={risk.tickerTo} />
-                          <span className="whitespace-nowrap"> в‚Ѕ</span>
+                          <span className="whitespace-nowrap"> ₽</span>
                         </p>
                       ) : null}
                       <p className="mt-1 text-xs font-medium leading-relaxed text-[var(--color-muted)] md:text-sm">
@@ -235,4 +235,3 @@ export function PainSection() {
     </section>
   );
 }
-

@@ -16,14 +16,14 @@ export function ServiceConversionHero({ service }: ServiceConversionHeroProps) {
       <div className="grid md:grid-cols-[1fr_auto] md:divide-x md:divide-[var(--color-border)]">
         <div className="border-b border-[var(--color-border)] px-7 py-7 md:border-b-0 md:px-9 md:py-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Р№ СЂР°СЃС‡С‘С‚
+            Индивидуальный расчёт
           </p>
           <p className="mt-4 text-base font-semibold leading-relaxed text-[var(--color-sapphire)] md:text-lg">
             {service.conversionHook}
           </p>
           <p className="mt-3 text-sm font-medium leading-relaxed text-[var(--color-muted)]">
-            РЎС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РІРёСЃРёС‚ РѕС‚ РєРµР№СЃР°: СЃРµРјСЊСЏ, СЃСЂРѕС‡РЅРѕСЃС‚СЊ, РґРѕСЂР°Р±РѕС‚РєР° РґРѕРєСѓРјРµРЅС‚РѕРІ.
-            Р’ Telegram РѕС‚РІРµС‚РёРј Р·Р° 15вЂ“30 РјРёРЅСѓС‚ РІ СЂР°Р±РѕС‡РёРµ С‡Р°СЃС‹.
+            Стоимость зависит от кейса: семья, срочность, доработка документов.
+            В Telegram ответим за 15–30 минут в рабочие часы.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -36,7 +36,7 @@ export function ServiceConversionHero({ service }: ServiceConversionHeroProps) {
               {service.telegramCtaLabel}
             </PremiumCta>
             <p className="text-xs font-medium text-[var(--color-muted)]">
-              РћС‚РІРµС‚ 15вЂ“30 РјРёРЅ В· Р±РµР· РѕР±СЏР·Р°С‚РµР»СЊСЃС‚РІ
+              Ответ 15–30 мин · без обязательств
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export function ServiceConversionHero({ service }: ServiceConversionHeroProps) {
             </span>
             <div>
               <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-muted)]">
-                РЎСЂРѕРє РѕС„РѕСЂРјР»РµРЅРёСЏ
+                Срок оформления
               </p>
               <p className="font-display text-lg font-bold text-[var(--color-sapphire)]">
                 {pricing.processingDays}
@@ -64,12 +64,11 @@ export function ServiceConversionHero({ service }: ServiceConversionHeroProps) {
           </div>
           <p className="text-xs font-medium leading-relaxed text-[var(--color-muted)]">
             {pricing.consularFeeIncluded
-              ? "РљРѕРЅСЃСѓР»СЊСЃРєРёР№ СЃР±РѕСЂ РІРєР»СЋС‡С‘РЅ РІ СЂР°СЃС‡С‘С‚ СѓСЃР»СѓРіРё"
-              : "РљРѕРЅСЃСѓР»СЊСЃРєРёР№ СЃР±РѕСЂ РѕРїР»Р°С‡РёРІР°РµС‚СЃСЏ РѕС‚РґРµР»СЊРЅРѕ"}
+              ? "Консульский сбор включён в расчёт услуги"
+              : "Консульский сбор оплачивается отдельно"}
           </p>
         </div>
       </div>
     </section>
   );
 }
-

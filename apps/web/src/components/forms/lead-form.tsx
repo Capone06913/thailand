@@ -26,9 +26,9 @@ import {
 import { cn } from "@/lib/utils";
 
 const leadSchema = z.object({
-  name: z.string().min(2, "РЈРєР°Р¶РёС‚Рµ РёРјСЏ"),
-  contact: z.string().min(3, "РЈРєР°Р¶РёС‚Рµ Telegram РёР»Рё WhatsApp"),
-  service: z.string().min(1, "Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї РІРёР·С‹"),
+  name: z.string().min(2, "Укажите имя"),
+  contact: z.string().min(3, "Укажите Telegram или WhatsApp"),
+  service: z.string().min(1, "Выберите тип визы"),
   deadline: z.string().optional(),
   comment: z.string().optional(),
 });
@@ -91,12 +91,12 @@ export function LeadForm({
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      if (!res.ok) throw new Error(json.error ?? "РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё");
+      if (!res.ok) throw new Error(json.error ?? "Ошибка отправки");
       setStatus("success");
       reset({ service: initialService });
     } catch (e) {
       setStatus("error");
-      setErrorMsg(e instanceof Error ? e.message : "РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё");
+      setErrorMsg(e instanceof Error ? e.message : "Ошибка отправки");
     }
   }
 
@@ -112,10 +112,10 @@ export function LeadForm({
           <CheckCircle2 className="text-[var(--color-teal)]" size={36} />
         </div>
         <p className="mt-5 font-display text-xl font-bold text-[var(--color-sapphire)]">
-          Р—Р°СЏРІРєР° РїСЂРёРЅСЏС‚Р°
+          Заявка принята
         </p>
         <p className="mt-2 max-w-xs text-sm font-medium text-[var(--color-muted)]">
-          РћС‚РІРµС‚РёРј РІ Telegram РёР»Рё WhatsApp РѕС‚ 15 РґРѕ 30 РјРёРЅСѓС‚ РІ СЂР°Р±РѕС‡РёРµ С‡Р°СЃС‹.
+          Ответим в Telegram или WhatsApp от 15 до 30 минут в рабочие часы.
         </p>
         <Button
           type="button"
@@ -123,7 +123,7 @@ export function LeadForm({
           className="mt-4 text-[var(--color-teal)]"
           onClick={() => setStatus("idle")}
         >
-          РћС‚РїСЂР°РІРёС‚СЊ РµС‰С‘ РѕРґРЅСѓ Р·Р°СЏРІРєСѓ
+          Отправить ещё одну заявку
         </Button>
       </div>
     );
@@ -145,27 +145,27 @@ export function LeadForm({
         <div className="flex items-center gap-2">
           <Sparkles size={16} className="text-[var(--color-gold)]" />
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
-            Р‘РµСЃРїР»Р°С‚РЅРѕ
+            Бесплатно
           </p>
         </div>
         <p className="mt-1 font-display text-xl font-extrabold text-white md:text-2xl">
-          {isServicePage ? "РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ" : "Р Р°Р·Р±РѕСЂ РІР°С€РµРіРѕ РєРµР№СЃР°"}
+          {isServicePage ? "Оставить заявку" : "Разбор вашего кейса"}
         </p>
         <p className="mt-1 text-sm text-white/70">
           {isServicePage
-            ? `${serviceName ?? "РЈСЃР»СѓРіР°"}: Р±РµСЃРїР»Р°С‚РЅС‹Р№ СЂР°Р·Р±РѕСЂ РґРѕРєСѓРјРµРЅС‚РѕРІ Рё СЃСЂРѕРєРѕРІ, РѕС‚РІРµС‚ РѕС‚ 15 РґРѕ 30 РјРёРЅСѓС‚`
-            : "РћС‚РІРµС‚ РІ РјРµСЃСЃРµРЅРґР¶РµСЂРµ РѕС‚ 15 РґРѕ 30 РјРёРЅСѓС‚"}
+            ? `${serviceName ?? "Услуга"}: бесплатный разбор документов и сроков, ответ от 15 до 30 минут`
+            : "Ответ в мессенджере от 15 до 30 минут"}
         </p>
       </div>
 
       <FieldGroup className="gap-4 p-6 pb-5 md:p-7 md:pb-5">
         <Field>
           <FieldLabel htmlFor="lead-name" className="font-semibold text-[var(--color-sapphire)]">
-            РРјСЏ
+            Имя
           </FieldLabel>
           <Input
             id="lead-name"
-            placeholder="РљР°Рє Рє РІР°Рј РѕР±СЂР°С‰Р°С‚СЊСЃСЏ"
+            placeholder="Как к вам обращаться"
             autoComplete="name"
             className="h-12 rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]"
             {...register("name")}
@@ -179,11 +179,11 @@ export function LeadForm({
 
         <Field>
           <FieldLabel htmlFor="lead-contact" className="font-semibold text-[var(--color-sapphire)]">
-            Telegram РёР»Рё WhatsApp
+            Telegram или WhatsApp
           </FieldLabel>
           <Input
             id="lead-contact"
-            placeholder="@username РёР»Рё РЅРѕРјРµСЂ"
+            placeholder="@username или номер"
             className="h-12 rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]"
             {...register("contact")}
           />
@@ -199,7 +199,7 @@ export function LeadForm({
         {!isServicePage ? (
           <Field>
             <FieldLabel className="font-semibold text-[var(--color-sapphire)]">
-              РљР°РєР°СЏ РІРёР·Р° РЅСѓР¶РЅР°
+              Какая виза нужна
             </FieldLabel>
             <Select
               value={serviceValue || undefined}
@@ -208,7 +208,7 @@ export function LeadForm({
               }}
             >
               <SelectTrigger className="h-12 w-full rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50">
-                <SelectValue placeholder="Р’С‹Р±РµСЂРёС‚Рµ СѓСЃР»СѓРіСѓ РёР»Рё РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ" />
+                <SelectValue placeholder="Выберите услугу или консультацию" />
               </SelectTrigger>
               <SelectContent>
                 {serviceOptions.map((o) => (
@@ -233,7 +233,7 @@ export function LeadForm({
               onClick={() => setShowExtra((v) => !v)}
               className="flex w-full items-center justify-between rounded-xl border border-dashed border-[var(--color-border)] bg-[var(--color-bg)]/30 px-4 py-3 text-left text-sm font-semibold text-[var(--color-sapphire)] transition-colors hover:bg-[var(--color-bg)]"
             >
-              Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ: СЃСЂРѕРєРё Рё РєРѕРјРјРµРЅС‚Р°СЂРёР№
+              Дополнительно: сроки и комментарий
               <ChevronDown
                 size={18}
                 className={cn(
@@ -247,22 +247,22 @@ export function LeadForm({
               <>
                 <Field>
                   <FieldLabel htmlFor="lead-deadline">
-                    РљРѕРіРґР° РЅСѓР¶РЅР° РІРёР·Р°
+                    Когда нужна виза
                   </FieldLabel>
                   <Input
                     id="lead-deadline"
-                    placeholder="РќР°РїСЂРёРјРµСЂ, С‡РµСЂРµР· 2 РЅРµРґРµР»Рё"
+                    placeholder="Например, через 2 недели"
                     className="h-12 rounded-xl"
                     {...register("deadline")}
                   />
                 </Field>
 
                 <Field>
-                  <FieldLabel htmlFor="lead-comment">РљРѕРјРјРµРЅС‚Р°СЂРёР№</FieldLabel>
+                  <FieldLabel htmlFor="lead-comment">Комментарий</FieldLabel>
                   <Textarea
                     id="lead-comment"
                     rows={3}
-                    placeholder="РљСЂР°С‚РєРѕ РѕРїРёС€РёС‚Рµ СЃРёС‚СѓР°С†РёСЋ"
+                    placeholder="Кратко опишите ситуацию"
                     className="rounded-xl"
                     {...register("comment")}
                   />
@@ -279,17 +279,16 @@ export function LeadForm({
         <RunawaySubmitButton
           ready={isFormReady}
           loading={status === "loading"}
-          label={isServicePage ? "РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ" : "РџРѕР»СѓС‡РёС‚СЊ СЂР°Р·Р±РѕСЂ РєРµР№СЃР°"}
+          label={isServicePage ? "Оставить заявку" : "Получить разбор кейса"}
         />
 
         <p className="text-center text-xs text-[var(--color-muted)]">
-          РќР°Р¶РёРјР°СЏ РєРЅРѕРїРєСѓ, РІС‹ СЃРѕРіР»Р°С€Р°РµС‚РµСЃСЊ РЅР°{" "}
+          Нажимая кнопку, вы соглашаетесь на{" "}
           <a href="/privacy" className="underline hover:text-[var(--color-teal)]">
-            РѕР±СЂР°Р±РѕС‚РєСѓ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РґР°РЅРЅС‹С…
+            обработку персональных данных
           </a>
         </p>
       </FieldGroup>
     </form>
   );
 }
-

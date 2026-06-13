@@ -22,9 +22,8 @@ export function StickyCta() {
         href="#zayavka"
         className="block w-full rounded-full bg-[var(--color-teal)] py-3 text-center text-sm font-semibold text-white"
       >
-        РџРѕР»СѓС‡РёС‚СЊ СЂР°Р·Р±РѕСЂ РєРµР№СЃР°
+        Получить разбор кейса
       </Link>
     </div>
   );
 }
-

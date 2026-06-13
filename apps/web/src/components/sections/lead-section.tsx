@@ -16,33 +16,33 @@ import { LeadForm } from "@/components/forms/lead-form";
 const bullets = [
   {
     icon: Clock,
-    title: "РћС‚ 15 РґРѕ 30 РјРёРЅСѓС‚",
-    text: "РћС‚РІРµС‚ РІ Telegram РёР»Рё WhatsApp РІ СЂР°Р±РѕС‡РёРµ С‡Р°СЃС‹",
+    title: "От 15 до 30 минут",
+    text: "Ответ в Telegram или WhatsApp в рабочие часы",
   },
   {
     icon: ShieldCheck,
-    title: "Р‘РµР· РѕР±СЏР·Р°С‚РµР»СЊСЃС‚РІ",
-    text: "РџРµСЂРІРёС‡РЅС‹Р№ СЂР°Р·Р±РѕСЂ РєРµР№СЃР° Р±РµСЃРїР»Р°С‚РЅРѕ: СЂРµС€РµРЅРёРµ Р·Р° РІР°РјРё",
+    title: "Без обязательств",
+    text: "Первичный разбор кейса бесплатно: решение за вами",
   },
   {
     icon: MessageCircle,
-    title: "Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ",
-    text: "DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ Рё РїРµРЅСЃРёРѕРЅРЅР°СЏ: С‚РѕР»СЊРєРѕ С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ РґР»СЏ РІСЉРµР·РґР°",
+    title: "Визы в Таиланд",
+    text: "DTV, туристическая и пенсионная: только то, что нужно для въезда",
   },
   {
     icon: Stamp,
-    title: "Р—Р°РіСЂР°РЅРїР°СЃРїРѕСЂС‚",
-    text: "РџРѕРјРѕР¶РµРј СЃ РѕС„РѕСЂРјР»РµРЅРёРµРј Рё РїСЂРѕРґР»РµРЅРёРµРј: РЅРµ С‚РѕР»СЊРєРѕ СЃ РІРёР·РѕР№",
+    title: "Загранпаспорт",
+    text: "Поможем с оформлением и продлением: не только с визой",
   },
   {
     icon: FileText,
-    title: "Р”РѕРєСѓРјРµРЅС‚С‹ РїРѕРґ РєР»СЋС‡",
-    text: "Р§РµРє-Р»РёСЃС‚, РїСЂРѕРІРµСЂРєР° РІС‹РїРёСЃРєРё, С„РѕС‚Рѕ Рё РїРµСЂРµРІРѕРґС‹ РґРѕ РїРѕРґР°С‡Рё",
+    title: "Документы под ключ",
+    text: "Чек-лист, проверка выписки, фото и переводы до подачи",
   },
   {
     icon: Truck,
-    title: "Р’СЃСЏ Р РѕСЃСЃРёСЏ",
-    text: "РњРѕСЃРєРІР° Рё РєСѓСЂСЊРµСЂ РїРѕ Р Р¤: РЅР°С‡РЅС‘Рј РґРёСЃС‚Р°РЅС†РёРѕРЅРЅРѕ РёР· Р»СЋР±РѕРіРѕ РіРѕСЂРѕРґР°",
+    title: "Вся Россия",
+    text: "Москва и курьер по РФ: начнём дистанционно из любого города",
   },
 ];
 
@@ -56,7 +56,7 @@ export function LeadSection() {
 
       <div className="relative mx-auto max-w-7xl">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-          РЎР»РµРґСѓСЋС‰РёР№ С€Р°Рі
+          Следующий шаг
         </p>
 
         <div className="mt-2 grid items-start gap-8 lg:grid-cols-[1fr_minmax(340px,420px)] lg:gap-10 xl:gap-12">
@@ -67,13 +67,13 @@ export function LeadSection() {
           className="flex min-h-0 flex-col"
         >
           <h2 className="font-display text-3xl font-extrabold leading-tight text-[var(--color-sapphire)] md:text-[2.65rem]">
-            РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ Рё РїРѕР»СѓС‡РёС‚Рµ{" "}
-            <span className="text-[var(--color-gold)]">Р±РµСЃРїР»Р°С‚РЅРѕРµ С„РѕС‚Рѕ РґР»СЏ РІРёР·С‹</span>
+            Оставьте заявку и получите{" "}
+            <span className="text-[var(--color-gold)]">бесплатное фото для визы</span>
           </h2>
           <p className="mt-4 max-w-xl text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            Р Р°СЃСЃРєР°Р¶РёС‚Рµ, РєР°РєР°СЏ РІРёР·Р° РІ РўР°РёР»Р°РЅРґ РЅСѓР¶РЅР° Рё РІ РєР°РєРёРµ СЃСЂРѕРєРё: РёР»Рё РµСЃР»Рё
-            РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ СЃ Р·Р°РіСЂР°РЅРїР°СЃРїРѕСЂС‚РѕРј. РџРѕРґСЃРєР°Р¶РµРј С„РѕСЂРјР°С‚ ThaiPass, РїРµСЂРµС‡РµРЅСЊ
-            РґРѕРєСѓРјРµРЅС‚РѕРІ Рё СЂРёСЃРєРё РґРѕ РїРѕРґР°С‡Рё РІ РєРѕРЅСЃСѓР»СЊСЃС‚РІРѕ.
+            Расскажите, какая виза в Таиланд нужна и в какие сроки: или если
+            нужна помощь с загранпаспортом. Подскажем формат ThaiPass, перечень
+            документов и риски до подачи в консульство.
           </p>
 
           <div className="mt-5 flex items-center gap-4 rounded-2xl border border-[var(--color-gold)]/35 bg-[var(--color-sapphire)] p-4 text-white shadow-lg shadow-[var(--color-sapphire)]/15">
@@ -82,13 +82,13 @@ export function LeadSection() {
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--color-gold)]">
-                РџРѕРґР°СЂРѕРє РїСЂРё Р·Р°СЏРІРєРµ
+                Подарок при заявке
               </p>
               <p className="mt-0.5 font-display text-[15px] font-bold leading-snug">
-                Р‘РµСЃРїР»Р°С‚РЅРѕРµ С„РѕС‚Рѕ РЅР° РІРёР·Сѓ
+                Бесплатное фото на визу
               </p>
               <p className="mt-1 text-xs font-medium text-white/75">
-                Р‘РѕРёС‚РµСЃСЊ РѕС‚РєР°Р·Р°? Р Р°Р·Р±РµСЂС‘Рј РґРѕРєСѓРјРµРЅС‚С‹ РґРѕ РїРѕРґР°С‡Рё. РћС‚РІРµС‚ Р·Р° 30 РјРёРЅСѓС‚.
+                Боитесь отказа? Разберём документы до подачи. Ответ за 30 минут.
               </p>
             </div>
             <ArrowRight
@@ -141,4 +141,3 @@ export function LeadSection() {
     </section>
   );
 }
-

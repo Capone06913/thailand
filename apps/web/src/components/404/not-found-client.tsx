@@ -18,14 +18,14 @@ export function NotFoundClient() {
 
       <div className="relative z-10 max-w-lg text-center">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--color-gold)]">
-          РћС€РёР±РєР° 404
+          Ошибка 404
         </p>
         <h1 className="mt-4 font-display text-3xl font-extrabold text-[var(--color-sapphire)] md:text-5xl">
-          РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°
+          Страница не найдена
         </h1>
         <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-          РџРѕС…РѕР¶Рµ, РІС‹ СЃРІРµСЂРЅСѓР»Рё РЅРµ С‚СѓРґР°. РџРѕРґРІРёРіР°Р№С‚Рµ Р±Р»РѕРєРё РјС‹С€СЊСЋ РёР»Рё РІРµСЂРЅРёС‚РµСЃСЊ РЅР°
-          РіР»Р°РІРЅСѓСЋ: С‚Р°Рј РІСЃРµ СѓСЃР»СѓРіРё Рё С„РѕСЂРјР° Р·Р°СЏРІРєРё.
+          Похоже, вы свернули не туда. Подвигайте блоки мышью или вернитесь на
+          главную: там все услуги и форма заявки.
         </p>
         <Link
           href="/"
@@ -34,10 +34,9 @@ export function NotFoundClient() {
             "mt-8 rounded-full bg-[var(--color-sapphire)] px-8 font-bold hover:bg-[var(--color-sapphire)]/90",
           )}
         >
-          РќР° РіР»Р°РІРЅСѓСЋ
+          На главную
         </Link>
       </div>
     </main>
   );
 }
-

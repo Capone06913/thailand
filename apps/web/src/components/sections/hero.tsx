@@ -24,17 +24,17 @@ export function Hero() {
             variant="secondary"
             className="mb-5 rounded-full border border-[var(--color-gold)]/30 bg-[var(--color-gold)]/10 px-4 py-1 text-xs font-medium uppercase tracking-widest text-[var(--color-gold)]"
           >
-            Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ
+            Визы в Таиланд
           </Badge>
 
           <h1 className="font-serif text-4xl font-semibold leading-[1.12] tracking-tight text-[var(--color-sapphire)] md:text-5xl lg:text-[3.25rem]">
-            РћС„РѕСЂРјРёРј РІРёР·Сѓ РІ РўР°РёР»Р°РЅРґ Р±РµР· РѕС‚РєР°Р·Р° Рё Р»РёС€РЅРёС… РїРѕРµР·РґРѕРє
+            Оформим визу в Таиланд без отказа и лишних поездок
           </h1>
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--color-muted)] md:text-lg">
-            {siteConfig.name} РїРѕРјРѕРіР°РµС‚ СЂРѕСЃСЃРёСЏРЅР°Рј СЃ DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєРѕР№ TR Рё
-            РїРµРЅСЃРёРѕРЅРЅРѕР№ РІРёР·РѕР№ 50+. РџСЂРѕРІРµСЂСЏРµРј РґРѕРєСѓРјРµРЅС‚С‹ РґРѕ РїРѕРґР°С‡Рё, РІРµРґС‘Рј Р·Р°СЏРІРєСѓ
-            РїРѕРґ РєР»СЋС‡ РёР»Рё РѕС„РѕСЂРјР»СЏРµРј СЃСЂРѕС‡РЅРѕ, РµСЃР»Рё РІС‹Р»РµС‚ СѓР¶Рµ СЃРєРѕСЂРѕ.
+            {siteConfig.name} помогает россиянам с DTV, туристической TR и
+            пенсионной визой 50+. Проверяем документы до подачи, ведём заявку
+            под ключ или оформляем срочно, если вылет уже скоро.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -42,7 +42,7 @@ export function Hero() {
               href="#zayavka"
               className={cn(buttonVariants({ size: "lg" }), "rounded-full px-8")}
             >
-              РџРѕР»СѓС‡РёС‚СЊ СЂР°Р·Р±РѕСЂ РєРµР№СЃР°
+              Получить разбор кейса
             </Link>
             <Link
               href="#uslugi"
@@ -51,7 +51,7 @@ export function Hero() {
                 "rounded-full border-[var(--color-border)] bg-white/80"
               )}
             >
-              РЎРјРѕС‚СЂРµС‚СЊ СѓСЃР»СѓРіРё
+              Смотреть услуги
             </Link>
           </div>
         </motion.div>
@@ -64,7 +64,7 @@ export function Hero() {
         >
           <Image
             src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?w=1200&q=80"
-            alt="Р’РёР·Р° РІ РўР°РёР»Р°РЅРґ: РїРѕР»СѓС‡РёС‚СЊ С‚СѓСЂРёСЃС‚РёС‡РµСЃРєСѓСЋ TR, DTV РёР»Рё РїРµРЅСЃРёРѕРЅРЅСѓСЋ РІРёР·Сѓ"
+            alt="Виза в Таиланд: получить туристическую TR, DTV или пенсионную визу"
             fill
             priority
             className="object-cover"
@@ -72,12 +72,11 @@ export function Hero() {
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-teal)]/50 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <p className="text-sm font-medium opacity-90">РћС„РёСЃ: {siteConfig.officeCity}</p>
-            <p className="text-xs opacity-75">РљСѓСЂСЊРµСЂ РїРѕ РІСЃРµР№ Р РѕСЃСЃРёРё</p>
+            <p className="text-sm font-medium opacity-90">Офис: {siteConfig.officeCity}</p>
+            <p className="text-xs opacity-75">Курьер по всей России</p>
           </div>
         </motion.div>
       </div>
     </section>
   );
 }
-

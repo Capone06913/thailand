@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 
 export const HERO_FRAME_COUNT = 282;
-export const HERO_FRAME_PATTERN = "/thailand/video/hero-frames/frame_%04d.webp";
+export const HERO_FRAME_PATTERN = "/video/hero-frames/frame_%04d.webp";
 
 export function framePath(index: number): string {
   const n = Math.min(Math.max(Math.round(index), 1), HERO_FRAME_COUNT);
@@ -65,4 +65,3 @@ export function useScrollFrames(
 
   return { currentFrame, preloaded, framePath: () => framePath(currentFrame) };
 }
-

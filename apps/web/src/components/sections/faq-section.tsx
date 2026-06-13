@@ -16,14 +16,14 @@ export function FaqSection() {
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Р§Р°СЃС‚С‹Рµ РІРѕРїСЂРѕСЃС‹
+            Частые вопросы
           </p>
           <h2 className="mt-2 font-display text-3xl font-extrabold text-[var(--color-sapphire)] md:text-5xl">
-            Р’РѕРїСЂРѕСЃС‹, РєРѕС‚РѕСЂС‹Рµ СЂРµС€Р°СЋС‚ СЃРѕРјРЅРµРЅРёСЏ
+            Вопросы, которые решают сомнения
           </h2>
           <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            Р Р°Р·РІС‘СЂРЅСѓС‚С‹Рµ РѕС‚РІРµС‚С‹ РїСЂРѕ DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєСѓСЋ РІРёР·Сѓ, РїРµРЅСЃРёРѕРЅРЅСѓСЋ РІРёР·Сѓ Рё
-            РѕС„РѕСЂРјР»РµРЅРёРµ РёР· РњРѕСЃРєРІС‹: С‚Рѕ, С‡С‚Рѕ РјРµС€Р°РµС‚ РїСЂРёРЅСЏС‚СЊ СЂРµС€РµРЅРёРµ.
+            Развёрнутые ответы про DTV, туристическую визу, пенсионную визу и
+            оформление из Москвы: то, что мешает принять решение.
           </p>
         </FadeIn>
 
@@ -60,4 +60,3 @@ export function FaqSection() {
     </section>
   );
 }
-

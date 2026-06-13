@@ -8,4 +8,3 @@ export function HeaderShell() {
   if (pathname === "/") return null;
   return <Header />;
 }
-

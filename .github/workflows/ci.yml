@@ -35,9 +35,47 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Fix all media paths in static export
+      - name: Fix media paths in static export
+        shell: bash
         run: |
-          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.css" -o -name "*.json" \) -print0 | xargs -0 perl -pi -e 's#(?<!/thailand)/images/#/thailand/images/#g; s#(?<!/thailand)/video/#/thailand/video/#g; s#(?<!/thailand)/blog/covers/#/thailand/blog/covers/#g; s#\\?/images\\?/#/thailand/images/#g; s#\\?/video\\?/#/thailand/video/#g; s#%2Fimages%2F#%2Fthailand%2Fimages%2F#g; s#%2Fvideo%2F#%2Fthailand%2Fvideo%2F#g; s#%2Fblog%2Fcovers%2F#%2Fthailand%2Fblog%2Fcovers%2F#g'
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          root = Path("out")
+          exts = {".html", ".js", ".css", ".json", ".txt", ".xml"}
+
+          for p in root.rglob("*"):
+              if not p.is_file() or p.suffix not in exts:
+                  continue
+
+              s = p.read_text(encoding="utf-8", errors="ignore")
+
+              # убрать двойной /thailand/thailand/
+              s = s.replace("/thailand/thailand/", "/thailand/")
+              s = s.replace("\\/thailand\\/thailand\\/", "\\/thailand\\/")
+              s = s.replace("%2Fthailand%2Fthailand%2F", "%2Fthailand%2F")
+
+              # добавить /thailand только там, где его ещё нет
+              s = re.sub(r'(?<!/thailand)/images/', '/thailand/images/', s)
+              s = re.sub(r'(?<!/thailand)/video/', '/thailand/video/', s)
+              s = re.sub(r'(?<!/thailand)/blog/covers/', '/thailand/blog/covers/', s)
+
+              s = re.sub(r'(?<!\\/thailand)\\/images\\/', r'\\/thailand\\/images\\/', s)
+              s = re.sub(r'(?<!\\/thailand)\\/video\\/', r'\\/thailand\\/video\\/', s)
+              s = re.sub(r'(?<!\\/thailand)\\/blog\\/covers\\/', r'\\/thailand\\/blog\\/covers\\/', s)
+
+              s = re.sub(r'(?<!%2Fthailand)%2Fimages%2F', '%2Fthailand%2Fimages%2F', s)
+              s = re.sub(r'(?<!%2Fthailand)%2Fvideo%2F', '%2Fthailand%2Fvideo%2F', s)
+              s = re.sub(r'(?<!%2Fthailand)%2Fblog%2Fcovers%2F', '%2Fthailand%2Fblog%2Fcovers%2F', s)
+
+              # ещё раз убрать возможный дубль после замен
+              s = s.replace("/thailand/thailand/", "/thailand/")
+              s = s.replace("\\/thailand\\/thailand\\/", "\\/thailand\\/")
+              s = s.replace("%2Fthailand%2Fthailand%2F", "%2Fthailand%2F")
+
+              p.write_text(s, encoding="utf-8")
+          PY
 
       - name: Disable Jekyll
         run: touch out/.nojekyll

@@ -37,7 +37,7 @@ jobs:
 
       - name: Fix media paths in static export
         run: |
-          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.css" \) -print0 | xargs -0 perl -pi -e 's#"/images/#"/thailand/images/#g; s#"/video/#"/thailand/video/#g; s#"/blog/#"/thailand/blog/#g'
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.css" \) -print0 | xargs -0 perl -pi -e 's#(?<!/thailand)/images/#/thailand/images/#g; s#(?<!/thailand)/video/#/thailand/video/#g; s#(?<!/thailand)/blog/covers/#/thailand/blog/covers/#g'
 
       - name: Disable Jekyll
         run: touch out/.nojekyll

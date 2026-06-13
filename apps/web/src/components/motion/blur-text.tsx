@@ -28,3 +28,4 @@ export function BlurText({ text, className, delay = 0 }: BlurTextProps) {
     </span>
   );
 }
+

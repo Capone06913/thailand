@@ -28,3 +28,4 @@ export function writeConsent(record: ConsentRecord) {
 export function hasAnalyticsConsent(): boolean {
   return readConsent()?.analytics === true;
 }
+

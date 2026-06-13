@@ -31,11 +31,11 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Визы в Таиланд из Москвы: DTV, TR, 50+ | ThaiPass",
+    default: "Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ РёР· РњРѕСЃРєРІС‹: DTV, TR, 50+ | ThaiPass",
     template: "%s | ThaiPass",
   },
   description:
-    "ThaiPass оформляет визы в Таиланд для россиян из Москвы и по России: DTV, туристическая TR, пенсионная 50+. Проверка документов до подачи, курьер по РФ.",
+    "ThaiPass РѕС„РѕСЂРјР»СЏРµС‚ РІРёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ РёР· РњРѕСЃРєРІС‹ Рё РїРѕ Р РѕСЃСЃРёРё: DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ TR, РїРµРЅСЃРёРѕРЅРЅР°СЏ 50+. РџСЂРѕРІРµСЂРєР° РґРѕРєСѓРјРµРЅС‚РѕРІ РґРѕ РїРѕРґР°С‡Рё, РєСѓСЂСЊРµСЂ РїРѕ Р Р¤.",
   openGraph: {
     type: "website",
     locale: "ru_RU",
@@ -49,7 +49,7 @@ const organizationSchema = {
   name: siteConfig.name,
   url: siteConfig.url,
   description:
-    "Сервис оформления виз в Таиланд: DTV, туристическая виза, пенсионная 50+",
+    "РЎРµСЂРІРёСЃ РѕС„РѕСЂРјР»РµРЅРёСЏ РІРёР· РІ РўР°РёР»Р°РЅРґ: DTV, С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ РІРёР·Р°, РїРµРЅСЃРёРѕРЅРЅР°СЏ 50+",
   areaServed: { "@type": "Country", name: "Russia" },
 };
 
@@ -76,3 +76,4 @@ export default function RootLayout({
     </html>
   );
 }
+

@@ -44,3 +44,4 @@ export function StaggerWords({ text, className, delay = 0 }: StaggerWordsProps) 
     </motion.span>
   );
 }
+

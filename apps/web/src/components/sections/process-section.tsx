@@ -14,26 +14,26 @@ import {
 const steps = [
   {
     icon: MessageCircle,
-    title: "Консультация",
-    text: "Получите консультацию специалиста по вашей визе в мессенджере",
+    title: "РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ",
+    text: "РџРѕР»СѓС‡РёС‚Рµ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ СЃРїРµС†РёР°Р»РёСЃС‚Р° РїРѕ РІР°С€РµР№ РІРёР·Рµ РІ РјРµСЃСЃРµРЅРґР¶РµСЂРµ",
     effect: "pulse",
   },
   {
     icon: FileText,
-    title: "Документы",
-    text: "От вас минимальный пакет документов: остальное подскажем",
+    title: "Р”РѕРєСѓРјРµРЅС‚С‹",
+    text: "РћС‚ РІР°СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ РїР°РєРµС‚ РґРѕРєСѓРјРµРЅС‚РѕРІ: РѕСЃС‚Р°Р»СЊРЅРѕРµ РїРѕРґСЃРєР°Р¶РµРј",
     effect: "float",
   },
   {
     icon: Landmark,
-    title: "Подача",
-    text: "Подготавливаем документы и сдаём в консульство",
+    title: "РџРѕРґР°С‡Р°",
+    text: "РџРѕРґРіРѕС‚Р°РІР»РёРІР°РµРј РґРѕРєСѓРјРµРЅС‚С‹ Рё СЃРґР°С‘Рј РІ РєРѕРЅСЃСѓР»СЊСЃС‚РІРѕ",
     effect: "glow",
   },
   {
     icon: Stamp,
-    title: "Виза",
-    text: "Вы получаете визу в паспорте: Москва или курьер по РФ",
+    title: "Р’РёР·Р°",
+    text: "Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РІРёР·Сѓ РІ РїР°СЃРїРѕСЂС‚Рµ: РњРѕСЃРєРІР° РёР»Рё РєСѓСЂСЊРµСЂ РїРѕ Р Р¤",
     effect: "stamp",
   },
 ] as const;
@@ -128,14 +128,14 @@ export function ProcessSection() {
           className="max-w-3xl"
         >
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Процесс
+            РџСЂРѕС†РµСЃСЃ
           </p>
           <h2 className="font-serif mt-2 text-3xl font-semibold text-[var(--color-sapphire)] md:text-5xl">
-            Как мы работаем
+            РљР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј
           </h2>
           <p className="mt-4 text-base font-medium leading-relaxed text-[var(--color-muted)] md:text-lg">
-            Четыре шага от заявки до визы в паспорте. Статус в мессенджере на
-            каждом этапе.
+            Р§РµС‚С‹СЂРµ С€Р°РіР° РѕС‚ Р·Р°СЏРІРєРё РґРѕ РІРёР·С‹ РІ РїР°СЃРїРѕСЂС‚Рµ. РЎС‚Р°С‚СѓСЃ РІ РјРµСЃСЃРµРЅРґР¶РµСЂРµ РЅР°
+            РєР°Р¶РґРѕРј СЌС‚Р°РїРµ.
           </p>
         </motion.div>
 
@@ -199,8 +199,8 @@ export function ProcessSection() {
         >
           <div className="relative aspect-[21/9] min-h-[240px] md:min-h-[340px]">
             <Image
-              src="/images/generated/process-timeline.jpg"
-              alt="Подготовка документов для получения визы в Таиланд: паспорт и чек-лист"
+              src="/thailand/images/generated/process-timeline.jpg"
+              alt="РџРѕРґРіРѕС‚РѕРІРєР° РґРѕРєСѓРјРµРЅС‚РѕРІ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РІРёР·С‹ РІ РўР°РёР»Р°РЅРґ: РїР°СЃРїРѕСЂС‚ Рё С‡РµРє-Р»РёСЃС‚"
               fill
               className="object-cover object-center"
               sizes="100vw"
@@ -208,11 +208,11 @@ export function ProcessSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-sapphire)]/85 via-[var(--color-sapphire)]/30 to-transparent" />
             <div className="absolute bottom-0 left-0 max-w-xl p-7 md:p-10">
               <p className="font-serif text-2xl font-semibold text-white md:text-3xl">
-                Доверие через прозрачность
+                Р”РѕРІРµСЂРёРµ С‡РµСЂРµР· РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ
               </p>
               <p className="mt-3 text-base font-medium leading-relaxed text-white/90">
-                Каждый этап фиксируем в мессенджере: вы видите, что происходит
-                с заявкой.
+                РљР°Р¶РґС‹Р№ СЌС‚Р°Рї С„РёРєСЃРёСЂСѓРµРј РІ РјРµСЃСЃРµРЅРґР¶РµСЂРµ: РІС‹ РІРёРґРёС‚Рµ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚
+                СЃ Р·Р°СЏРІРєРѕР№.
               </p>
             </div>
           </div>
@@ -221,3 +221,4 @@ export function ProcessSection() {
     </section>
   );
 }
+

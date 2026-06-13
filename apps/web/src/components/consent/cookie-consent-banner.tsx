@@ -88,36 +88,36 @@ export function CookieConsentBanner() {
                       id="cookie-consent-title"
                       className="font-display text-base font-bold text-[var(--color-sapphire)] sm:text-lg"
                     >
-                      Согласие на cookie и персональные данные
+                      РЎРѕРіР»Р°СЃРёРµ РЅР° cookie Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ
                     </h2>
                     <p
                       id="cookie-consent-desc"
                       className="mt-2 text-sm leading-relaxed text-[var(--color-muted)]"
                     >
-                      {siteConfig.name} использует технические и аналитические
-                      cookie, а также обрабатывает персональные данные по правилам
-                      152-ФЗ и{" "}
+                      {siteConfig.name} РёСЃРїРѕР»СЊР·СѓРµС‚ С‚РµС…РЅРёС‡РµСЃРєРёРµ Рё Р°РЅР°Р»РёС‚РёС‡РµСЃРєРёРµ
+                      cookie, Р° С‚Р°РєР¶Рµ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ РїРѕ РїСЂР°РІРёР»Р°Рј
+                      152-Р¤Р— Рё{" "}
                       <a
                         href="https://rkn.gov.ru/docs/Polozhenie_ob_obrabotke_PD_24052023.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-medium text-[var(--color-teal)] underline underline-offset-2"
                       >
-                        Положения Роскомнадзора
+                        РџРѕР»РѕР¶РµРЅРёСЏ Р РѕСЃРєРѕРјРЅР°РґР·РѕСЂР°
                       </a>
-                      . Подробности: в{" "}
+                      . РџРѕРґСЂРѕР±РЅРѕСЃС‚Рё: РІ{" "}
                       <Link
                         href="/privacy"
                         className="font-medium text-[var(--color-teal)] underline underline-offset-2"
                       >
-                        политике конфиденциальности
+                        РїРѕР»РёС‚РёРєРµ РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚Рё
                       </Link>{" "}
-                      и{" "}
+                      Рё{" "}
                       <Link
                         href="/cookies"
                         className="font-medium text-[var(--color-teal)] underline underline-offset-2"
                       >
-                        политике cookie
+                        РїРѕР»РёС‚РёРєРµ cookie
                       </Link>
                       .
                     </p>
@@ -137,17 +137,17 @@ export function CookieConsentBanner() {
                       className="mt-0.5 size-4 shrink-0 rounded border-[var(--color-border)] text-[var(--color-teal)] focus:ring-[var(--color-teal)]"
                     />
                     <span className="text-sm">
-                      Я ознакомлен(а) с политикой конфиденциальности и политикой
-                      cookie и даю согласие на обработку персональных данных,
-                      включая аналитические cookie.
+                      РЇ РѕР·РЅР°РєРѕРјР»РµРЅ(Р°) СЃ РїРѕР»РёС‚РёРєРѕР№ РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚Рё Рё РїРѕР»РёС‚РёРєРѕР№
+                      cookie Рё РґР°СЋ СЃРѕРіР»Р°СЃРёРµ РЅР° РѕР±СЂР°Р±РѕС‚РєСѓ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РґР°РЅРЅС‹С…,
+                      РІРєР»СЋС‡Р°СЏ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРёРµ cookie.
                     </span>
                   </Label>
                 </div>
 
                 <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-xs text-[var(--color-muted)]">
-                    Продолжая работу с сайтом, вы подтверждаете согласие.
-                    Закрыть без принятия нельзя.
+                    РџСЂРѕРґРѕР»Р¶Р°СЏ СЂР°Р±РѕС‚Сѓ СЃ СЃР°Р№С‚РѕРј, РІС‹ РїРѕРґС‚РІРµСЂР¶РґР°РµС‚Рµ СЃРѕРіР»Р°СЃРёРµ.
+                    Р—Р°РєСЂС‹С‚СЊ Р±РµР· РїСЂРёРЅСЏС‚РёСЏ РЅРµР»СЊР·СЏ.
                   </p>
                   <button
                     type="button"
@@ -155,7 +155,7 @@ export function CookieConsentBanner() {
                     disabled={!checked}
                     className="inline-flex shrink-0 items-center justify-center rounded-full bg-[var(--color-teal)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[var(--color-teal-light)] disabled:cursor-not-allowed disabled:opacity-45"
                   >
-                    Принять и продолжить
+                    РџСЂРёРЅСЏС‚СЊ Рё РїСЂРѕРґРѕР»Р¶РёС‚СЊ
                   </button>
                 </div>
               </div>
@@ -166,3 +166,4 @@ export function CookieConsentBanner() {
     </AnimatePresence>
   );
 }
+

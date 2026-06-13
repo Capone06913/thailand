@@ -65,7 +65,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
             </div>
           </div>
           <p className="mt-1 text-xs text-[#999]">
-            {review.city} · {review.visa}
+            {review.city} В· {review.visa}
           </p>
         </div>
       </div>
@@ -74,9 +74,9 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
       </p>
       <div className="mt-3 flex items-center gap-1.5 border-t border-[#f0f0f0] pt-3">
         <span className="inline-flex h-4 w-4 items-center justify-center rounded-sm bg-[#FC3] text-[9px] font-black text-[#212121]">
-          Я
+          РЇ
         </span>
-        <span className="text-xs text-[#999]">Отзыв о ThaiPass</span>
+        <span className="text-xs text-[#999]">РћС‚Р·С‹РІ Рѕ ThaiPass</span>
       </div>
     </article>
   );
@@ -92,10 +92,10 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <FadeIn className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Отзывы клиентов
+            РћС‚Р·С‹РІС‹ РєР»РёРµРЅС‚РѕРІ
           </p>
           <h2 className="mt-2 font-display text-4xl font-extrabold tracking-tight text-[var(--color-sapphire)] md:text-5xl">
-            Нам доверяют заявители по всей России
+            РќР°Рј РґРѕРІРµСЂСЏСЋС‚ Р·Р°СЏРІРёС‚РµР»Рё РїРѕ РІСЃРµР№ Р РѕСЃСЃРёРё
           </h2>
         </FadeIn>
       </div>
@@ -126,3 +126,4 @@ export function TestimonialsSection() {
     </section>
   );
 }
+

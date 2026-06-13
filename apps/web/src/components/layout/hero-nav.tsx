@@ -11,9 +11,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const nav = [
-  { href: "/#boli", label: "С чем помогаем" },
-  { href: "/blog", label: "Блог" },
-  { href: "/kontakty", label: "Контакты" },
+  { href: "/#boli", label: "РЎ С‡РµРј РїРѕРјРѕРіР°РµРј" },
+  { href: "/blog", label: "Р‘Р»РѕРі" },
+  { href: "/kontakty", label: "РљРѕРЅС‚Р°РєС‚С‹" },
 ];
 
 export function HeroNav() {
@@ -40,7 +40,7 @@ export function HeroNav() {
               onClick={() => setServicesOpen(!servicesOpen)}
               className={cn(linkClass, "inline-flex items-center gap-1")}
             >
-              Услуги
+              РЈСЃР»СѓРіРё
               <ChevronDown
                 size={14}
                 className={cn(
@@ -98,7 +98,7 @@ export function HeroNav() {
               "rounded-full border border-[var(--color-gold)]/40 bg-[var(--color-gold)] px-5 font-bold text-[var(--color-sapphire)] shadow-lg shadow-[var(--color-gold)]/20 hover:bg-[var(--color-gold)]/90",
             )}
           >
-            Заявка
+            Р—Р°СЏРІРєР°
           </Link>
         </div>
 
@@ -106,7 +106,7 @@ export function HeroNav() {
           type="button"
           className="rounded-lg p-2 text-[var(--color-sapphire)] md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="Меню"
+          aria-label="РњРµРЅСЋ"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -150,3 +150,4 @@ export function HeroNav() {
     </motion.header>
   );
 }
+

@@ -26,3 +26,4 @@ export function CountUp({ value, suffix = "", className }: CountUpProps) {
     </span>
   );
 }
+

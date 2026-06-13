@@ -69,15 +69,15 @@ export function PackagesSection() {
           className="mx-auto max-w-3xl text-center"
         >
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-            Услуги
+            РЈСЃР»СѓРіРё
           </p>
           <h2 className="mt-2 font-display text-4xl font-extrabold tracking-tight text-[var(--color-sapphire)] md:text-6xl">
-            Визы в Таиланд под ваш кейс
+            Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ РїРѕРґ РІР°С€ РєРµР№СЃ
           </h2>
           <p className="mt-3 text-base font-medium leading-relaxed text-[var(--color-muted)]">
-            Девять форматов: от проверки DTV до срочной туристической и
-            пенсионной. Срок на карточке, индивидуальный расчёт в Telegram на
-            странице услуги.
+            Р”РµРІСЏС‚СЊ С„РѕСЂРјР°С‚РѕРІ: РѕС‚ РїСЂРѕРІРµСЂРєРё DTV РґРѕ СЃСЂРѕС‡РЅРѕР№ С‚СѓСЂРёСЃС‚РёС‡РµСЃРєРѕР№ Рё
+            РїРµРЅСЃРёРѕРЅРЅРѕР№. РЎСЂРѕРє РЅР° РєР°СЂС‚РѕС‡РєРµ, РёРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Р№ СЂР°СЃС‡С‘С‚ РІ Telegram РЅР°
+            СЃС‚СЂР°РЅРёС†Рµ СѓСЃР»СѓРіРё.
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ export function PackagesSection() {
               <div className="relative min-h-[200px] lg:min-h-full">
                 <Image
                   src={featured.image}
-                  alt={`${featured.name}: оформление визы в Таиланд для россиян`}
+                  alt={`${featured.name}: РѕС„РѕСЂРјР»РµРЅРёРµ РІРёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -106,7 +106,7 @@ export function PackagesSection() {
               <div className="flex flex-col justify-center p-5 md:p-6">
                 <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[var(--color-gold)]/40 bg-[var(--color-gold)]/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--color-gold)]">
                   <Star size={12} />
-                  Чаще выбирают
+                  Р§Р°С‰Рµ РІС‹Р±РёСЂР°СЋС‚
                 </span>
                 <h3 className="mt-3 font-display text-xl font-extrabold text-white md:text-2xl">
                   {featured.shortName}
@@ -125,7 +125,7 @@ export function PackagesSection() {
                   {featured.pricing.processingDays}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--color-gold)]">
-                  Подробнее
+                  РџРѕРґСЂРѕР±РЅРµРµ
                   <ArrowRight
                     size={16}
                     className="transition-transform group-hover:translate-x-1"
@@ -179,10 +179,11 @@ export function PackagesSection() {
           className="mt-8 flex justify-center"
         >
           <PremiumCta href="#zayavka" variant="secondary">
-            Не уверены в формате: напишите нам
+            РќРµ СѓРІРµСЂРµРЅС‹ РІ С„РѕСЂРјР°С‚Рµ: РЅР°РїРёС€РёС‚Рµ РЅР°Рј
           </PremiumCta>
         </motion.div>
       </div>
     </section>
   );
 }
+

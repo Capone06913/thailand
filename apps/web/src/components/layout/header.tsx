@@ -10,9 +10,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const nav = [
-  { href: "/#boli", label: "С чем помогаем" },
-  { href: "/blog", label: "Блог" },
-  { href: "/kontakty", label: "Контакты" },
+  { href: "/#boli", label: "РЎ С‡РµРј РїРѕРјРѕРіР°РµРј" },
+  { href: "/blog", label: "Р‘Р»РѕРі" },
+  { href: "/kontakty", label: "РљРѕРЅС‚Р°РєС‚С‹" },
 ];
 
 export function Header() {
@@ -31,7 +31,7 @@ export function Header() {
               onClick={() => setServicesOpen(!servicesOpen)}
               className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-[var(--color-muted)] transition-colors hover:bg-white hover:text-[var(--color-teal)]"
             >
-              Услуги
+              РЈСЃР»СѓРіРё
               <ChevronDown
                 size={14}
                 className={cn("transition-transform", servicesOpen && "rotate-180")}
@@ -78,7 +78,7 @@ export function Header() {
             href="/#zayavka"
             className={cn(buttonVariants({ size: "sm" }), "rounded-full px-5")}
           >
-            Заявка
+            Р—Р°СЏРІРєР°
           </Link>
         </div>
 
@@ -86,7 +86,7 @@ export function Header() {
           type="button"
           className="rounded-lg p-2 md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="Меню"
+          aria-label="РњРµРЅСЋ"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -95,7 +95,7 @@ export function Header() {
       {open && (
         <div className="border-t border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-4 md:hidden">
           <p className="mb-2 text-xs font-medium uppercase tracking-wider text-[var(--color-muted)]">
-            Услуги
+            РЈСЃР»СѓРіРё
           </p>
           {services.map((s) => (
             <Link
@@ -124,3 +124,4 @@ export function Header() {
     </header>
   );
 }
+

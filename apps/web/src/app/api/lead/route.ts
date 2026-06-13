@@ -40,16 +40,16 @@ export async function POST(request: Request) {
     const data = leadSchema.parse(body);
 
     const message = [
-      "<b>Новая заявка ThaiPass</b>",
+      "<b>РќРѕРІР°СЏ Р·Р°СЏРІРєР° ThaiPass</b>",
       "",
-      `<b>Имя:</b> ${escapeHtml(data.name)}`,
-      `<b>Контакт:</b> ${escapeHtml(data.contact)}`,
-      `<b>Услуга:</b> ${escapeHtml(formatServiceLabel(data.service))}`,
+      `<b>РРјСЏ:</b> ${escapeHtml(data.name)}`,
+      `<b>РљРѕРЅС‚Р°РєС‚:</b> ${escapeHtml(data.contact)}`,
+      `<b>РЈСЃР»СѓРіР°:</b> ${escapeHtml(formatServiceLabel(data.service))}`,
       data.deadline
-        ? `<b>Сроки:</b> ${escapeHtml(data.deadline)}`
+        ? `<b>РЎСЂРѕРєРё:</b> ${escapeHtml(data.deadline)}`
         : null,
       data.comment
-        ? `<b>Комментарий:</b> ${escapeHtml(data.comment)}`
+        ? `<b>РљРѕРјРјРµРЅС‚Р°СЂРёР№:</b> ${escapeHtml(data.comment)}`
         : null,
       "",
       `<i>${new Date().toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })} MSK</i>`,
@@ -61,7 +61,7 @@ export async function POST(request: Request) {
 
     if (!sent && process.env.NODE_ENV === "production") {
       return NextResponse.json(
-        { error: "Не удалось отправить заявку. Попробуйте WhatsApp." },
+        { error: "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ. РџРѕРїСЂРѕР±СѓР№С‚Рµ WhatsApp." },
         { status: 503 },
       );
     }
@@ -69,9 +69,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, telegram: sent });
   } catch (e) {
     if (e instanceof z.ZodError) {
-      return NextResponse.json({ error: "Неверные данные формы" }, { status: 400 });
+      return NextResponse.json({ error: "РќРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ С„РѕСЂРјС‹" }, { status: 400 });
     }
-    return NextResponse.json({ error: "Внутренняя ошибка" }, { status: 500 });
+    return NextResponse.json({ error: "Р’РЅСѓС‚СЂРµРЅРЅСЏСЏ РѕС€РёР±РєР°" }, { status: 500 });
   }
 }
 
@@ -81,3 +81,4 @@ function escapeHtml(text: string): string {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 }
+

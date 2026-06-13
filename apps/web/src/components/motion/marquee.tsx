@@ -22,3 +22,4 @@ export function Marquee({ children, className, speed = 30 }: MarqueeProps) {
     </div>
   );
 }
+

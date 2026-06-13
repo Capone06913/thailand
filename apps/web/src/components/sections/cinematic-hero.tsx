@@ -10,9 +10,9 @@ import { PremiumCta } from "@/components/ui/premium-cta";
 import { StaggerWords } from "@/components/motion/stagger-words";
 
 const utpStats = [
-  { value: "0 ₽", label: "разбор кейса" },
-  { value: "до 30 мин", label: "ответ в мессенджере" },
-  { value: "DTV·TR", label: "только визы Таиланд" },
+  { value: "0 в‚Ѕ", label: "СЂР°Р·Р±РѕСЂ РєРµР№СЃР°" },
+  { value: "РґРѕ 30 РјРёРЅ", label: "РѕС‚РІРµС‚ РІ РјРµСЃСЃРµРЅРґР¶РµСЂРµ" },
+  { value: "DTVВ·TR", label: "С‚РѕР»СЊРєРѕ РІРёР·С‹ РўР°РёР»Р°РЅРґ" },
 ];
 
 export function CinematicHero() {
@@ -24,10 +24,10 @@ export function CinematicHero() {
           muted
           loop
           playsInline
-          poster="/images/generated/hero-poster.jpg"
+          poster="/thailand/images/generated/hero-poster.jpg"
           className="h-full w-full object-cover brightness-110 saturate-125 contrast-105"
         >
-          <source src="/video/hero-loop.mp4" type="video/mp4" />
+          <source src="/thailand/video/hero-loop.mp4" type="video/mp4" />
         </video>
       </HeroVideoSpotlight>
 
@@ -55,27 +55,27 @@ export function CinematicHero() {
             <div className="relative">
               <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-gold)]/30 bg-[var(--color-gold)]/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--color-sapphire)]">
                 <Sparkles size={12} className="text-[var(--color-gold)]" />
-                Визы в Таиланд для россиян
+                Р’РёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ
               </span>
 
               <h1 className="mt-5 font-display text-[clamp(2rem,5.5vw,3.75rem)] font-extrabold leading-[1.02] tracking-tight text-[var(--color-sapphire)]">
-                <StaggerWords text="Оформим визу в Таиланд без отказа" />
+                <StaggerWords text="РћС„РѕСЂРјРёРј РІРёР·Сѓ РІ РўР°РёР»Р°РЅРґ Р±РµР· РѕС‚РєР°Р·Р°" />
               </h1>
 
               <p className="mt-5 max-w-xl text-base font-medium leading-relaxed text-[var(--color-muted)] md:text-lg">
-                DTV, TR и пенсионная 50+: проверим документы до подачи в
-                консульство и ведём заявку до одобрения. Москва и курьер по всей
-                России.
+                DTV, TR Рё РїРµРЅСЃРёРѕРЅРЅР°СЏ 50+: РїСЂРѕРІРµСЂРёРј РґРѕРєСѓРјРµРЅС‚С‹ РґРѕ РїРѕРґР°С‡Рё РІ
+                РєРѕРЅСЃСѓР»СЊСЃС‚РІРѕ Рё РІРµРґС‘Рј Р·Р°СЏРІРєСѓ РґРѕ РѕРґРѕР±СЂРµРЅРёСЏ. РњРѕСЃРєРІР° Рё РєСѓСЂСЊРµСЂ РїРѕ РІСЃРµР№
+                Р РѕСЃСЃРёРё.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-[var(--color-sapphire)]">
                 <span className="inline-flex items-center gap-2">
                   <MapPin size={15} className="text-[var(--color-teal)]" />
-                  Только визы Таиланд
+                  РўРѕР»СЊРєРѕ РІРёР·С‹ РўР°РёР»Р°РЅРґ
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <Clock size={15} className="text-[var(--color-teal)]" />
-                  Москва + курьер по РФ
+                  РњРѕСЃРєРІР° + РєСѓСЂСЊРµСЂ РїРѕ Р Р¤
                 </span>
               </div>
             </div>
@@ -98,7 +98,7 @@ export function CinematicHero() {
             <div className="relative flex flex-1 flex-col">
               <div className="flex items-start justify-between gap-3">
                 <p className="font-display text-2xl font-extrabold text-[var(--color-sapphire)]">
-                  Разбор кейса бесплатно
+                  Р Р°Р·Р±РѕСЂ РєРµР№СЃР° Р±РµСЃРїР»Р°С‚РЅРѕ
                 </p>
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-gold)]/15 text-[var(--color-gold)]">
                   <Clock size={20} />
@@ -127,13 +127,13 @@ export function CinematicHero() {
 
               <div className="mt-auto flex flex-col gap-3 pt-6">
                 <PremiumCta href="#zayavka" variant="primary" className="w-full py-3.5">
-                  Получить разбор
+                  РџРѕР»СѓС‡РёС‚СЊ СЂР°Р·Р±РѕСЂ
                 </PremiumCta>
                 <Link
                   href="#uslugi"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--color-border)] bg-white/80 px-5 py-3 text-sm font-bold text-[var(--color-sapphire)] transition-colors hover:border-[var(--color-teal)]/40 hover:bg-white"
                 >
-                  Услуги
+                  РЈСЃР»СѓРіРё
                   <ArrowRight size={14} />
                 </Link>
               </div>
@@ -144,3 +144,4 @@ export function CinematicHero() {
     </section>
   );
 }
+

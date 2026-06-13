@@ -14,7 +14,7 @@ export function ServiceVisaDetails({ visaInfo }: ServiceVisaDetailsProps) {
             <Info size={16} />
           </span>
           <h2 className="font-serif text-xl font-semibold text-[var(--color-sapphire)]">
-            Важная информация
+            Р’Р°Р¶РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ
           </h2>
         </div>
         <p className="mt-4 flex-1 text-sm font-medium leading-relaxed text-[var(--color-muted)] md:text-[15px]">
@@ -28,7 +28,7 @@ export function ServiceVisaDetails({ visaInfo }: ServiceVisaDetailsProps) {
             <FileText size={16} />
           </span>
           <h2 className="font-serif text-xl font-semibold text-[var(--color-sapphire)]">
-            Документы для оформления
+            Р”РѕРєСѓРјРµРЅС‚С‹ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ
           </h2>
         </div>
         <ul className="mt-4 space-y-2.5">
@@ -45,7 +45,7 @@ export function ServiceVisaDetails({ visaInfo }: ServiceVisaDetailsProps) {
         {visaInfo.childrenExtra ? (
           <p className="mt-auto pt-6 text-sm font-medium leading-relaxed text-[var(--color-muted)]">
             <span className="mb-2 block font-display text-xs font-bold uppercase tracking-wide text-[var(--color-sapphire)]">
-              Дети
+              Р”РµС‚Рё
             </span>
             {visaInfo.childrenExtra}
           </p>
@@ -54,3 +54,4 @@ export function ServiceVisaDetails({ visaInfo }: ServiceVisaDetailsProps) {
     </section>
   );
 }
+

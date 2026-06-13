@@ -15,7 +15,7 @@ export function RunawaySubmitButton({
   ready,
   loading,
   label,
-  hint = "Заполните имя, контакт и тип визы",
+  hint = "Р—Р°РїРѕР»РЅРёС‚Рµ РёРјСЏ, РєРѕРЅС‚Р°РєС‚ Рё С‚РёРї РІРёР·С‹",
 }: RunawaySubmitButtonProps) {
   const arenaRef = useRef<HTMLDivElement>(null);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
@@ -73,7 +73,7 @@ export function RunawaySubmitButton({
         {loading ? (
           <>
             <Loader2 className="animate-spin" size={16} />
-            Отправляем...
+            РћС‚РїСЂР°РІР»СЏРµРј...
           </>
         ) : (
           label
@@ -82,3 +82,4 @@ export function RunawaySubmitButton({
     </div>
   );
 }
+

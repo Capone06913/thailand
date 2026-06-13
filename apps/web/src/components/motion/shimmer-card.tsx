@@ -18,3 +18,4 @@ export function ShimmerCard({ children, className }: ShimmerCardProps) {
     </div>
   );
 }
+

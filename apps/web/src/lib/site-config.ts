@@ -5,10 +5,11 @@ export const siteConfig = {
   telegramChannelUrl: process.env.NEXT_PUBLIC_TELEGRAM_CHANNEL_URL ?? "",
   telegramChannelName:
     process.env.NEXT_PUBLIC_TELEGRAM_CHANNEL_NAME ?? "@thaipass_visa",
-  /** Бот или личный аккаунт для расчёта стоимости (deep link ?text=) */
+  /** Р‘РѕС‚ РёР»Рё Р»РёС‡РЅС‹Р№ Р°РєРєР°СѓРЅС‚ РґР»СЏ СЂР°СЃС‡С‘С‚Р° СЃС‚РѕРёРјРѕСЃС‚Рё (deep link ?text=) */
   telegramBotUrl: process.env.NEXT_PUBLIC_TELEGRAM_BOT_URL ?? "",
   instagramUrl: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
-  officeCity: process.env.NEXT_PUBLIC_OFFICE_CITY ?? "Москва",
+  officeCity: process.env.NEXT_PUBLIC_OFFICE_CITY ?? "РњРѕСЃРєРІР°",
   officeAddress: process.env.NEXT_PUBLIC_OFFICE_ADDRESS ?? "",
   officeMetro: process.env.NEXT_PUBLIC_OFFICE_METRO ?? "",
 };
+

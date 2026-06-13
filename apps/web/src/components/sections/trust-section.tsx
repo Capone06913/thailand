@@ -11,20 +11,21 @@ const seoMarqueeItems: MarqueeItem[] = [
     label: service.primaryKeyword,
     href: `/uslugi/${service.slug}`,
   })),
-  { label: "виза в тайланд для россиян", href: "/#zayavka" },
-  { label: "оформление визы таиланд под ключ", href: "/#uslugi" },
-  { label: "туристическая виза таиланд", href: "/uslugi/turisticheskaya-60-30" },
-  { label: "пенсионная виза таиланд 50+", href: "/uslugi/pensionnaya-50" },
-  { label: "срочная туристическая виза", href: "/uslugi/turisticheskaya-srochnaya" },
-  { label: "разбор кейса бесплатно", href: "/#zayavka" },
-  { label: "курьер по россии", href: "/#dostavka" },
-  { label: "офис москва", href: "/#dostavka" },
+  { label: "РІРёР·Р° РІ С‚Р°Р№Р»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ", href: "/#zayavka" },
+  { label: "РѕС„РѕСЂРјР»РµРЅРёРµ РІРёР·С‹ С‚Р°РёР»Р°РЅРґ РїРѕРґ РєР»СЋС‡", href: "/#uslugi" },
+  { label: "С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ РІРёР·Р° С‚Р°РёР»Р°РЅРґ", href: "/uslugi/turisticheskaya-60-30" },
+  { label: "РїРµРЅСЃРёРѕРЅРЅР°СЏ РІРёР·Р° С‚Р°РёР»Р°РЅРґ 50+", href: "/uslugi/pensionnaya-50" },
+  { label: "СЃСЂРѕС‡РЅР°СЏ С‚СѓСЂРёСЃС‚РёС‡РµСЃРєР°СЏ РІРёР·Р°", href: "/uslugi/turisticheskaya-srochnaya" },
+  { label: "СЂР°Р·Р±РѕСЂ РєРµР№СЃР° Р±РµСЃРїР»Р°С‚РЅРѕ", href: "/#zayavka" },
+  { label: "РєСѓСЂСЊРµСЂ РїРѕ СЂРѕСЃСЃРёРё", href: "/#dostavka" },
+  { label: "РѕС„РёСЃ РјРѕСЃРєРІР°", href: "/#dostavka" },
 ];
 
 export function TrustSection() {
   return (
-    <section className="bg-white" aria-label="Услуги и направления ThaiPass">
+    <section className="bg-white" aria-label="РЈСЃР»СѓРіРё Рё РЅР°РїСЂР°РІР»РµРЅРёСЏ ThaiPass">
       <InteractiveMarquee items={seoMarqueeItems} speed={0.5} />
     </section>
   );
 }
+

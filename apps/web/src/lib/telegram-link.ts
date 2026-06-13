@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site-config";
 import type { Service } from "@/lib/services";
 
-/** Deep link в Telegram-бот с готовым текстом заявки по услуге. */
+/** Deep link РІ Telegram-Р±РѕС‚ СЃ РіРѕС‚РѕРІС‹Рј С‚РµРєСЃС‚РѕРј Р·Р°СЏРІРєРё РїРѕ СѓСЃР»СѓРіРµ. */
 export function buildTelegramServiceLink(service: Service): string {
   const botUrl = siteConfig.telegramBotUrl?.replace(/\/$/, "");
   if (botUrl) {
@@ -15,3 +15,4 @@ export function buildTelegramServiceLink(service: Service): string {
 export function hasTelegramBotLink(): boolean {
   return Boolean(siteConfig.telegramBotUrl || siteConfig.telegramChannelUrl);
 }
+

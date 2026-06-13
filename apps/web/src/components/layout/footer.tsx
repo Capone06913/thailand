@@ -7,11 +7,11 @@ import { SocialLinks } from "@/components/icons/social-icons";
 import { siteConfig } from "@/lib/utils";
 
 const footerLinks = [
-  { href: "/#zayavka", label: "Заявка" },
-  { href: "/kontakty", label: "Контакты" },
-  { href: "/blog", label: "Блог" },
-  { href: "/oferta", label: "Условия" },
-  { href: "/privacy", label: "Политика" },
+  { href: "/#zayavka", label: "Р—Р°СЏРІРєР°" },
+  { href: "/kontakty", label: "РљРѕРЅС‚Р°РєС‚С‹" },
+  { href: "/blog", label: "Р‘Р»РѕРі" },
+  { href: "/oferta", label: "РЈСЃР»РѕРІРёСЏ" },
+  { href: "/privacy", label: "РџРѕР»РёС‚РёРєР°" },
   { href: "/cookies", label: "Cookie" },
 ];
 
@@ -43,7 +43,7 @@ export function Footer() {
                     aria-hidden
                     className="mx-2 text-[var(--color-sapphire)]/25"
                   >
-                    ·
+                    В·
                   </span>
                 )}
                 <Link
@@ -62,8 +62,8 @@ export function Footer() {
 
       <div className="border-t border-[var(--color-border)]/70 px-4 py-3 text-center text-[11px] leading-relaxed text-[var(--color-muted)]">
         <p className="mx-auto max-w-2xl">
-          ThaiPass не является консульством. Сумма на сайте не является публичной
-          офертой: точную стоимость подтверждаем после разбора кейса. © {year}{" "}
+          ThaiPass РЅРµ СЏРІР»СЏРµС‚СЃСЏ РєРѕРЅСЃСѓР»СЊСЃС‚РІРѕРј. РЎСѓРјРјР° РЅР° СЃР°Р№С‚Рµ РЅРµ СЏРІР»СЏРµС‚СЃСЏ РїСѓР±Р»РёС‡РЅРѕР№
+          РѕС„РµСЂС‚РѕР№: С‚РѕС‡РЅСѓСЋ СЃС‚РѕРёРјРѕСЃС‚СЊ РїРѕРґС‚РІРµСЂР¶РґР°РµРј РїРѕСЃР»Рµ СЂР°Р·Р±РѕСЂР° РєРµР№СЃР°. В© {year}{" "}
           {siteConfig.name}.{" "}
           <a
             href="https://www.thaievisa.go.th"
@@ -73,17 +73,18 @@ export function Footer() {
           >
             thaievisa.go.th
           </a>
-          {" · "}
+          {" В· "}
           <a
             href="https://moscow.thaiembassy.org"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-[var(--color-sapphire)]"
           >
-            посольство в Москве
+            РїРѕСЃРѕР»СЊСЃС‚РІРѕ РІ РњРѕСЃРєРІРµ
           </a>
         </p>
       </div>
     </footer>
   );
 }
+

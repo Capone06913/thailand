@@ -19,63 +19,63 @@ import { RussiaDotMap } from "@/components/sections/russia-dot-map";
 const perksLeft = [
   {
     icon: MapPin,
-    title: `Офис: ${siteConfig.officeCity}`,
-    text: "Личная передача документов и консультация на месте",
+    title: `РћС„РёСЃ: ${siteConfig.officeCity}`,
+    text: "Р›РёС‡РЅР°СЏ РїРµСЂРµРґР°С‡Р° РґРѕРєСѓРјРµРЅС‚РѕРІ Рё РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ РЅР° РјРµСЃС‚Рµ",
   },
   {
     icon: Truck,
-    title: "Курьер по всей РФ",
-    text: "Забираем и доставляем паспорт с визой в ваш город",
+    title: "РљСѓСЂСЊРµСЂ РїРѕ РІСЃРµР№ Р Р¤",
+    text: "Р—Р°Р±РёСЂР°РµРј Рё РґРѕСЃС‚Р°РІР»СЏРµРј РїР°СЃРїРѕСЂС‚ СЃ РІРёР·РѕР№ РІ РІР°С€ РіРѕСЂРѕРґ",
   },
 ];
 
 const perksRight = [
   {
     icon: Shield,
-    title: "Безопасная передача",
-    text: "Отслеживаемая доставка и контроль на каждом этапе",
+    title: "Р‘РµР·РѕРїР°СЃРЅР°СЏ РїРµСЂРµРґР°С‡Р°",
+    text: "РћС‚СЃР»РµР¶РёРІР°РµРјР°СЏ РґРѕСЃС‚Р°РІРєР° Рё РєРѕРЅС‚СЂРѕР»СЊ РЅР° РєР°Р¶РґРѕРј СЌС‚Р°РїРµ",
   },
   {
     icon: Zap,
-    title: "Быстрый старт",
-    text: "Начинаем разбор в день обращения",
+    title: "Р‘С‹СЃС‚СЂС‹Р№ СЃС‚Р°СЂС‚",
+    text: "РќР°С‡РёРЅР°РµРј СЂР°Р·Р±РѕСЂ РІ РґРµРЅСЊ РѕР±СЂР°С‰РµРЅРёСЏ",
   },
 ];
 
 const handoffMethods = [
   {
     icon: Building2,
-    label: "У нас в офисе",
-    hint: "Личная передача в Москве",
+    label: "РЈ РЅР°СЃ РІ РѕС„РёСЃРµ",
+    hint: "Р›РёС‡РЅР°СЏ РїРµСЂРµРґР°С‡Р° РІ РњРѕСЃРєРІРµ",
   },
   {
     icon: Bike,
-    label: "Курьером по городу",
-    hint: "Забор и доставка по Москве",
+    label: "РљСѓСЂСЊРµСЂРѕРј РїРѕ РіРѕСЂРѕРґСѓ",
+    hint: "Р—Р°Р±РѕСЂ Рё РґРѕСЃС‚Р°РІРєР° РїРѕ РњРѕСЃРєРІРµ",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp, Telegram",
-    hint: "Согласуем дистанционно",
+    hint: "РЎРѕРіР»Р°СЃСѓРµРј РґРёСЃС‚Р°РЅС†РёРѕРЅРЅРѕ",
   },
   {
     icon: Package,
-    label: "Курьерской компанией",
-    hint: "По всей России",
+    label: "РљСѓСЂСЊРµСЂСЃРєРѕР№ РєРѕРјРїР°РЅРёРµР№",
+    hint: "РџРѕ РІСЃРµР№ Р РѕСЃСЃРёРё",
   },
 ];
 
 const cities = [
-  "Москва",
-  "СПб",
-  "Казань",
-  "Екатеринбург",
-  "Новосибирск",
-  "Краснодар",
-  "Сочи",
-  "Владивосток",
-  "Калининград",
-  "Самара",
+  "РњРѕСЃРєРІР°",
+  "РЎРџР±",
+  "РљР°Р·Р°РЅСЊ",
+  "Р•РєР°С‚РµСЂРёРЅР±СѓСЂРі",
+  "РќРѕРІРѕСЃРёР±РёСЂСЃРє",
+  "РљСЂР°СЃРЅРѕРґР°СЂ",
+  "РЎРѕС‡Рё",
+  "Р’Р»Р°РґРёРІРѕСЃС‚РѕРє",
+  "РљР°Р»РёРЅРёРЅРіСЂР°Рґ",
+  "РЎР°РјР°СЂР°",
 ];
 
 export function DeliverySection() {
@@ -95,14 +95,14 @@ export function DeliverySection() {
             className="min-w-0 overflow-hidden"
           >
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
-              География ThaiPass
+              Р“РµРѕРіСЂР°С„РёСЏ ThaiPass
             </p>
             <h2 className="font-serif mt-2 text-3xl font-semibold text-[var(--color-sapphire)] md:text-5xl">
-              Вся Россия: один стандарт сервиса
+              Р’СЃСЏ Р РѕСЃСЃРёСЏ: РѕРґРёРЅ СЃС‚Р°РЅРґР°СЂС‚ СЃРµСЂРІРёСЃР°
             </h2>
             <p className="mt-4 max-w-xl text-base font-medium leading-relaxed text-[var(--color-muted)]">
-              Оформляем визы в Таиланд для россиян из Москвы и регионов. Офис в
-              столице, курьер по всей стране.{" "}
+              РћС„РѕСЂРјР»СЏРµРј РІРёР·С‹ РІ РўР°РёР»Р°РЅРґ РґР»СЏ СЂРѕСЃСЃРёСЏРЅ РёР· РњРѕСЃРєРІС‹ Рё СЂРµРіРёРѕРЅРѕРІ. РћС„РёСЃ РІ
+              СЃС‚РѕР»РёС†Рµ, РєСѓСЂСЊРµСЂ РїРѕ РІСЃРµР№ СЃС‚СЂР°РЅРµ.{" "}
               {siteConfig.telegramChannelUrl ? (
                 <Link
                   href={siteConfig.telegramChannelUrl}
@@ -110,14 +110,14 @@ export function DeliverySection() {
                   rel="noopener noreferrer"
                   className="font-semibold text-[var(--color-teal)] underline decoration-[var(--color-teal)]/30 underline-offset-4 transition-colors hover:text-[var(--color-sapphire)]"
                 >
-                  Напишите в Telegram
+                  РќР°РїРёС€РёС‚Рµ РІ Telegram
                 </Link>
               ) : (
                 <span className="font-semibold text-[var(--color-teal)]">
-                  Напишите в Telegram
+                  РќР°РїРёС€РёС‚Рµ РІ Telegram
                 </span>
               )}{" "}
-              , подскажем по вашему городу.
+              , РїРѕРґСЃРєР°Р¶РµРј РїРѕ РІР°С€РµРјСѓ РіРѕСЂРѕРґСѓ.
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -207,8 +207,8 @@ export function DeliverySection() {
             <div className="relative overflow-hidden rounded-[2rem] border border-[var(--color-border)] shadow-2xl">
               <div className="relative aspect-[5/4] min-h-[300px]">
                 <Image
-                  src="/images/generated/delivery-premium.jpg"
-                  alt="Курьерская доставка паспорта с визой в Таиланд по России"
+                  src="/thailand/images/generated/delivery-premium.jpg"
+                  alt="РљСѓСЂСЊРµСЂСЃРєР°СЏ РґРѕСЃС‚Р°РІРєР° РїР°СЃРїРѕСЂС‚Р° СЃ РІРёР·РѕР№ РІ РўР°РёР»Р°РЅРґ РїРѕ Р РѕСЃСЃРёРё"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 45vw"
@@ -226,10 +226,10 @@ export function DeliverySection() {
           className="mt-16"
         >
           <h3 className="text-center font-serif text-2xl font-semibold text-[var(--color-sapphire)] md:text-3xl">
-            Передача документов
+            РџРµСЂРµРґР°С‡Р° РґРѕРєСѓРјРµРЅС‚РѕРІ
           </h3>
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm font-medium text-[var(--color-muted)]">
-            Передайте документы на визу любым удобным для вас способом
+            РџРµСЂРµРґР°Р№С‚Рµ РґРѕРєСѓРјРµРЅС‚С‹ РЅР° РІРёР·Сѓ Р»СЋР±С‹Рј СѓРґРѕР±РЅС‹Рј РґР»СЏ РІР°СЃ СЃРїРѕСЃРѕР±РѕРј
           </p>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -272,3 +272,4 @@ export function DeliverySection() {
     </section>
   );
 }
+

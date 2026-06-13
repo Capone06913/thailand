@@ -6,10 +6,10 @@ import { BorderBeam } from "@/components/motion/border-beam";
 import { cn } from "@/lib/utils";
 
 const steps = [
-  { id: 0, num: "01", label: "Цель", caption: "Сценарий въезда" },
-  { id: 1, num: "02", label: "Сроки", caption: "Когда нужна виза" },
-  { id: 2, num: "03", label: "Опыт", caption: "Были ли попытки" },
-  { id: 3, num: "04", label: "Итог", caption: "Ваша услуга" },
+  { id: 0, num: "01", label: "Р¦РµР»СЊ", caption: "РЎС†РµРЅР°СЂРёР№ РІСЉРµР·РґР°" },
+  { id: 1, num: "02", label: "РЎСЂРѕРєРё", caption: "РљРѕРіРґР° РЅСѓР¶РЅР° РІРёР·Р°" },
+  { id: 2, num: "03", label: "РћРїС‹С‚", caption: "Р‘С‹Р»Рё Р»Рё РїРѕРїС‹С‚РєРё" },
+  { id: 3, num: "04", label: "РС‚РѕРі", caption: "Р’Р°С€Р° СѓСЃР»СѓРіР°" },
 ] as const;
 
 interface QuizShellProps {
@@ -48,7 +48,7 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
               />
 
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--color-gold)]">
-                ThaiPass · подбор
+                ThaiPass В· РїРѕРґР±РѕСЂ
               </p>
 
               <div className="relative mt-4 md:mt-5">
@@ -121,7 +121,7 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
 
               <div className="mt-5 md:mt-6">
                 <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.18em] text-white/45 lg:text-[11px]">
-                  <span>Прогресс</span>
+                  <span>РџСЂРѕРіСЂРµСЃСЃ</span>
                   <span className="tabular-nums text-[var(--color-gold)]">
                     {progress}%
                   </span>
@@ -145,7 +145,7 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
               <div className="relative border-b border-[var(--color-border)]/80 px-5 py-4 md:hidden">
                 <div className="flex items-center justify-between gap-3">
                   <p className="font-display text-xs font-bold uppercase tracking-wide text-[var(--color-sapphire)]">
-                    Шаг {Math.min(step + 1, steps.length)} · {activeStep.label}
+                    РЁР°Рі {Math.min(step + 1, steps.length)} В· {activeStep.label}
                   </p>
                   <span className="font-display text-xs font-bold tabular-nums text-[var(--color-gold)]">
                     {progress}%
@@ -169,3 +169,4 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
     </motion.div>
   );
 }
+

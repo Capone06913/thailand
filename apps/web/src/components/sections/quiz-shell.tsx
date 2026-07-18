@@ -40,31 +40,31 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,168,83,0.08),transparent_42%)]"
           />
 
-          <div className="grid items-start md:grid-cols-[minmax(0,15rem)_1fr] lg:grid-cols-[minmax(0,20rem)_1fr] xl:grid-cols-[minmax(0,22rem)_1fr]">
-            <aside className="relative border-b border-[var(--color-border)] bg-[var(--color-sapphire)] px-5 py-5 text-white md:border-b-0 md:border-r md:border-white/10 md:px-6 md:py-6 lg:px-7 lg:py-7">
+          <div className="grid items-stretch md:grid-cols-[minmax(0,15rem)_1fr] lg:grid-cols-[minmax(0,20rem)_1fr] xl:grid-cols-[minmax(0,22rem)_1fr]">
+            <aside className="relative flex min-h-full flex-col border-b border-[var(--color-border)] bg-[var(--color-sapphire)] px-5 py-5 text-white md:border-b-0 md:border-r md:border-white/10 md:px-6 md:py-7 lg:px-7 lg:py-8">
               <div
                 aria-hidden
-                className="pointer-events-none absolute -right-6 top-8 h-32 w-32 rounded-full bg-[var(--color-gold)]/10 blur-2xl"
-              />
+                className="pointer-events-none absolute inset-0 overflow-hidden"
+              >
+                <span className="absolute -right-1 top-5 font-display text-[5.5rem] font-extrabold leading-none text-white/[0.06] md:text-[6rem] lg:top-6 lg:text-[6.5rem]">
+                  {activeStep.num}
+                </span>
+                <div className="absolute -right-6 top-8 h-32 w-32 rounded-full bg-[var(--color-gold)]/10 blur-2xl" />
+              </div>
 
+              <div className="relative z-[1] flex min-h-full flex-1 flex-col">
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--color-gold)]">
                 ThaiPass · подбор
               </p>
 
               <div className="relative mt-4 md:mt-5">
-                <span
-                  aria-hidden
-                  className="font-display text-[5.5rem] font-extrabold leading-none text-white/[0.06] md:text-[6.5rem] lg:text-[7.5rem]"
-                >
-                  {activeStep.num}
-                </span>
-                <p className="relative -mt-10 font-display text-3xl font-extrabold tracking-tight md:-mt-12 md:text-4xl lg:-mt-14 lg:text-5xl">
+                <p className="font-display text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl">
                   {activeStep.num}
                 </p>
-                <p className="relative mt-1 font-serif text-lg font-semibold text-white/95 lg:text-xl">
+                <p className="mt-1 font-serif text-lg font-semibold text-white/95 lg:text-xl">
                   {activeStep.label}
                 </p>
-                <p className="relative mt-1 text-xs font-medium text-white/55 lg:text-sm">
+                <p className="mt-1 text-xs font-medium text-white/55 lg:text-sm">
                   {activeStep.caption}
                 </p>
               </div>
@@ -119,7 +119,7 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
                 })}
               </ol>
 
-              <div className="mt-5 md:mt-6">
+              <div className="mt-auto pt-5 md:pt-6">
                 <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.18em] text-white/45 lg:text-[11px]">
                   <span>Прогресс</span>
                   <span className="tabular-nums text-[var(--color-gold)]">
@@ -135,9 +135,10 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
                   />
                 </div>
               </div>
+              </div>
             </aside>
 
-            <div className="relative min-w-0 rounded-b-[calc(2rem-1px)] bg-white md:rounded-br-[calc(2rem-1px)] lg:rounded-br-[calc(2.5rem-1px)]">
+            <div className="relative flex min-h-full min-w-0 flex-col rounded-b-[calc(2rem-1px)] bg-white md:rounded-br-[calc(2rem-1px)] lg:rounded-br-[calc(2.5rem-1px)]">
               <div
                 aria-hidden
                 className="quiz-panel-texture pointer-events-none absolute inset-0 opacity-70"
@@ -161,7 +162,7 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
                 </div>
               </div>
 
-              <div className="relative p-6 pb-5 md:p-8 md:pb-6 lg:px-9 lg:pt-8 lg:pb-5">{children}</div>
+              <div className="relative flex flex-1 flex-col p-6 pb-5 md:p-8 md:pb-6 lg:px-9 lg:pt-8 lg:pb-5">{children}</div>
             </div>
           </div>
         </div>

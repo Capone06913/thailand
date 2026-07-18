@@ -7,35 +7,27 @@ import {
   Ban,
   FileWarning,
   HeartCrack,
-  Plane,
-  Wallet,
-  Clock,
-  FileX,
 } from "lucide-react";
 import { NumberTicker } from "@/components/motion/number-ticker";
 
 const pains = [
   {
     num: "01",
-    icon: FileX,
     title: "Консульство вернуло заявку",
     text: "Доработка с нуля и ещё от 2 до 4 недели ожидания.",
   },
   {
     num: "02",
-    icon: Wallet,
     title: "500 000 бат есть, выписка не подходит",
     text: "Формат, срок и движение средств: типичный отказ по DTV.",
   },
   {
     num: "03",
-    icon: Clock,
     title: "Безвиз заканчивается",
     text: "Виза не готова, а дни в Таиланде на исходе.",
   },
   {
     num: "04",
-    icon: Plane,
     title: "До вылета 3 дня",
     text: "Стандартные сроки консульства уже не спасают.",
   },
@@ -100,9 +92,7 @@ export function PainSection() {
         </motion.div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {pains.map((pain, i) => {
-            const Icon = pain.icon;
-            return (
+          {pains.map((pain, i) => (
               <motion.article
                 key={pain.num}
                 initial={{ opacity: 0, y: 18 }}
@@ -118,16 +108,9 @@ export function PainSection() {
                   {pain.num}
                 </span>
 
-                <div className="flex items-center justify-between gap-4">
-                  <span className="font-display text-xs font-extrabold tracking-[0.25em] text-[var(--color-gold)]">
-                    {pain.num}
-                  </span>
-                  <Icon
-                    size={22}
-                    strokeWidth={1.75}
-                    className="text-[var(--color-teal)] opacity-80"
-                  />
-                </div>
+                <span className="font-display text-xs font-extrabold tracking-[0.25em] text-[var(--color-gold)]">
+                  {pain.num}
+                </span>
 
                 <div className="relative mt-auto pt-8">
                   <h3 className="font-serif text-xl font-semibold leading-snug text-[var(--color-sapphire)] md:text-2xl">
@@ -138,8 +121,7 @@ export function PainSection() {
                   </p>
                 </div>
               </motion.article>
-            );
-          })}
+          ))}
         </div>
 
         <motion.aside

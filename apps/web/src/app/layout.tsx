@@ -14,6 +14,7 @@ const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
   variable: "--font-sans",
   display: "swap",
+  preload: false,
 });
 
 const unbounded = Unbounded({
@@ -28,6 +29,7 @@ const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

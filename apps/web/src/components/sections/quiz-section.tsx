@@ -415,37 +415,6 @@ export function QuizSection() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <div className="md:hidden">
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 200,
-                        damping: 16,
-                        delay: 0.1,
-                      }}
-                      className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--color-gold)]/15 text-[var(--color-gold)]"
-                    >
-                      <Check size={28} strokeWidth={2.5} />
-                    </motion.div>
-
-                    <p className="mt-5 text-center text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
-                      Рекомендуем
-                    </p>
-                    <h3 className="mt-2 text-center font-display text-2xl font-extrabold text-[var(--color-sapphire)]">
-                      {result.name}
-                    </h3>
-                    <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-[var(--color-muted)]">
-                      {result.tagline}
-                    </p>
-                    <p className="mt-2 text-center text-xs font-medium text-[var(--color-muted)]">
-                      Срок: {result.timeline}
-                      {tried === "yes" &&
-                        " · Рекомендуем проверку кейса до повторной подачи"}
-                    </p>
-                  </div>
-
                   <div className="hidden md:block">
                     <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
                       Следующий шаг
@@ -460,6 +429,10 @@ export function QuizSection() {
                         : ""}
                     </p>
                   </div>
+
+                  <p className="text-sm leading-relaxed text-[var(--color-muted)] md:hidden">
+                    {result.tagline}
+                  </p>
 
                   <div className="mt-6 flex flex-wrap justify-center gap-3 md:mt-8 md:justify-start">
                     <Link

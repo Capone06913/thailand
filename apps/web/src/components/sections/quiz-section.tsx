@@ -207,6 +207,17 @@ export function QuizSection() {
     setStep((s) => Math.max(s - 1, 0));
   }
 
+  const quizSummary =
+    result && goal && timeline && tried
+      ? {
+          goal: goalOptions.find((item) => item.v === goal)?.l,
+          timeline: timelineOptions.find((item) => item.v === timeline)?.l,
+          tried: triedOptions.find((item) => item.v === tried)?.l,
+          serviceName: result.shortName,
+          serviceTimeline: result.timeline,
+        }
+      : undefined;
+
   return (
     <section
       id="quiz"
@@ -239,7 +250,7 @@ export function QuizSection() {
           </p>
         </motion.div>
 
-        <QuizShell step={step} progress={progress}>
+        <QuizShell step={step} progress={progress} summary={quizSummary}>
             <AnimatePresence mode="wait">
               {step === 0 && (
                 <motion.div
@@ -404,31 +415,53 @@ export function QuizSection() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: "spring", stiffness: 200, damping: 16, delay: 0.1 }}
-                    className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--color-gold)]/15 text-[var(--color-gold)]"
-                  >
-                    <Check size={28} strokeWidth={2.5} />
-                  </motion.div>
+                  <div className="md:hidden">
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 16,
+                        delay: 0.1,
+                      }}
+                      className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--color-gold)]/15 text-[var(--color-gold)]"
+                    >
+                      <Check size={28} strokeWidth={2.5} />
+                    </motion.div>
 
-                  <p className="mt-5 text-center text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
-                    Рекомендуем
-                  </p>
-                  <h3 className="mt-2 text-center font-display text-2xl font-extrabold text-[var(--color-sapphire)] md:text-3xl lg:text-4xl">
-                    {result.name}
-                  </h3>
-                  <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-[var(--color-muted)]">
-                    {result.tagline}
-                  </p>
-                  <p className="mt-2 text-center text-xs font-medium text-[var(--color-muted)]">
-                    Срок: {result.timeline}
-                    {tried === "yes" &&
-                      " · Рекомендуем проверку кейса до повторной подачи"}
-                  </p>
+                    <p className="mt-5 text-center text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
+                      Рекомендуем
+                    </p>
+                    <h3 className="mt-2 text-center font-display text-2xl font-extrabold text-[var(--color-sapphire)]">
+                      {result.name}
+                    </h3>
+                    <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-[var(--color-muted)]">
+                      {result.tagline}
+                    </p>
+                    <p className="mt-2 text-center text-xs font-medium text-[var(--color-muted)]">
+                      Срок: {result.timeline}
+                      {tried === "yes" &&
+                        " · Рекомендуем проверку кейса до повторной подачи"}
+                    </p>
+                  </div>
 
-                  <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  <div className="hidden md:block">
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
+                      Следующий шаг
+                    </p>
+                    <h3 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-sapphire)] lg:text-3xl">
+                      Оставьте заявку на разбор кейса
+                    </h3>
+                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--color-muted)]">
+                      {result.tagline}
+                      {tried === "yes"
+                        ? " Рекомендуем проверку документов до повторной подачи."
+                        : ""}
+                    </p>
+                  </div>
+
+                  <div className="mt-6 flex flex-wrap justify-center gap-3 md:mt-8 md:justify-start">
                     <Link
                       href={`/uslugi/${result.slug}`}
                       className={cn(
@@ -457,9 +490,9 @@ export function QuizSection() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="mt-8 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]/60 p-5 md:p-6 lg:p-8"
+                    className="mt-6 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]/60 p-5 md:mt-8 md:p-6 lg:p-8"
                   >
-                    <p className="font-display text-sm font-bold text-[var(--color-sapphire)]">
+                    <p className="font-display text-sm font-bold text-[var(--color-sapphire)] md:hidden">
                       Оставьте заявку на разбор кейса
                     </p>
                     <p className="mt-1 text-xs text-[var(--color-muted)]">

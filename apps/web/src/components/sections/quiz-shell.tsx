@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check, Clock3, MapPin, ShieldCheck } from "lucide-react";
 import { BorderBeam } from "@/components/motion/border-beam";
 import { cn } from "@/lib/utils";
 
@@ -12,14 +12,148 @@ const steps = [
   { id: 3, num: "04", label: "Итог", caption: "Ваша услуга" },
 ] as const;
 
+export type QuizSidebarSummary = {
+  goal?: string;
+  timeline?: string;
+  tried?: string;
+  serviceName?: string;
+  serviceTimeline?: string;
+};
+
 interface QuizShellProps {
   step: number;
   progress: number;
   children: React.ReactNode;
+  summary?: QuizSidebarSummary;
 }
 
-export function QuizShell({ step, progress, children }: QuizShellProps) {
+const trustPoints = [
+  { icon: Clock3, text: "Ответ в мессенджере за 30 минут" },
+  { icon: MapPin, text: "Москва и вся Россия" },
+  { icon: ShieldCheck, text: "Разбор кейса бесплатно" },
+];
+
+function StepTimeline({ step }: { step: number }) {
+  return (
+    <ol className="relative space-y-0">
+      {steps.map((item, index) => {
+        const isActive = step === item.id;
+        const isDone = step > item.id;
+        const isLast = index === steps.length - 1;
+        return (
+          <li key={item.id} className="relative flex gap-2.5 pb-3 last:pb-0 lg:gap-3 lg:pb-3.5">
+            {!isLast ? (
+              <span
+                aria-hidden
+                className={cn(
+                  "absolute left-[10px] top-6 h-[calc(100%-6px)] w-px lg:left-[11px] lg:top-7",
+                  isDone ? "bg-[var(--color-gold)]/70" : "bg-white/15",
+                )}
+              />
+            ) : null}
+            <span
+              className={cn(
+                "relative z-[1] flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[9px] font-bold transition-colors lg:h-6 lg:w-6 lg:text-[10px]",
+                isActive
+                  ? "border-[var(--color-gold)] bg-[var(--color-gold)] text-[var(--color-sapphire)]"
+                  : isDone
+                    ? "border-[var(--color-gold)]/60 bg-[var(--color-gold)]/15 text-[var(--color-gold)]"
+                    : "border-white/20 bg-white/5 text-white/40",
+              )}
+            >
+              {isDone ? <Check size={10} strokeWidth={3} /> : index + 1}
+            </span>
+            <div className="min-w-0 pt-0.5">
+              <p
+                className={cn(
+                  "text-[11px] font-bold uppercase tracking-wide lg:text-xs",
+                  isActive
+                    ? "text-white"
+                    : isDone
+                      ? "text-white/75"
+                      : "text-white/35",
+                )}
+              >
+                {item.label}
+              </p>
+              <p className="text-[10px] leading-snug text-white/40 lg:text-[11px]">
+                {item.caption}
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+function SummaryRecap({ summary }: { summary: QuizSidebarSummary }) {
+  const rows = [
+    { label: "Цель", value: summary.goal },
+    { label: "Сроки", value: summary.timeline },
+    { label: "Опыт", value: summary.tried },
+  ].filter((row) => row.value);
+
+  return (
+    <div className="space-y-3">
+      <div className="rounded-xl border border-white/10 bg-white/[0.06] p-3.5 lg:p-4">
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
+          Ваш сценарий
+        </p>
+        <dl className="mt-2.5 space-y-2">
+          {rows.map((row) => (
+            <div key={row.label}>
+              <dt className="text-[10px] font-semibold uppercase tracking-wide text-white/40">
+                {row.label}
+              </dt>
+              <dd className="mt-0.5 text-xs font-medium leading-snug text-white/90 lg:text-[13px]">
+                {row.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      {summary.serviceName ? (
+        <div className="rounded-xl border border-[var(--color-gold)]/35 bg-[var(--color-gold)]/10 p-3.5 lg:p-4">
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--color-gold)]">
+            Рекомендуем
+          </p>
+          <p className="mt-2 font-display text-sm font-extrabold leading-snug text-white lg:text-base">
+            {summary.serviceName}
+          </p>
+          {summary.serviceTimeline ? (
+            <p className="mt-1.5 text-[11px] font-medium text-white/65 lg:text-xs">
+              Срок: {summary.serviceTimeline}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
+
+      <ul className="space-y-2">
+        {trustPoints.map(({ icon: Icon, text }) => (
+          <li
+            key={text}
+            className="flex items-start gap-2.5 rounded-lg border border-white/8 bg-white/[0.04] px-3 py-2.5"
+          >
+            <Icon
+              size={15}
+              strokeWidth={1.75}
+              className="mt-0.5 shrink-0 text-[var(--color-gold)]"
+            />
+            <span className="text-[11px] font-medium leading-snug text-white/75 lg:text-xs">
+              {text}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function QuizShell({ step, progress, children, summary }: QuizShellProps) {
   const activeStep = steps[Math.min(step, steps.length - 1)];
+  const isComplete = step >= 3;
 
   return (
     <motion.div
@@ -40,105 +174,96 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,168,83,0.08),transparent_42%)]"
           />
 
-          <div className="grid items-stretch md:grid-cols-[minmax(0,15rem)_1fr] lg:grid-cols-[minmax(0,20rem)_1fr] xl:grid-cols-[minmax(0,22rem)_1fr]">
-            <aside className="relative flex min-h-full flex-col border-b border-[var(--color-border)] bg-[var(--color-sapphire)] px-5 py-5 text-white md:border-b-0 md:border-r md:border-white/10 md:px-6 md:py-7 lg:px-7 lg:py-8">
+          <div className="grid items-stretch md:grid-cols-[minmax(0,16rem)_1fr] lg:grid-cols-[minmax(0,18.5rem)_1fr] xl:grid-cols-[minmax(0,20rem)_1fr]">
+            <aside className="relative flex flex-col border-b border-[var(--color-border)] bg-[var(--color-sapphire)] px-5 py-5 text-white md:border-b-0 md:border-r md:border-white/10 md:px-5 md:py-6 lg:px-6 lg:py-7">
               <div
                 aria-hidden
                 className="pointer-events-none absolute inset-0 overflow-hidden"
               >
-                <span className="absolute -right-1 top-5 font-display text-[5.5rem] font-extrabold leading-none text-white/[0.06] md:text-[6rem] lg:top-6 lg:text-[6.5rem]">
-                  {activeStep.num}
-                </span>
-                <div className="absolute -right-6 top-8 h-32 w-32 rounded-full bg-[var(--color-gold)]/10 blur-2xl" />
-              </div>
-
-              <div className="relative z-[1] flex min-h-full flex-1 flex-col">
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--color-gold)]">
-                ThaiPass · подбор
-              </p>
-
-              <div className="relative mt-4 md:mt-5">
-                <p className="font-display text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl">
-                  {activeStep.num}
-                </p>
-                <p className="mt-1 font-serif text-lg font-semibold text-white/95 lg:text-xl">
-                  {activeStep.label}
-                </p>
-                <p className="mt-1 text-xs font-medium text-white/55 lg:text-sm">
-                  {activeStep.caption}
-                </p>
-              </div>
-
-              <ol className="relative mt-5 hidden space-y-0 xl:block">
-                {steps.map((item, index) => {
-                  const isActive = step === item.id;
-                  const isDone = step > item.id;
-                  const isLast = index === steps.length - 1;
-                  return (
-                    <li key={item.id} className="relative flex gap-3 pb-3.5 last:pb-0 lg:pb-4">
-                      {!isLast ? (
-                        <span
-                          aria-hidden
-                          className={cn(
-                            "absolute left-[11px] top-7 h-[calc(100%-4px)] w-px",
-                            isDone
-                              ? "bg-[var(--color-gold)]/70"
-                              : "bg-white/15",
-                          )}
-                        />
-                      ) : null}
-                      <span
-                        className={cn(
-                          "relative z-[1] flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold transition-colors lg:h-7 lg:w-7 lg:text-[11px]",
-                          isActive
-                            ? "border-[var(--color-gold)] bg-[var(--color-gold)] text-[var(--color-sapphire)]"
-                            : isDone
-                              ? "border-[var(--color-gold)]/60 bg-[var(--color-gold)]/15 text-[var(--color-gold)]"
-                              : "border-white/20 bg-white/5 text-white/40",
-                        )}
-                      >
-                        {isDone ? <Check size={12} strokeWidth={3} /> : index + 1}
-                      </span>
-                      <div className="min-w-0 pt-0.5">
-                        <p
-                          className={cn(
-                            "text-xs font-bold uppercase tracking-wide lg:text-[13px]",
-                            isActive
-                              ? "text-white"
-                              : isDone
-                                ? "text-white/75"
-                                : "text-white/35",
-                          )}
-                        >
-                          {item.label}
-                        </p>
-                        <p className="text-[11px] text-white/40 lg:text-xs">{item.caption}</p>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ol>
-
-              <div className="mt-auto pt-5 md:pt-6">
-                <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.18em] text-white/45 lg:text-[11px]">
-                  <span>Прогресс</span>
-                  <span className="tabular-nums text-[var(--color-gold)]">
-                    {progress}%
+                {!isComplete ? (
+                  <span className="absolute -right-1 top-4 font-display text-[5rem] font-extrabold leading-none text-white/[0.05] lg:text-[5.5rem]">
+                    {activeStep.num}
                   </span>
-                </div>
-                <div className="relative mt-2 h-1 overflow-hidden rounded-full bg-white/10 lg:mt-2.5 lg:h-1.5">
-                  <motion.div
-                    className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-sky)]"
-                    initial={false}
-                    animate={{ width: `${progress}%` }}
-                    transition={{ type: "spring", stiffness: 120, damping: 22 }}
-                  />
-                </div>
+                ) : null}
+                <div className="absolute -right-8 bottom-8 h-36 w-36 rounded-full bg-[var(--color-gold)]/10 blur-3xl" />
+                <div className="absolute -left-10 top-1/2 h-24 w-24 rounded-full bg-[var(--color-teal)]/20 blur-3xl" />
               </div>
+
+              <div className="relative z-[1] flex flex-col gap-4 md:min-h-full md:gap-5">
+                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--color-gold)]">
+                  ThaiPass · подбор
+                </p>
+
+                {isComplete ? (
+                  <>
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-gold)] text-[var(--color-sapphire)]">
+                        <Check size={20} strokeWidth={2.5} />
+                      </span>
+                      <div>
+                        <p className="font-display text-lg font-extrabold leading-tight lg:text-xl">
+                          Подбор завершён
+                        </p>
+                        <p className="text-[11px] font-medium text-white/55 lg:text-xs">
+                          Осталось оставить заявку
+                        </p>
+                      </div>
+                    </div>
+
+                    {summary ? (
+                      <div className="hidden md:block">
+                        <SummaryRecap summary={summary} />
+                      </div>
+                    ) : null}
+
+                    <div className="md:hidden">
+                      <StepTimeline step={step} />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <p className="font-display text-2xl font-extrabold tracking-tight lg:text-3xl">
+                        {activeStep.num}
+                      </p>
+                      <p className="mt-0.5 font-serif text-base font-semibold text-white/95 lg:text-lg">
+                        {activeStep.label}
+                      </p>
+                      <p className="mt-0.5 text-[11px] font-medium text-white/55 lg:text-xs">
+                        {activeStep.caption}
+                      </p>
+                    </div>
+
+                    <div className="hidden md:block">
+                      <StepTimeline step={step} />
+                    </div>
+                  </>
+                )}
+
+                <div className="mt-auto border-t border-white/10 pt-4">
+                  <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.18em] text-white/45">
+                    <span>Прогресс</span>
+                    <span className="tabular-nums text-[var(--color-gold)]">
+                      {progress}%
+                    </span>
+                  </div>
+                  <div className="relative mt-2 h-1 overflow-hidden rounded-full bg-white/10 lg:h-1.5">
+                    <motion.div
+                      className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-sky)]"
+                      initial={false}
+                      animate={{ width: `${progress}%` }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 120,
+                        damping: 22,
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </aside>
 
-            <div className="relative flex min-h-full min-w-0 flex-col rounded-b-[calc(2rem-1px)] bg-white md:rounded-br-[calc(2rem-1px)] lg:rounded-br-[calc(2.5rem-1px)]">
+            <div className="relative flex min-w-0 flex-col rounded-b-[calc(2rem-1px)] bg-white md:rounded-br-[calc(2rem-1px)] lg:rounded-br-[calc(2.5rem-1px)]">
               <div
                 aria-hidden
                 className="quiz-panel-texture pointer-events-none absolute inset-0 opacity-70"
@@ -157,12 +282,18 @@ export function QuizShell({ step, progress, children }: QuizShellProps) {
                     className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[var(--color-teal)] to-[var(--color-gold)]"
                     initial={false}
                     animate={{ width: `${progress}%` }}
-                    transition={{ type: "spring", stiffness: 120, damping: 22 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 120,
+                      damping: 22,
+                    }}
                   />
                 </div>
               </div>
 
-              <div className="relative flex flex-1 flex-col p-6 pb-5 md:p-8 md:pb-6 lg:px-9 lg:pt-8 lg:pb-5">{children}</div>
+              <div className="relative flex flex-1 flex-col p-6 pb-5 md:p-8 md:pb-6 lg:px-9 lg:pt-8 lg:pb-5">
+                {children}
+              </div>
             </div>
           </div>
         </div>

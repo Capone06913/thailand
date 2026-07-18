@@ -1,16 +1,23 @@
 // Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 → git tag final-v2 | v3 → git tag final-v3
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
+import {
+  HERO_POSTER_SRC,
+  HERO_VIDEO_ENABLED,
+  HERO_VIDEO_SRC,
+} from "@/lib/hero-media";
 
 const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 export function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [showVideo, setShowVideo] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -57,23 +64,47 @@ export function ScrollVideoHero() {
   const lineMotion = [line1Y, line2Y, line3Y];
 
   useEffect(() => {
+    if (!HERO_VIDEO_ENABLED) return;
+
+    const motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mobileMq = window.matchMedia("(max-width: 767px)");
+    const connection = (
+      navigator as Navigator & {
+        connection?: { saveData?: boolean; effectiveType?: string };
+      }
+    ).connection;
+
+    const shouldUseVideo = () => {
+      if (motionMq.matches || mobileMq.matches) return false;
+      if (connection?.saveData) return false;
+      if (connection?.effectiveType?.includes("2g")) return false;
+      return true;
+    };
+
+    const sync = () => setShowVideo(shouldUseVideo());
+    sync();
+    motionMq.addEventListener("change", sync);
+    mobileMq.addEventListener("change", sync);
+    return () => {
+      motionMq.removeEventListener("change", sync);
+      mobileMq.removeEventListener("change", sync);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!showVideo) return;
     const video = videoRef.current;
     if (!video) return;
 
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const applyPlayback = () => {
-      if (mq.matches) {
-        video.pause();
-        return;
-      }
+    video.preload = "metadata";
+    const onCanPlay = () => {
       video.playbackRate = 1;
       void video.play().catch(() => {});
     };
-
-    applyPlayback();
-    mq.addEventListener("change", applyPlayback);
-    return () => mq.removeEventListener("change", applyPlayback);
-  }, []);
+    video.addEventListener("canplay", onCanPlay, { once: true });
+    video.load();
+    return () => video.removeEventListener("canplay", onCanPlay);
+  }, [showVideo]);
 
   return (
     <section
@@ -88,18 +119,30 @@ export function ScrollVideoHero() {
           className="absolute inset-0 origin-center"
           style={{ scale: videoScale }}
         >
-          <video
-            ref={videoRef}
+          <Image
+            src={HERO_POSTER_SRC}
+            alt="Вид на побережье Таиланда"
+            fill
+            priority
+            fetchPriority="high"
+            quality={80}
+            sizes="100vw"
             className="h-full w-full object-cover brightness-110 saturate-125"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/images/generated/hero-poster.jpg"
-            aria-label="Вид на побережье Таиланда"
-          >
-            <source src="/video/hero-loop.mp4" type="video/mp4" />
-          </video>
+          />
+          {showVideo ? (
+            <video
+              ref={videoRef}
+              className="absolute inset-0 h-full w-full object-cover brightness-110 saturate-125"
+              muted
+              loop
+              playsInline
+              preload="none"
+              aria-hidden
+              tabIndex={-1}
+            >
+              <source src={HERO_VIDEO_SRC} type="video/mp4" />
+            </video>
+          ) : null}
         </motion.div>
 
         <motion.div

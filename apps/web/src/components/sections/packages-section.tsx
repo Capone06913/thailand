@@ -76,7 +76,8 @@ export function PackagesSection() {
           </h2>
           <p className="mt-3 text-base font-medium leading-relaxed text-[var(--color-muted)]">
             Девять форматов: от проверки DTV до срочной туристической и
-            пенсионной. Срок на карточке, детали и стоимость на странице услуги.
+            пенсионной. Срок на карточке, индивидуальный расчёт в Telegram на
+            странице услуги.
           </p>
         </motion.div>
 
@@ -98,7 +99,6 @@ export function PackagesSection() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-sapphire)]/80 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[var(--color-sapphire)]" />
               </div>

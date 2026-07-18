@@ -198,7 +198,10 @@ export function LeadForm({
 
         {!isServicePage ? (
           <Field>
-            <FieldLabel className="font-semibold text-[var(--color-sapphire)]">
+            <FieldLabel
+              id="lead-service-label"
+              className="font-semibold text-[var(--color-sapphire)]"
+            >
               Какая виза нужна
             </FieldLabel>
             <Select
@@ -207,7 +210,12 @@ export function LeadForm({
                 if (v) setValue("service", v, { shouldValidate: true });
               }}
             >
-              <SelectTrigger className="h-12 w-full rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50">
+              <SelectTrigger
+                id="lead-service"
+                aria-labelledby="lead-service-label"
+                aria-label="Выберите услугу или консультацию"
+                className="h-12 w-full rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50"
+              >
                 <SelectValue placeholder="Выберите услугу или консультацию" />
               </SelectTrigger>
               <SelectContent>

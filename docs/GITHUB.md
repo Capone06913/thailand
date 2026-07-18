@@ -52,6 +52,7 @@ copy ..\..\.env.example .env.local
 | `TELEGRAM_BOT_TOKEN` | Bot API для заявок |
 | `TELEGRAM_LEAD_CHAT_ID` | Чат/канал для лидов |
 | `WORDPRESS_API_URL` | REST API блога (пусто = Excalibur mock) |
+| `NEXT_PUBLIC_TELEGRAM_BOT_URL` | Бот/менеджер для кнопок «узнать цену» на `/uslugi/*` |
 | `NEXT_PUBLIC_SITE_URL` | Канонический URL продакшена |
 | `NEXT_PUBLIC_YM_COUNTER_ID` / `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Аналитика (опционально) |
 

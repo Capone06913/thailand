@@ -1,18 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { readConsent } from "@/lib/consent";
 
-export function StickyCta() {
-  const [consentGiven, setConsentGiven] = useState(false);
+function subscribeConsent(callback: () => void) {
+  window.addEventListener("storage", callback);
+  window.addEventListener("thaipass:consent", callback);
+  return () => {
+    window.removeEventListener("storage", callback);
+    window.removeEventListener("thaipass:consent", callback);
+  };
+}
 
-  useEffect(() => {
-    setConsentGiven(readConsent() !== null);
-    const onConsent = () => setConsentGiven(true);
-    window.addEventListener("thaipass:consent", onConsent);
-    return () => window.removeEventListener("thaipass:consent", onConsent);
-  }, []);
+function getConsentGiven() {
+  return readConsent() !== null;
+}
+
+function getServerConsentGiven() {
+  return false;
+}
+
+export function StickyCta() {
+  const consentGiven = useSyncExternalStore(
+    subscribeConsent,
+    getConsentGiven,
+    getServerConsentGiven,
+  );
 
   if (!consentGiven) return null;
 

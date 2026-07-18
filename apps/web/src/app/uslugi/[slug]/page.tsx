@@ -4,9 +4,8 @@ import { notFound } from "next/navigation";
 import { getService, services } from "@/lib/services";
 import { LeadForm } from "@/components/forms/lead-form";
 import { JsonLd } from "@/components/seo/json-ld";
-import { ServiceAboutPanel } from "@/components/service/service-about-panel";
-import { ServicePricingHero } from "@/components/service/service-pricing-hero";
-import { ServiceVisaDetails } from "@/components/service/service-visa-details";
+import { ServiceDetailsPanel } from "@/components/service/service-details-panel";
+import { ServiceConversionHero } from "@/components/service/service-conversion-hero";
 import { ServiceLeadShell } from "@/components/service/service-lead-shell";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
@@ -45,8 +44,8 @@ export default async function ServicePage({ params }: PageProps) {
     description: service.description,
     offers: {
       "@type": "Offer",
-      price: service.pricing.amountRub,
-      priceCurrency: "RUB",
+      description: "Индивидуальный расчёт стоимости после разбора кейса",
+      availability: "https://schema.org/InStock",
     },
     provider: { "@type": "Organization", name: siteConfig.name },
     areaServed: "Russia",
@@ -113,12 +112,9 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_22rem] lg:items-start xl:grid-cols-[1fr_24rem] xl:gap-14">
-          <div className="min-w-0 space-y-10">
-            <ServiceAboutPanel service={service} />
-            {service.visaInfo ? (
-              <ServiceVisaDetails visaInfo={service.visaInfo} />
-            ) : null}
-            <ServicePricingHero service={service} />
+          <div className="min-w-0 space-y-6">
+            <ServiceDetailsPanel service={service} visaInfo={service.visaInfo} />
+            <ServiceConversionHero service={service} />
           </div>
 
           <div id="zayavka">

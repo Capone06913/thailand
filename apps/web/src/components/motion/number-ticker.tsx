@@ -28,11 +28,7 @@ export function NumberTicker({
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (prefersReduced) {
-      setDisplay(value);
-      return;
-    }
-
+    if (prefersReduced) return;
     let start: number | null = null;
     let frame: number;
 

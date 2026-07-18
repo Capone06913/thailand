@@ -31,5 +31,11 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://thaipass.ru
+          NEXT_PUBLIC_SITE_URL: https://capone06913.github.io
+          NEXT_PUBLIC_BRAND_NAME: ThaiPass
+
+      - name: Build GitHub Pages export
+        run: npm run build:gh-pages
+        env:
+          NEXT_PUBLIC_SITE_URL: https://capone06913.github.io
           NEXT_PUBLIC_BRAND_NAME: ThaiPass

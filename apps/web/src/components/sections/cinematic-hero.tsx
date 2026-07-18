@@ -8,6 +8,11 @@ import { HeroVideoSpotlight } from "@/components/motion/hero-video-spotlight";
 import { BorderBeam } from "@/components/motion/border-beam";
 import { PremiumCta } from "@/components/ui/premium-cta";
 import { StaggerWords } from "@/components/motion/stagger-words";
+import {
+  HERO_POSTER_SRC,
+  HERO_VIDEO_ENABLED,
+  HERO_VIDEO_SRC,
+} from "@/lib/hero-media";
 
 const utpStats = [
   { value: "0 ₽", label: "разбор кейса" },
@@ -24,10 +29,13 @@ export function CinematicHero() {
           muted
           loop
           playsInline
-          poster="/images/generated/hero-poster.jpg"
+          preload="none"
+          poster={HERO_POSTER_SRC}
           className="h-full w-full object-cover brightness-110 saturate-125 contrast-105"
         >
-          <source src="/video/hero-loop.mp4" type="video/mp4" />
+          {HERO_VIDEO_ENABLED ? (
+            <source src={HERO_VIDEO_SRC} type="video/mp4" />
+          ) : null}
         </video>
       </HeroVideoSpotlight>
 

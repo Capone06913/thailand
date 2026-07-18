@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useId, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
@@ -34,14 +34,31 @@ function CookieIcon({ className }: { className?: string }) {
   );
 }
 
-export function CookieConsentBanner() {
-  const [visible, setVisible] = useState(false);
-  const [checked, setChecked] = useState(false);
-  const checkboxId = useId();
+function subscribeConsent(callback: () => void) {
+  window.addEventListener("storage", callback);
+  window.addEventListener("thaipass:consent", callback);
+  return () => {
+    window.removeEventListener("storage", callback);
+    window.removeEventListener("thaipass:consent", callback);
+  };
+}
 
-  useEffect(() => {
-    setVisible(readConsent() === null);
-  }, []);
+function getConsentVisible() {
+  return readConsent() === null;
+}
+
+function getServerConsentVisible() {
+  return false;
+}
+
+export function CookieConsentBanner() {
+  const visible = useSyncExternalStore(
+    subscribeConsent,
+    getConsentVisible,
+    getServerConsentVisible,
+  );
+  const checkboxId = useId();
+  const [checked, setChecked] = useState(false);
 
   const accept = () => {
     if (!checked) return;
@@ -50,15 +67,14 @@ export function CookieConsentBanner() {
       acceptedAt: new Date().toISOString(),
       analytics: true,
     });
-    setVisible(false);
   };
 
   return (
     <AnimatePresence>
       {visible ? (
-        <motion.aside
+        <motion.div
           role="dialog"
-          aria-modal="false"
+          aria-modal="true"
           aria-labelledby="cookie-consent-title"
           aria-describedby="cookie-consent-desc"
           initial={{ y: 40, opacity: 0 }}
@@ -161,7 +177,7 @@ export function CookieConsentBanner() {
               </div>
             </div>
           </div>
-        </motion.aside>
+        </motion.div>
       ) : null}
     </AnimatePresence>
   );

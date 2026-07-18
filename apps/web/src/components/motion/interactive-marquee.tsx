@@ -114,8 +114,6 @@ export function InteractiveMarquee({
               </span>
             );
 
-            const canNavigate = item.href && movedRef.current < 6;
-
             if (!item.href) {
               return (
                 <span key={`${item.label}-${i}`} className="mx-3 shrink-0">
@@ -148,7 +146,7 @@ export function InteractiveMarquee({
                 href={item.href}
                 className="mx-3 shrink-0"
                 onClick={(e) => {
-                  if (!canNavigate) e.preventDefault();
+                  if (movedRef.current >= 6) e.preventDefault();
                 }}
                 draggable={false}
               >

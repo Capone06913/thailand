@@ -21,17 +21,16 @@ const BLOCKS = [
 export function PhysicsBlocks404() {
   const mountRef = useRef<HTMLDivElement>(null);
   const layerRef = useRef<HTMLDivElement>(null);
-  const [staticMode, setStaticMode] = useState(false);
+  const [staticMode] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.innerWidth < 768
+    );
+  });
 
   useEffect(() => {
-    const reduced =
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const narrow = window.innerWidth < 768;
-    if (reduced || narrow) {
-      setStaticMode(true);
-      return;
-    }
-
+    if (staticMode) return;
     let disposed = false;
     let spawnTimer: ReturnType<typeof setInterval>;
     const pairs: { body: import("matter-js").Body; el: HTMLDivElement }[] = [];

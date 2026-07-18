@@ -1,18 +1,42 @@
+import dynamic from "next/dynamic";
 import { ScrollVideoHero } from "@/components/sections/scroll-video-hero";
-import { PainSection } from "@/components/sections/pain-section";
-import { FaqSection } from "@/components/sections/faq-section";
-import { QuizSection } from "@/components/sections/quiz-section";
-import { PackagesSection } from "@/components/sections/packages-section";
-import { ProcessSection } from "@/components/sections/process-section";
-import { DeliverySection } from "@/components/sections/delivery-section";
-import { GuaranteesSection } from "@/components/sections/guarantees-section";
-import { TestimonialsSection } from "@/components/sections/testimonials-section";
-import { TrustSection } from "@/components/sections/trust-section";
-import { LeadSection } from "@/components/sections/lead-section";
 import { SectionDivider } from "@/components/ui/section-divider";
 import { JsonLd } from "@/components/seo/json-ld";
 import { landingFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
+
+const PainSection = dynamic(() =>
+  import("@/components/sections/pain-section").then((m) => m.PainSection),
+);
+const FaqSection = dynamic(() =>
+  import("@/components/sections/faq-section").then((m) => m.FaqSection),
+);
+const QuizSection = dynamic(() =>
+  import("@/components/sections/quiz-section").then((m) => m.QuizSection),
+);
+const PackagesSection = dynamic(() =>
+  import("@/components/sections/packages-section").then((m) => m.PackagesSection),
+);
+const ProcessSection = dynamic(() =>
+  import("@/components/sections/process-section").then((m) => m.ProcessSection),
+);
+const DeliverySection = dynamic(() =>
+  import("@/components/sections/delivery-section").then((m) => m.DeliverySection),
+);
+const GuaranteesSection = dynamic(() =>
+  import("@/components/sections/guarantees-section").then((m) => m.GuaranteesSection),
+);
+const TestimonialsSection = dynamic(() =>
+  import("@/components/sections/testimonials-section").then(
+    (m) => m.TestimonialsSection,
+  ),
+);
+const TrustSection = dynamic(() =>
+  import("@/components/sections/trust-section").then((m) => m.TrustSection),
+);
+const LeadSection = dynamic(() =>
+  import("@/components/sections/lead-section").then((m) => m.LeadSection),
+);
 
 const faqSchema = {
   "@context": "https://schema.org",

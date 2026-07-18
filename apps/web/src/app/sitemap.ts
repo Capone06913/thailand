@@ -3,6 +3,8 @@ import { services } from "@/lib/services";
 import { mockBlogPosts } from "@/lib/blog-mock";
 import { siteConfig } from "@/lib/utils";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
 

@@ -87,7 +87,7 @@ export function ScrollVideoHero() {
   return (
     <section
       ref={containerRef}
-      className="relative h-[240vh]"
+      className="relative hidden h-[240vh] md:block"
       aria-label="Главный экран"
     >
       <div className="sticky top-0 z-0 h-svh min-h-[600px] overflow-hidden">

@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
-import { ScrollVideoHero } from "@/components/sections/scroll-video-hero";
+import { MobileHeroStatic } from "@/components/sections/mobile-hero-static";
+import { DesktopHeroLoader } from "@/components/sections/desktop-hero-loader";
 import { SectionDivider } from "@/components/ui/section-divider";
 import { JsonLd } from "@/components/seo/json-ld";
 import { landingFaq } from "@/lib/faq";
@@ -68,7 +69,8 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={[faqSchema, localBusinessSchema]} />
-      <ScrollVideoHero />
+      <MobileHeroStatic />
+      <DesktopHeroLoader />
       <PainSection />
       <SectionDivider />
       <FaqSection />

@@ -118,39 +118,6 @@ function fixMediaPaths(outDir) {
   console.log(`✓ Fixed media paths in ${changedFiles} files`);
 }
 
-const CRITICAL_HERO_CSS = fs.readFileSync(
-  path.join(__dirname, "critical-hero.css"),
-  "utf8",
-);
-
-/** Homepage only: inline critical CSS + async full stylesheets (PSI render-blocking). */
-function optimizeHomepageStylesheets(outDir) {
-  const indexPath = path.join(outDir, "index.html");
-  if (!fs.existsSync(indexPath)) return;
-
-  let html = fs.readFileSync(indexPath, "utf8");
-  const stylesheetPattern =
-    /<link rel="stylesheet" href="([^"]+)" data-precedence="next"\/>/g;
-
-  if (!html.includes('id="critical-hero"')) {
-    html = html.replace(
-      "</head>",
-      `<style id="critical-hero">${CRITICAL_HERO_CSS}</style></head>`,
-    );
-  }
-
-  html = html.replace(stylesheetPattern, (_match, href) => {
-    const slug = href.split("/").pop()?.replace(".css", "") ?? "css";
-    return [
-      `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'" id="css-${slug}">`,
-      `<noscript><link rel="stylesheet" href="${href}"></noscript>`,
-    ].join("");
-  });
-
-  fs.writeFileSync(indexPath, html, "utf8");
-  console.log("✓ Optimized homepage stylesheets for PSI");
-}
-
 moveApiAside();
 
 const nextDir = path.join(root, ".next");
@@ -170,7 +137,6 @@ try {
 
   const outDir = path.join(root, "out");
   fixMediaPaths(outDir);
-  optimizeHomepageStylesheets(outDir);
   fs.writeFileSync(path.join(outDir, ".nojekyll"), "");
 } finally {
   restoreApi();

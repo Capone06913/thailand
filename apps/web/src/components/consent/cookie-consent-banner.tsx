@@ -2,7 +2,6 @@
 
 import { useId, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import { siteConfig } from "@/lib/site-config";
@@ -70,17 +69,13 @@ export function CookieConsentBanner() {
   };
 
   return (
-    <AnimatePresence>
+    <>
       {visible ? (
-        <motion.div
+        <div
           role="dialog"
           aria-modal="true"
           aria-labelledby="cookie-consent-title"
           aria-describedby="cookie-consent-desc"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="fixed inset-x-0 bottom-0 z-50 px-3 pb-3 pt-2 sm:px-4 sm:pb-4 md:bottom-4 md:left-auto md:right-4 md:max-w-xl md:px-0"
         >
           <div className="relative overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]/92 shadow-[0_20px_60px_rgba(20,42,69,0.18)] backdrop-blur-xl">
@@ -177,8 +172,8 @@ export function CookieConsentBanner() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       ) : null}
-    </AnimatePresence>
+    </>
   );
 }

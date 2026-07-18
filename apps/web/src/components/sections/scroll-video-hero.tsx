@@ -87,19 +87,17 @@ export function ScrollVideoHero() {
       video.load();
     };
 
-    const idleId =
-      typeof requestIdleCallback !== "undefined"
-        ? requestIdleCallback(() => window.setTimeout(startLoad, 1500))
-        : window.setTimeout(startLoad, 1500);
+    const onScroll = () => {
+      startLoad();
+      window.removeEventListener("scroll", onScroll);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => {
       cancelled = true;
       video.removeEventListener("canplay", onCanPlay);
-      if (typeof requestIdleCallback !== "undefined") {
-        cancelIdleCallback(idleId as number);
-      } else {
-        clearTimeout(idleId as number);
-      }
+      window.removeEventListener("scroll", onScroll);
     };
   }, [showVideo]);
 

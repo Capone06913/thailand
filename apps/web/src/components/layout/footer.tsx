@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BrandLogo } from "@/components/brand/brand-logo";
 import { SocialLinks } from "@/components/icons/social-icons";
 import { siteConfig } from "@/lib/utils";
@@ -26,13 +25,7 @@ export function Footer() {
       />
 
       <div className="relative mx-auto max-w-3xl px-4 py-8 text-center md:px-6 md:py-10">
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.45 }}
-          className="flex flex-col items-center gap-5"
-        >
+        <div className="flex flex-col items-center gap-5">
           <BrandLogo size="footer" variant="color" href="/" centered />
 
           <nav className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2">
@@ -57,7 +50,7 @@ export function Footer() {
           </nav>
 
           <SocialLinks size="md" className="justify-center" />
-        </motion.div>
+        </div>
       </div>
 
       <div className="border-t border-[var(--color-border)]/70 px-4 py-3 text-center text-[11px] leading-relaxed text-[var(--color-muted)]">

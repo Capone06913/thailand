@@ -28,8 +28,15 @@ export function DesktopHeroLoader() {
     if (!showDesktopHero) return;
     const fallback = document.getElementById("desktop-hero-fallback");
     if (!fallback) return;
-    fallback.style.opacity = "0";
-    fallback.style.pointerEvents = "none";
+
+    const hideFallback = () => {
+      fallback.style.visibility = "hidden";
+      fallback.style.pointerEvents = "none";
+    };
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(hideFallback);
+    });
   }, [showDesktopHero]);
 
   if (!showDesktopHero) return null;

@@ -1,7 +1,7 @@
 "use client";
 
+import { useEffect, useSyncExternalStore } from "react";
 import dynamic from "next/dynamic";
-import { useSyncExternalStore } from "react";
 import {
   getHeroPlaybackServerSnapshot,
   getHeroPlaybackSnapshot,
@@ -16,13 +16,18 @@ const ScrollVideoHero = dynamic(
   { ssr: false, loading: () => null },
 );
 
-/** Loads scroll hero + framer-motion only on desktop — mobile uses MobileHeroStatic. */
+/** Loads scroll hero on desktop; removes SSR poster fallback once mounted. */
 export function DesktopHeroLoader() {
   const showDesktopHero = useSyncExternalStore(
     subscribeHeroPlayback,
     getHeroPlaybackSnapshot,
     getHeroPlaybackServerSnapshot,
   );
+
+  useEffect(() => {
+    if (!showDesktopHero) return;
+    document.getElementById("desktop-hero-fallback")?.remove();
+  }, [showDesktopHero]);
 
   if (!showDesktopHero) return null;
 

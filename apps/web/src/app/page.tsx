@@ -1,4 +1,5 @@
 import { MobileHeroStatic } from "@/components/sections/mobile-hero-static";
+import { DesktopHeroStatic } from "@/components/sections/desktop-hero-static";
 import { DesktopHeroLoader } from "@/components/sections/desktop-hero-loader";
 import { HomeBelowFoldLoader } from "@/components/sections/home-below-fold-loader";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -36,6 +37,7 @@ export default function HomePage() {
     <>
       <JsonLd data={[faqSchema, localBusinessSchema]} />
       <MobileHeroStatic />
+      <DesktopHeroStatic />
       <DesktopHeroLoader />
       <HomeBelowFoldLoader />
     </>

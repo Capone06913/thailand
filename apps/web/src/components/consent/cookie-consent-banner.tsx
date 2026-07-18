@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState, useSyncExternalStore } from "react";
+import { useId, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
@@ -57,14 +57,8 @@ export function CookieConsentBanner() {
     getConsentVisible,
     getServerConsentVisible,
   );
-  const [paintReady, setPaintReady] = useState(false);
   const checkboxId = useId();
   const [checked, setChecked] = useState(false);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => setPaintReady(true), 2500);
-    return () => window.clearTimeout(timer);
-  }, []);
 
   const accept = () => {
     if (!checked) return;
@@ -77,7 +71,7 @@ export function CookieConsentBanner() {
 
   return (
     <AnimatePresence>
-      {visible && paintReady ? (
+      {visible ? (
         <motion.div
           role="dialog"
           aria-modal="true"

@@ -118,45 +118,6 @@ function fixMediaPaths(outDir) {
   console.log(`✓ Fixed media paths in ${changedFiles} files`);
 }
 
-const CRITICAL_HERO_CSS = fs.readFileSync(
-  path.join(__dirname, "critical-hero.css"),
-  "utf8",
-);
-
-/** Inline hero-critical CSS and load full stylesheets without render-blocking. */
-function optimizeStylesheets(outDir) {
-  const stylesheetPattern =
-    /<link rel="stylesheet" href="([^"]+)" data-precedence="next"\/>/g;
-
-  for (const filePath of walkFiles(outDir)) {
-    if (!filePath.endsWith(".html")) continue;
-
-    let html = fs.readFileSync(filePath, "utf8");
-    const original = html;
-
-    if (!html.includes('id="critical-hero"')) {
-      html = html.replace(
-        "</head>",
-        `<style id="critical-hero">${CRITICAL_HERO_CSS}</style></head>`,
-      );
-    }
-
-    html = html.replace(stylesheetPattern, (_match, href) => {
-      const slug = href.split("/").pop()?.replace(".css", "") ?? "css";
-      return [
-        `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'" id="css-${slug}">`,
-        `<noscript><link rel="stylesheet" href="${href}"></noscript>`,
-      ].join("");
-    });
-
-    if (html !== original) {
-      fs.writeFileSync(filePath, html, "utf8");
-    }
-  }
-
-  console.log("✓ Deferred render-blocking stylesheets");
-}
-
 moveApiAside();
 
 const nextDir = path.join(root, ".next");
@@ -176,7 +137,6 @@ try {
 
   const outDir = path.join(root, "out");
   fixMediaPaths(outDir);
-  optimizeStylesheets(outDir);
   fs.writeFileSync(path.join(outDir, ".nojekyll"), "");
 } finally {
   restoreApi();

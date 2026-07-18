@@ -21,9 +21,8 @@ const unbounded = Unbounded({
   subsets: ["latin", "cyrillic"],
   weight: ["700"],
   variable: "--font-display",
-  display: "optional",
+  display: "swap",
   preload: false,
-  adjustFontFallback: true,
 });
 
 const fraunces = Fraunces({

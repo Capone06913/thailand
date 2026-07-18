@@ -6,6 +6,12 @@ const staticAssetCache = "public, max-age=31536000, immutable";
 const nextConfig: NextConfig = {
   output: isGithubPages ? "export" : undefined,
   trailingSlash: isGithubPages,
+  ...(isGithubPages
+    ? {
+        basePath: "/thailand",
+        assetPrefix: "/thailand/",
+      }
+    : {}),
   images: {
     unoptimized: isGithubPages,
     formats: isGithubPages ? undefined : ["image/avif", "image/webp"],

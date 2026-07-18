@@ -1,6 +1,9 @@
 import { siteConfig } from "@/lib/site-config";
 import {
+  HERO_POSTER_MOBILE_HEIGHT,
   HERO_POSTER_MOBILE_SRC,
+  HERO_POSTER_MOBILE_WEBP_SRC,
+  HERO_POSTER_MOBILE_WIDTH,
   HERO_POSTER_SRC,
 } from "@/lib/hero-media";
 import { HeroNavStatic } from "@/components/layout/hero-nav-static";
@@ -17,12 +20,20 @@ export function MobileHeroStatic() {
       <HeroNavStatic />
 
       <picture className="absolute inset-0 block h-full w-full">
+        <source
+          type="image/webp"
+          media="(max-width: 767px)"
+          srcSet={HERO_POSTER_MOBILE_WEBP_SRC}
+        />
         <source media="(max-width: 767px)" srcSet={HERO_POSTER_MOBILE_SRC} />
         <img
           src={HERO_POSTER_SRC}
           alt="Вид на побережье Таиланда"
+          width={HERO_POSTER_MOBILE_WIDTH}
+          height={HERO_POSTER_MOBILE_HEIGHT}
           fetchPriority="high"
           decoding="async"
+          sizes="100vw"
           className="h-full w-full object-cover brightness-110 saturate-125"
         />
       </picture>
@@ -48,7 +59,7 @@ export function MobileHeroStatic() {
             Визы в Таиланд для россиян · {siteConfig.officeCity}
           </p>
 
-          <h1 className="font-display text-[2.625rem] font-bold uppercase leading-[0.92] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-4xl">
+          <h1 className="text-[2.625rem] font-bold uppercase leading-[0.92] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-4xl">
             {headlineLines.map((line) => (
               <span key={line} className="block">
                 {line}

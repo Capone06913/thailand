@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
         assetPrefix: "/thailand/",
       }
     : {}),
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
   images: {
     unoptimized: isGithubPages,
     formats: isGithubPages ? undefined : ["image/avif", "image/webp"],

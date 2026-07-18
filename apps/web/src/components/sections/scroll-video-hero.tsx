@@ -2,11 +2,10 @@
 "use client";
 
 import { useRef, useEffect, useSyncExternalStore } from "react";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
-import { HERO_POSTER_SRC, HERO_VIDEO_SRC } from "@/lib/hero-media";
+import { HERO_POSTER_SRC, HERO_POSTER_WEBP_SRC, HERO_VIDEO_SRC } from "@/lib/hero-media";
 import {
   getHeroPlaybackServerSnapshot,
   getHeroPlaybackSnapshot,
@@ -73,21 +72,41 @@ export function ScrollVideoHero() {
     const video = videoRef.current;
     if (!video) return;
 
+    let cancelled = false;
+
     const onCanPlay = () => {
+      if (cancelled) return;
       video.playbackRate = 1;
       void video.play().catch(() => {});
     };
 
-    video.preload = "auto";
-    video.addEventListener("canplay", onCanPlay, { once: true });
-    video.load();
-    return () => video.removeEventListener("canplay", onCanPlay);
+    const startLoad = () => {
+      if (cancelled || video.getAttribute("src")) return;
+      video.src = HERO_VIDEO_SRC;
+      video.addEventListener("canplay", onCanPlay, { once: true });
+      video.load();
+    };
+
+    const idleId =
+      typeof requestIdleCallback !== "undefined"
+        ? requestIdleCallback(() => window.setTimeout(startLoad, 1500))
+        : window.setTimeout(startLoad, 1500);
+
+    return () => {
+      cancelled = true;
+      video.removeEventListener("canplay", onCanPlay);
+      if (typeof requestIdleCallback !== "undefined") {
+        cancelIdleCallback(idleId as number);
+      } else {
+        clearTimeout(idleId as number);
+      }
+    };
   }, [showVideo]);
 
   return (
     <section
       ref={containerRef}
-      className="relative hidden h-[240vh] md:block"
+      className="relative h-full w-full"
       aria-label="Главный экран"
     >
       <div className="sticky top-0 z-0 h-svh min-h-[600px] overflow-hidden">
@@ -97,16 +116,19 @@ export function ScrollVideoHero() {
           className="absolute inset-0 origin-center"
           style={{ scale: videoScale }}
         >
-          <Image
-            src={HERO_POSTER_SRC}
-            alt="Вид на побережье Таиланда"
-            fill
-            priority
-            fetchPriority="high"
-            quality={82}
-            sizes="100vw"
-            className="h-full w-full object-cover brightness-110 saturate-125"
-          />
+          <picture className="absolute inset-0 block h-full w-full">
+            <source type="image/webp" srcSet={HERO_POSTER_WEBP_SRC} />
+            <img
+              src={HERO_POSTER_SRC}
+              alt="Вид на побережье Таиланда"
+              width={1920}
+              height={1080}
+              loading="lazy"
+              decoding="async"
+              sizes="100vw"
+              className="h-full w-full object-cover brightness-110 saturate-125"
+            />
+          </picture>
           {showVideo ? (
             <video
               ref={videoRef}
@@ -117,9 +139,7 @@ export function ScrollVideoHero() {
               preload="none"
               aria-hidden
               tabIndex={-1}
-            >
-              <source src={HERO_VIDEO_SRC} type="video/mp4" />
-            </video>
+            />
           ) : null}
         </motion.div>
 

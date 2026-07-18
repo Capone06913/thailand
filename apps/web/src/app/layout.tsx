@@ -7,7 +7,7 @@ import { AnalyticsLoader } from "@/components/consent/analytics-loader";
 import { CookieConsentLoader } from "@/components/consent/cookie-consent-loader";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-import { HERO_POSTER_MOBILE_WEBP_SRC } from "@/lib/hero-media";
+import { HERO_POSTER_MOBILE_WEBP_SRC, HERO_POSTER_WEBP_SRC } from "@/lib/hero-media";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -72,6 +72,14 @@ export default function RootLayout({
           href={HERO_POSTER_MOBILE_WEBP_SRC}
           type="image/webp"
           media="(max-width: 767px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={HERO_POSTER_WEBP_SRC}
+          type="image/webp"
+          media="(min-width: 768px)"
           fetchPriority="high"
         />
       </head>

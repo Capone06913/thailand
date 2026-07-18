@@ -37,8 +37,13 @@ export default function HomePage() {
     <>
       <JsonLd data={[faqSchema, localBusinessSchema]} />
       <MobileHeroStatic />
-      <DesktopHeroStatic />
-      <DesktopHeroLoader />
+      <div
+        id="desktop-hero-slot"
+        className="relative hidden h-[240vh] md:block"
+      >
+        <DesktopHeroStatic />
+        <DesktopHeroLoader />
+      </div>
       <HomeBelowFoldLoader />
     </>
   );

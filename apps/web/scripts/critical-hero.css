@@ -3,9 +3,6 @@
   --color-sapphire: #142a45;
   --color-gold: #d4a853;
   --color-teal: #0a4a48;
-  --color-teal-light: #0f6b68;
-  --color-muted: #5a5854;
-  --color-border: #ddd9cf;
   --color-foreground: #181614;
   --font-sans: system-ui, sans-serif;
   --font-display: system-ui, sans-serif;
@@ -14,9 +11,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -29,8 +23,10 @@ img {
   display: block;
   max-width: 100%;
 }
-.font-display {
-  font-family: var(--font-display);
+#desktop-hero-slot {
+  display: none;
+  position: relative;
+  height: 240vh;
 }
 .relative {
   position: relative;
@@ -41,9 +37,11 @@ img {
 .inset-0 {
   inset: 0;
 }
-.inset-x-0 {
-  left: 0;
-  right: 0;
+.sticky {
+  position: sticky;
+}
+.top-0 {
+  top: 0;
 }
 .block {
   display: block;
@@ -60,8 +58,17 @@ img {
 .w-full {
   width: 100%;
 }
+.h-svh {
+  height: 100svh;
+}
+.min-h-\[600px\] {
+  min-height: 600px;
+}
 .min-h-\[88svh\] {
   min-height: 88svh;
+}
+.h-\[240vh\] {
+  height: 240vh;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -74,6 +81,9 @@ img {
 }
 .object-cover {
   object-fit: cover;
+}
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -94,18 +104,6 @@ img {
 .text-white {
   color: #fff;
 }
-.text-white\/95 {
-  color: rgb(255 255 255 / 0.95);
-}
-.text-\[0\.6875rem\] {
-  font-size: 0.6875rem;
-}
-.text-\[2\.625rem\] {
-  font-size: 2.625rem;
-}
-.text-\[0\.9375rem\] {
-  font-size: 0.9375rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -115,35 +113,13 @@ img {
 .uppercase {
   text-transform: uppercase;
 }
-.leading-\[0\.92\] {
-  line-height: 0.92;
-}
-.leading-\[1\.65\] {
-  line-height: 1.65;
-}
-.tracking-\[-0\.02em\] {
-  letter-spacing: -0.02em;
-}
-.tracking-\[0\.18em\] {
-  letter-spacing: 0.18em;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-.mt-4 {
-  margin-top: 1rem;
-}
-.max-w-xl {
-  max-width: 36rem;
-}
-.max-w-5xl {
-  max-width: 64rem;
-}
-.hero-grain {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  mix-blend-mode: overlay;
-}
 @media (min-width: 768px) {
+  #desktop-hero-slot {
+    display: block;
+  }
+  .md\:block {
+    display: block;
+  }
   .md\:hidden {
     display: none;
   }

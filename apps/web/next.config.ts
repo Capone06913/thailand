@@ -13,7 +13,15 @@ const nextConfig: NextConfig = {
       }
     : {}),
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    optimizePackageImports: [
+      "lucide-react",
+      "framer-motion",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-select",
+      "@radix-ui/react-label",
+      "react-hook-form",
+    ],
   },
   images: {
     unoptimized: isGithubPages,

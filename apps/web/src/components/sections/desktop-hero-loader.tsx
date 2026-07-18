@@ -16,7 +16,7 @@ const ScrollVideoHero = dynamic(
   { ssr: false, loading: () => null },
 );
 
-/** Loads scroll hero on desktop; removes SSR poster fallback once mounted. */
+/** Overlays ScrollVideoHero in the reserved desktop slot; hides SSR fallback without layout shift. */
 export function DesktopHeroLoader() {
   const showDesktopHero = useSyncExternalStore(
     subscribeHeroPlayback,
@@ -26,10 +26,17 @@ export function DesktopHeroLoader() {
 
   useEffect(() => {
     if (!showDesktopHero) return;
-    document.getElementById("desktop-hero-fallback")?.remove();
+    const fallback = document.getElementById("desktop-hero-fallback");
+    if (!fallback) return;
+    fallback.style.opacity = "0";
+    fallback.style.pointerEvents = "none";
   }, [showDesktopHero]);
 
   if (!showDesktopHero) return null;
 
-  return <ScrollVideoHero />;
+  return (
+    <div className="absolute inset-0 z-[1] h-full">
+      <ScrollVideoHero />
+    </div>
+  );
 }

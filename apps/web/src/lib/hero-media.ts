@@ -1,5 +1,6 @@
 /** Hero LCP asset — poster is required in public/images/generated/ */
 export const HERO_POSTER_SRC = "/images/generated/hero-poster.jpg";
+export const HERO_POSTER_WEBP_SRC = "/images/generated/hero-poster.webp";
 /** Smaller poster for mobile LCP (~640px WebP, JPG fallback) */
 export const HERO_POSTER_MOBILE_SRC =
   "/images/generated/hero-poster-mobile.jpg";

@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site-config";
 import {
+  HERO_POSTER_MOBILE_SRC,
   HERO_POSTER_SRC,
   HERO_POSTER_WEBP_SRC,
 } from "@/lib/hero-media";
@@ -19,15 +20,19 @@ export function DesktopHeroStatic() {
         <HeroNavStatic />
 
         <picture className="absolute inset-0 block h-full w-full">
-          <source type="image/webp" srcSet={HERO_POSTER_WEBP_SRC} />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcSet={HERO_POSTER_WEBP_SRC}
+          />
+          <source media="(min-width: 768px)" srcSet={HERO_POSTER_SRC} />
           <img
-            src={HERO_POSTER_SRC}
+            src={HERO_POSTER_MOBILE_SRC}
             alt="Вид на побережье Таиланда"
             width={1920}
             height={1080}
-            fetchPriority="high"
             decoding="async"
-            sizes="100vw"
+            sizes="(min-width: 768px) 100vw, 0px"
             className="h-full w-full object-cover brightness-110 saturate-125"
           />
         </picture>

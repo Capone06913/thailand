@@ -4,7 +4,6 @@ import {
   HERO_POSTER_MOBILE_SRC,
   HERO_POSTER_MOBILE_WEBP_SRC,
   HERO_POSTER_MOBILE_WIDTH,
-  HERO_POSTER_SRC,
 } from "@/lib/hero-media";
 import { HeroNavStatic } from "@/components/layout/hero-nav-static";
 
@@ -27,12 +26,12 @@ export function MobileHeroStatic() {
         />
         <source media="(max-width: 767px)" srcSet={HERO_POSTER_MOBILE_SRC} />
         <img
-          src={HERO_POSTER_SRC}
+          src={HERO_POSTER_MOBILE_SRC}
           alt="Вид на побережье Таиланда"
           width={HERO_POSTER_MOBILE_WIDTH}
           height={HERO_POSTER_MOBILE_HEIGHT}
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
           sizes="100vw"
           className="h-full w-full object-cover brightness-110 saturate-125"
         />

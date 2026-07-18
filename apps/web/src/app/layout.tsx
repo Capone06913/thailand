@@ -7,6 +7,7 @@ import { AnalyticsLoader } from "@/components/consent/analytics-loader";
 import { CookieConsentBanner } from "@/components/consent/cookie-consent-banner";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
+import { HERO_POSTER_SRC } from "@/lib/hero-media";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -62,6 +63,12 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <JsonLd data={organizationSchema} />
+        <link
+          rel="preload"
+          as="image"
+          href={HERO_POSTER_SRC}
+          fetchPriority="high"
+        />
       </head>
       <body
         className={`${manrope.variable} ${unbounded.variable} ${fraunces.variable} font-sans antialiased`}

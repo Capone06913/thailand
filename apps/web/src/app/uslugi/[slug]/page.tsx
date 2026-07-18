@@ -105,8 +105,8 @@ export default async function ServicePage({ params }: PageProps) {
               alt={`${service.name}: получить визу в Таиланд, сопровождение ThaiPass`}
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
+              sizes="(max-width: 1024px) 100vw, 576px"
+              quality={82}
             />
           </div>
         </div>

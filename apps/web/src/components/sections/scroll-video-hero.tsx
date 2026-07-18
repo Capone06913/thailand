@@ -1,17 +1,28 @@
 // Stable baselines: v1 hero → scroll-video-hero.stable-2026-06-10.tsx | v2 → git tag final-v2 | v3 → git tag final-v3
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useSyncExternalStore } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
 import { HERO_POSTER_SRC, HERO_VIDEO_SRC } from "@/lib/hero-media";
+import {
+  getHeroPlaybackServerSnapshot,
+  getHeroPlaybackSnapshot,
+  subscribeHeroPlayback,
+} from "@/lib/hero-playback";
 
 const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 export function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const showVideo = useSyncExternalStore(
+    subscribeHeroPlayback,
+    getHeroPlaybackSnapshot,
+    getHeroPlaybackServerSnapshot,
+  );
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -58,23 +69,20 @@ export function ScrollVideoHero() {
   const lineMotion = [line1Y, line2Y, line3Y];
 
   useEffect(() => {
+    if (!showVideo) return;
     const video = videoRef.current;
     if (!video) return;
 
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const applyPlayback = () => {
-      if (mq.matches) {
-        video.pause();
-        return;
-      }
+    const onCanPlay = () => {
       video.playbackRate = 1;
       void video.play().catch(() => {});
     };
 
-    applyPlayback();
-    mq.addEventListener("change", applyPlayback);
-    return () => mq.removeEventListener("change", applyPlayback);
-  }, []);
+    video.preload = "auto";
+    video.addEventListener("canplay", onCanPlay, { once: true });
+    video.load();
+    return () => video.removeEventListener("canplay", onCanPlay);
+  }, [showVideo]);
 
   return (
     <section
@@ -89,19 +97,30 @@ export function ScrollVideoHero() {
           className="absolute inset-0 origin-center"
           style={{ scale: videoScale }}
         >
-          <video
-            ref={videoRef}
+          <Image
+            src={HERO_POSTER_SRC}
+            alt="Вид на побережье Таиланда"
+            fill
+            priority
+            fetchPriority="high"
+            quality={82}
+            sizes="100vw"
             className="h-full w-full object-cover brightness-110 saturate-125"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={HERO_POSTER_SRC}
-            preload="metadata"
-            aria-label="Вид на побережье Таиланда"
-          >
-            <source src={HERO_VIDEO_SRC} type="video/mp4" />
-          </video>
+          />
+          {showVideo ? (
+            <video
+              ref={videoRef}
+              className="absolute inset-0 h-full w-full object-cover brightness-110 saturate-125"
+              muted
+              loop
+              playsInline
+              preload="none"
+              aria-hidden
+              tabIndex={-1}
+            >
+              <source src={HERO_VIDEO_SRC} type="video/mp4" />
+            </video>
+          ) : null}
         </motion.div>
 
         <motion.div

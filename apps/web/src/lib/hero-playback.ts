@@ -4,7 +4,6 @@ function canAutoplayVideo(): boolean {
   if (typeof window === "undefined") return false;
   if (!HERO_VIDEO_ENABLED) return false;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
-  if (window.matchMedia("(max-width: 767px)").matches) return false;
 
   const connection = (
     navigator as Navigator & {

@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { MobileHeroStatic } from "@/components/sections/mobile-hero-static";
+import { MobileHeroLoader } from "@/components/sections/mobile-hero-loader";
 import { DesktopHeroStatic } from "@/components/sections/desktop-hero-static";
 import { DesktopHeroLoader } from "@/components/sections/desktop-hero-loader";
 import { SectionDivider } from "@/components/ui/section-divider";
@@ -72,7 +73,10 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={[faqSchema, localBusinessSchema]} />
-      <MobileHeroStatic />
+      <div className="relative md:hidden">
+        <MobileHeroStatic />
+        <MobileHeroLoader />
+      </div>
       <div
         id="desktop-hero-slot"
         className="relative hidden h-[240vh] md:block"

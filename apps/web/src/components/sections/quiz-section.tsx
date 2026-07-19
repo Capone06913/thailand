@@ -411,18 +411,19 @@ export function QuizSection() {
               {step === 3 && result && (
                 <motion.div
                   key="s3"
-                  initial={{ opacity: 0, y: 20, scale: 0.98 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="space-y-4"
                 >
                   <div className="hidden md:block">
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--color-gold)]">
                       Следующий шаг
                     </p>
-                    <h3 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-sapphire)] lg:text-3xl">
+                    <h3 className="mt-1.5 font-serif text-xl font-semibold text-[var(--color-sapphire)] lg:text-2xl">
                       Оставьте заявку на разбор кейса
                     </h3>
-                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--color-muted)]">
+                    <p className="mt-1.5 max-w-lg text-sm leading-relaxed text-[var(--color-muted)]">
                       {result.tagline}
                       {tried === "yes"
                         ? " Рекомендуем проверку документов до повторной подачи."
@@ -434,12 +435,12 @@ export function QuizSection() {
                     {result.tagline}
                   </p>
 
-                  <div className="mt-6 flex flex-wrap justify-center gap-3 md:mt-8 md:justify-start">
+                  <div className="flex flex-wrap justify-center gap-2.5 md:justify-start">
                     <Link
                       href={`/uslugi/${result.slug}`}
                       className={cn(
-                        buttonVariants({ variant: "outline" }),
-                        "rounded-full border-[var(--color-sapphire)]/20 px-5 py-2.5 font-semibold",
+                        buttonVariants({ variant: "outline", size: "sm" }),
+                        "rounded-full border-[var(--color-sapphire)]/20 px-4 font-semibold",
                       )}
                     >
                       Подробнее об услуге
@@ -450,8 +451,8 @@ export function QuizSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={cn(
-                          buttonVariants({ variant: "secondary" }),
-                          "rounded-full px-5 py-2.5 font-semibold",
+                          buttonVariants({ variant: "secondary", size: "sm" }),
+                          "rounded-full px-4 font-semibold",
                         )}
                       >
                         Написать в Telegram
@@ -459,22 +460,25 @@ export function QuizSection() {
                     )}
                   </div>
 
-                  <motion.div
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="mt-6 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]/60 p-5 md:mt-8 md:p-6 lg:p-8"
-                  >
-                    <p className="font-display text-sm font-bold text-[var(--color-sapphire)] md:hidden">
+                  <p className="text-[11px] leading-relaxed text-[var(--color-muted)]">
+                    Ответ за 30 минут · Москва и вся Россия · разбор кейса бесплатно
+                  </p>
+
+                  <div className="md:hidden">
+                    <p className="font-display text-sm font-bold text-[var(--color-sapphire)]">
                       Оставьте заявку на разбор кейса
                     </p>
-                    <p className="mt-1 text-xs text-[var(--color-muted)]">
+                    <p className="mt-0.5 text-xs text-[var(--color-muted)]">
                       Ответим за 30 минут · бесплатное фото на визу
                     </p>
-                    <div className="mt-4">
-                      <LeadForm defaultService={result.slug} compact />
-                    </div>
-                  </motion.div>
+                  </div>
+
+                  <LeadForm
+                    defaultService={result.slug}
+                    compact
+                    embed
+                    className="mt-1"
+                  />
                 </motion.div>
               )}
             </AnimatePresence>

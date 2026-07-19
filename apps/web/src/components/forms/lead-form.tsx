@@ -39,6 +39,7 @@ interface LeadFormProps {
   className?: string;
   defaultService?: string;
   compact?: boolean;
+  embed?: boolean;
   variant?: "default" | "service";
   serviceName?: string;
 }
@@ -47,6 +48,7 @@ export function LeadForm({
   className,
   defaultService,
   compact,
+  embed,
   variant = "default",
   serviceName,
 }: LeadFormProps) {
@@ -105,6 +107,8 @@ export function LeadForm({
       <div
         className={cn(
           "flex flex-col items-center rounded-3xl border border-[var(--color-teal)]/25 bg-white px-8 py-12 text-center shadow-xl",
+          compact && "rounded-2xl px-6 py-8 shadow-lg",
+          embed && "border-[var(--color-border)] shadow-none",
           className,
         )}
       >
@@ -137,28 +141,46 @@ export function LeadForm({
         isServicePage
           ? "border-[var(--color-gold)]/30 ring-1 ring-[var(--color-gold)]/20"
           : "border-[var(--color-border)]",
-        compact && "shadow-lg",
+        compact && "rounded-2xl shadow-lg",
+        embed && "rounded-2xl border-[var(--color-border)] shadow-none",
         className,
       )}
     >
-      <div className="border-b border-[var(--color-border)] bg-gradient-to-r from-[var(--color-sapphire)] to-[#1a3a5c] px-6 py-5 md:px-8">
+      <div
+        className={cn(
+          "border-b border-[var(--color-border)] bg-gradient-to-r from-[var(--color-sapphire)] to-[#1a3a5c] px-6 py-5 md:px-8",
+          compact && "px-5 py-3.5 md:px-5",
+        )}
+      >
         <div className="flex items-center gap-2">
-          <Sparkles size={16} className="text-[var(--color-gold)]" />
+          <Sparkles size={compact ? 14 : 16} className="text-[var(--color-gold)]" />
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
             Бесплатно
           </p>
         </div>
-        <p className="mt-1 font-display text-xl font-extrabold text-white md:text-2xl">
+        <p
+          className={cn(
+            "mt-1 font-display font-extrabold text-white",
+            compact ? "text-base md:text-lg" : "text-xl md:text-2xl",
+          )}
+        >
           {isServicePage ? "Оставить заявку" : "Разбор вашего кейса"}
         </p>
-        <p className="mt-1 text-sm text-white/70">
-          {isServicePage
-            ? `${serviceName ?? "Услуга"}: бесплатный разбор документов и сроков, ответ от 15 до 30 минут`
-            : "Ответ в мессенджере от 15 до 30 минут"}
-        </p>
+        {!embed ? (
+          <p className="mt-1 text-sm text-white/70">
+            {isServicePage
+              ? `${serviceName ?? "Услуга"}: бесплатный разбор документов и сроков, ответ от 15 до 30 минут`
+              : "Ответ в мессенджере от 15 до 30 минут"}
+          </p>
+        ) : null}
       </div>
 
-      <FieldGroup className="gap-4 p-6 pb-5 md:p-7 md:pb-5">
+      <FieldGroup
+        className={cn(
+          "gap-4 p-6 pb-5 md:p-7 md:pb-5",
+          compact && "gap-3 p-4 pb-4 md:p-4 md:pb-4",
+        )}
+      >
         <Field>
           <FieldLabel htmlFor="lead-name" className="font-semibold text-[var(--color-sapphire)]">
             Имя
@@ -167,7 +189,10 @@ export function LeadForm({
             id="lead-name"
             placeholder="Как к вам обращаться"
             autoComplete="name"
-            className="h-12 rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]"
+            className={cn(
+              "rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]",
+              compact ? "h-11" : "h-12",
+            )}
             {...register("name")}
           />
           {errors.name && (
@@ -184,7 +209,10 @@ export function LeadForm({
           <Input
             id="lead-contact"
             placeholder="@username или номер"
-            className="h-12 rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]"
+            className={cn(
+              "rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50 focus-visible:ring-[var(--color-gold)]",
+              compact ? "h-11" : "h-12",
+            )}
             {...register("contact")}
           />
           {errors.contact && (
@@ -214,7 +242,10 @@ export function LeadForm({
                 id="lead-service"
                 aria-labelledby="lead-service-label"
                 aria-label="Выберите услугу или консультацию"
-                className="h-12 w-full rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50"
+                className={cn(
+                  "w-full rounded-xl border-[var(--color-border)] bg-[var(--color-bg)]/50",
+                  compact ? "h-11" : "h-12",
+                )}
               >
                 <SelectValue placeholder="Выберите услугу или консультацию" />
               </SelectTrigger>
@@ -290,7 +321,7 @@ export function LeadForm({
           label={isServicePage ? "Оставить заявку" : "Получить разбор кейса"}
         />
 
-        <p className="text-center text-xs text-[var(--color-muted)]">
+        <p className="text-center text-[11px] leading-snug text-[var(--color-muted)]">
           Нажимая кнопку, вы соглашаетесь на{" "}
           <a href="/privacy" className="underline hover:text-[var(--color-teal)]">
             обработку персональных данных

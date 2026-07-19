@@ -4,9 +4,15 @@ import {
   HERO_POSTER_SRC,
   HERO_POSTER_WEBP_SRC,
 } from "@/lib/hero-media";
+import {
+  heroContentShellClass,
+  heroEyebrowClass,
+  heroHeadlineLineClass,
+  heroHeadlineLines,
+  heroSubcopyClass,
+  heroTitleClass,
+} from "@/lib/hero-typography";
 import { HeroNavStatic } from "@/components/layout/hero-nav-static";
-
-const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 /** SSR desktop hero poster — same 240vh slot as ScrollVideoHero to prevent CLS. */
 export function DesktopHeroStatic() {
@@ -52,21 +58,21 @@ export function DesktopHeroStatic() {
           className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[62%] bg-gradient-to-t from-[var(--color-sapphire)]/85 via-[var(--color-sapphire)]/45 to-transparent"
         />
 
-        <div className="relative z-10 flex h-full flex-col justify-end px-8 pb-16 pt-32">
+        <div className={heroContentShellClass}>
           <div className="w-full max-w-5xl">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)]">
+            <p className={heroEyebrowClass}>
               Визы в Таиланд для россиян · {siteConfig.officeCity}
             </p>
 
-            <h1 className="font-display text-5xl font-bold uppercase leading-[0.92] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] lg:text-6xl">
-              {headlineLines.map((line) => (
-                <span key={line} className="block">
+            <h1 className={heroTitleClass}>
+              {heroHeadlineLines.map((line) => (
+                <span key={line} className={heroHeadlineLineClass}>
                   {line}
                 </span>
               ))}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-[1.65] text-white/95 drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] lg:text-lg">
+            <p className={heroSubcopyClass}>
               {siteConfig.name}: сервис оформления виз в Таиланд для граждан
               России. Офис в {siteConfig.officeCity}, приём документов по всей
               РФ. Ведём DTV на 5 лет, туристическую TR и пенсионную 50+:

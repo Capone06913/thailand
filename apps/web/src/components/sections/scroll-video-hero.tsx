@@ -7,12 +7,20 @@ import { HeroNav } from "@/components/layout/hero-nav";
 import { siteConfig } from "@/lib/site-config";
 import { HERO_POSTER_SRC, HERO_POSTER_WEBP_SRC, HERO_VIDEO_SRC } from "@/lib/hero-media";
 import {
+  heroContentShellClass,
+  heroEyebrowClass,
+  heroHeadlineLineClass,
+  heroHeadlineLines,
+  heroSubcopyClass,
+  heroTitleClass,
+} from "@/lib/hero-typography";
+import {
   getHeroPlaybackServerSnapshot,
   getHeroPlaybackSnapshot,
   subscribeHeroPlayback,
 } from "@/lib/hero-playback";
 
-const headlineLines = ["Оформим", "визу в", "Таиланд"];
+const headlineLines = heroHeadlineLines;
 
 export function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -157,7 +165,7 @@ export function ScrollVideoHero() {
         />
 
         <motion.div
-          className="pointer-events-none relative z-10 flex h-full flex-col justify-end px-5 pb-10 pt-28 md:px-12 md:pb-14 lg:px-16 xl:px-20"
+          className={`pointer-events-none ${heroContentShellClass}`}
           style={{
             opacity: contentOpacity,
             visibility: contentVisibility,
@@ -167,32 +175,26 @@ export function ScrollVideoHero() {
           }}
         >
           <div className="w-full max-w-5xl">
-            <motion.p
-              style={{ y: eyebrowY }}
-              className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] sm:text-xs md:mb-4 md:text-sm"
-            >
+            <motion.p style={{ y: eyebrowY }} className={heroEyebrowClass}>
               Визы в Таиланд для россиян · {siteConfig.officeCity}
             </motion.p>
 
             <motion.h1
               style={{ letterSpacing: titleTracking }}
-              className="font-display font-bold uppercase leading-[0.92] text-white"
+              className={heroTitleClass}
             >
               {headlineLines.map((line, i) => (
                 <motion.span
                   key={line}
                   style={{ y: lineMotion[i], display: "block" }}
-                  className="block text-[2.625rem] drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem]"
+                  className={heroHeadlineLineClass}
                 >
                   {line}
                 </motion.span>
               ))}
             </motion.h1>
 
-            <motion.p
-              style={{ y: subcopyY }}
-              className="mt-4 max-w-xl text-[0.9375rem] leading-[1.65] text-white/95 drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] sm:max-w-2xl sm:text-base md:mt-5 md:text-lg md:leading-relaxed lg:text-[1.125rem]"
-            >
+            <motion.p style={{ y: subcopyY }} className={heroSubcopyClass}>
               {siteConfig.name}: сервис оформления виз в Таиланд для граждан
               России. Офис в {siteConfig.officeCity}, приём документов по всей
               РФ. Ведём DTV на 5 лет, туристическую TR и пенсионную 50+:

@@ -5,9 +5,15 @@ import {
   HERO_POSTER_MOBILE_WEBP_SRC,
   HERO_POSTER_MOBILE_WIDTH,
 } from "@/lib/hero-media";
+import {
+  heroContentShellClass,
+  heroEyebrowClass,
+  heroHeadlineLineClass,
+  heroHeadlineLines,
+  heroSubcopyClass,
+  heroTitleClass,
+} from "@/lib/hero-typography";
 import { HeroNavStatic } from "@/components/layout/hero-nav-static";
-
-const headlineLines = ["Оформим", "визу в", "Таиланд"];
 
 /** SSR-first hero for mobile LCP — no framer-motion, paints in initial HTML. */
 export function MobileHeroStatic() {
@@ -52,21 +58,21 @@ export function MobileHeroStatic() {
         className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[62%] bg-gradient-to-t from-[var(--color-sapphire)]/85 via-[var(--color-sapphire)]/45 to-transparent"
       />
 
-      <div className="relative z-10 flex min-h-[88svh] flex-col justify-end px-5 pb-10 pt-28">
+      <div className={`${heroContentShellClass} min-h-[88svh]`}>
         <div className="w-full max-w-5xl">
-          <p className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-gold)] drop-shadow-[0_2px_12px_rgba(20,42,69,0.9)] sm:text-xs">
+          <p className={heroEyebrowClass}>
             Визы в Таиланд для россиян · {siteConfig.officeCity}
           </p>
 
-          <h1 className="font-display text-[2.625rem] font-bold uppercase leading-[0.92] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(20,42,69,0.85)] sm:text-4xl">
-            {headlineLines.map((line) => (
-              <span key={line} className="block">
+          <h1 className={heroTitleClass}>
+            {heroHeadlineLines.map((line) => (
+              <span key={line} className={heroHeadlineLineClass}>
                 {line}
               </span>
             ))}
           </h1>
 
-          <p className="mt-4 max-w-xl text-[0.9375rem] leading-[1.65] text-white/95 drop-shadow-[0_2px_16px_rgba(20,42,69,0.9)] sm:max-w-2xl sm:text-base">
+          <p className={heroSubcopyClass}>
             {siteConfig.name}: сервис оформления виз в Таиланд для граждан
             России. Офис в {siteConfig.officeCity}, приём документов по всей
             РФ. Ведём DTV на 5 лет, туристическую TR и пенсионную 50+:

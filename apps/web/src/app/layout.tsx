@@ -22,7 +22,7 @@ const unbounded = Unbounded({
   weight: ["700"],
   variable: "--font-display",
   display: "swap",
-  preload: false,
+  preload: true,
 });
 
 const fraunces = Fraunces({

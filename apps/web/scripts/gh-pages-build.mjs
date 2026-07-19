@@ -118,41 +118,6 @@ function fixMediaPaths(outDir) {
   console.log(`✓ Fixed media paths in ${changedFiles} files`);
 }
 
-/** Mobile-only: inline critical CSS + non-blocking stylesheets on homepage. */
-function optimizeHomepageMobileStylesheets(outDir) {
-  const indexPath = path.join(outDir, "index.html");
-  const criticalPath = path.join(__dirname, "critical-hero.css");
-  if (!fs.existsSync(indexPath) || !fs.existsSync(criticalPath)) return;
-
-  let html = fs.readFileSync(indexPath, "utf8");
-  if (html.includes('id="critical-mobile"')) return;
-
-  const criticalCss = fs
-    .readFileSync(criticalPath, "utf8")
-    .replace(/<\/style/gi, "<\\/style");
-
-  html = html.replace(
-    "</head>",
-    `<style id="critical-mobile">${criticalCss}</style></head>`,
-  );
-
-  html = html.replace(
-    /<link rel="stylesheet" href="([^"]+\.css)"([^>]*?)\/>/g,
-    (match, href, rest) => {
-      if (rest.includes("critical-mobile") || rest.includes("media=")) {
-        return match;
-      }
-      const desktopLink = `<link rel="stylesheet" href="${href}" media="(min-width: 768px)"${rest}/>`;
-      const mobileLink = `<link rel="stylesheet" href="${href}" media="print" onload="this.media='(max-width: 767px)'"${rest}/>`;
-      const noscriptLink = `<noscript><link rel="stylesheet" href="${href}"${rest}/></noscript>`;
-      return `${desktopLink}${mobileLink}${noscriptLink}`;
-    },
-  );
-
-  fs.writeFileSync(indexPath, html, "utf8");
-  console.log("✓ Optimized homepage stylesheets for mobile LCP/FCP");
-}
-
 moveApiAside();
 
 const nextDir = path.join(root, ".next");
@@ -172,7 +137,6 @@ try {
 
   const outDir = path.join(root, "out");
   fixMediaPaths(outDir);
-  optimizeHomepageMobileStylesheets(outDir);
   fs.writeFileSync(path.join(outDir, ".nojekyll"), "");
 } finally {
   restoreApi();
